@@ -12,18 +12,7 @@ export default function Hero() {
           <div className="hero-v2-bg-name">JANA AFFUM</div>
         </div>
 
-        {/* Center / Right Cutout Person Image */}
-        <div className="hero-v2-person-wrapper">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/images/jana-affum-hero.png"
-            alt="Jana Affum - International Recruiter & Private Coach"
-            className="hero-v2-person-img"
-            loading="eager"
-          />
-        </div>
-
-        {/* Main Body: Left Content + Bottom Right Glass Cards */}
+        {/* Main Body: Left Content + Person Image + Bottom Right Glass Cards */}
         <div className="hero-v2-body">
           <div className="hero-v2-content-left">
             <div className="hero-v2-eyebrow">
@@ -64,6 +53,17 @@ export default function Hero() {
                 </svg>
               </Link>
             </div>
+          </div>
+
+          {/* Center / Right Cutout Person Image */}
+          <div className="hero-v2-person-wrapper">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/jana-affum-hero.png"
+              alt="Jana Affum - International Recruiter & Private Coach"
+              className="hero-v2-person-img"
+              loading="eager"
+            />
           </div>
 
           {/* Two Floating Glassmorphism Stat Cards */}

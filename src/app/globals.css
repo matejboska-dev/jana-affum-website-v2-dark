@@ -23876,16 +23876,18 @@ p.services-description-animation.services-description-animation {
   .hero-v2-card {
     min-height: auto;
     border-radius: 0;
+    background-image: radial-gradient(ellipse 90% 55% at 50% 32%, rgba(211, 175, 101, 0.22) 0%, rgba(122, 92, 24, 0.08) 42%, rgba(14, 12, 9, 0) 75%);
   }
   .hero-v2-body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 100px 24px 44px 24px;
+    padding: 105px 24px 44px 24px;
   }
   .hero-v2-content-left {
-    max-width: 100%;
-    margin-bottom: 32px;
+    max-width: 640px;
+    width: 100%;
+    margin-bottom: 24px;
   }
   .hero-v2-eyebrow {
     align-items: center;
@@ -23900,10 +23902,45 @@ p.services-description-animation.services-description-animation {
   .hero-v2-person-wrapper {
     position: relative;
     left: auto;
+    bottom: auto;
     transform: none;
-    height: 380px;
-    margin-bottom: 24px;
-    order: -1;
+    height: auto;
+    max-height: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 8px auto 36px auto;
+    pointer-events: auto;
+    z-index: 3;
+    order: 0;
+  }
+  .hero-v2-person-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    width: clamp(260px, 75vw, 400px);
+    height: clamp(260px, 75vw, 400px);
+    background: radial-gradient(circle, rgba(211, 175, 101, 0.22) 0%, rgba(180, 140, 60, 0.08) 45%, rgba(14, 12, 9, 0) 75%);
+    border-radius: 50%;
+    filter: blur(28px);
+    pointer-events: none;
+    z-index: -1;
+  }
+  .hero-v2-person-img {
+    height: auto;
+    max-height: clamp(340px, 48vh, 440px);
+    width: auto;
+    max-width: min(100%, 380px);
+    object-fit: contain;
+    object-position: bottom center;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.75));
+    -webkit-mask-image: linear-gradient(to bottom, #000 80%, rgba(0, 0, 0, 0.5) 92%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 80%, rgba(0, 0, 0, 0.5) 92%, transparent 100%);
   }
   .hero-v2-stats-wrapper {
     flex-direction: row;
@@ -23913,15 +23950,22 @@ p.services-description-animation.services-description-animation {
   }
   .hero-v2-glass-card {
     flex: 1;
-    max-width: 220px;
+    max-width: 240px;
   }
   .hero-v2-bg-name {
-    top: 70px;
+    top: 75px;
     left: 50%;
     right: auto;
     transform: translateX(-50%);
-    font-size: clamp(30px, 6vw, 48px);
+    font-size: clamp(26px, 6vw, 44px);
     text-align: center;
+    opacity: 0.08;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-v2-content-left {
+    padding-top: 24px;
   }
 }
 
@@ -23933,7 +23977,24 @@ p.services-description-animation.services-description-animation {
     border-radius: 0;
   }
   .hero-v2-body {
-    padding: 90px 16px 36px 16px;
+    padding: 95px 18px 36px 18px;
+  }
+  .hero-v2-content-left {
+    padding-top: 28px;
+    margin-bottom: 20px;
+  }
+  .hero-v2-title {
+    font-size: clamp(26px, 7.2vw, 32px) !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.02em !important;
+    margin-bottom: 16px !important;
+    word-break: keep-all;
+    overflow-wrap: normal;
+  }
+  .hero-v2-lead {
+    font-size: 15px;
+    line-height: 1.55;
+    margin-bottom: 24px;
   }
   .hero-v2-actions {
     flex-direction: column;
@@ -23947,23 +24008,30 @@ p.services-description-animation.services-description-animation {
     width: 100%;
     justify-content: center;
   }
+  .hero-v2-person-wrapper {
+    height: auto;
+    margin: 10px auto 30px auto;
+  }
+  .hero-v2-person-img {
+    max-height: clamp(300px, 45vh, 380px);
+    max-width: min(100%, 330px);
+  }
   .hero-v2-stats-wrapper {
     flex-direction: column;
     width: 100%;
+    gap: 12px;
   }
   .hero-v2-glass-card {
     max-width: 100%;
     width: 100%;
   }
-  .hero-v2-person-wrapper {
-    height: 300px;
-  }
   .hero-v2-bg-name {
-    font-size: clamp(24px, 7vw, 34px);
-    top: 55px;
+    font-size: clamp(20px, 6.5vw, 30px);
+    top: 60px;
     left: 50%;
     right: auto;
     transform: translateX(-50%);
+    opacity: 0.07;
   }
 }
 
