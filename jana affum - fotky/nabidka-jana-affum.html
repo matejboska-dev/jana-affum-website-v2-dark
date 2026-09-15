@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<title>Cenová nabídka | Jana Affum</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+@page{size:A4 portrait;margin:0}
+
+:root{
+  --navy:#16120B;        /* teple temna, misto puvodni navy */
+  --blue:#9A7420;        /* akcent: zlata odvozena z loga klientky */
+  --goldl:#D3AF65;       /* svetla zlata z loga, pouze na tmavem podkladu */
+  --gray:#FAF7F0;
+  --white:#ffffff;
+  --black:#000000;
+  --text:#3D3831;
+  --textl:#7A7267;
+  --border:#E5DFD3;
+  --font:'Plus Jakarta Sans','Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+  --cc:var(--navy);
+  --ct:#ffffff;
+}
+
+body{
+  font-family:var(--font);
+  background:#d9d3c6;
+  color:var(--text);
+  print-color-adjust:exact;
+  -webkit-print-color-adjust:exact;
+}
+
+@media screen{body{padding:40px 0}}
+@media print{body{background:transparent;padding:0}}
+
+.page{
+  width:210mm;
+  height:297mm;
+  background:#fff;
+  position:relative;
+  overflow:hidden;
+  break-after:page;
+  page-break-after:always;
+}
+.page:last-child{break-after:auto;page-break-after:auto}
+
+@media screen{
+  .page{margin:0 auto 24px;box-shadow:0 8px 48px rgba(0,0,0,.2)}
+}
+
+/* ===== COVER ===== */
+.cover{display:flex;flex-direction:row}
+
+.cover-l{
+  width:95mm;
+  min-height:297mm;
+  background:var(--cc);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:20mm 15mm;
+  gap:8mm;
+  position:relative;
+  flex-shrink:0;
+  border-right:1px solid rgba(255,255,255,0.1);
+}
+
+.cl-tile{
+  background:#ffffff;border-radius:4mm;padding:7mm 9mm;
+  display:flex;align-items:center;justify-content:center;
+}
+.cl-logo{width:44mm;height:auto;max-height:30mm;object-fit:contain;display:block}
+
+.cl-logo-placeholder{
+  width:58mm;height:20mm;
+  border:1px solid rgba(255,255,255,.2);
+  background:rgba(255,255,255,.05);
+  border-radius:4mm;
+  display:flex;align-items:center;justify-content:center;
+  font-size:8pt;color:rgba(255,255,255,.6);
+  font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+}
+
+.cl-name{
+  font-size:24pt;font-weight:800;color:var(--ct);
+  text-align:center;letter-spacing:-.03em;line-height:1.15;
+  position:relative;z-index:1;
+}
+
+.cl-web{
+  font-size:8.5pt;font-weight:600;color:var(--goldl);
+  letter-spacing:.1em;position:relative;text-transform:uppercase;z-index:1;
+}
+
+.cover-r{
+  flex:1;min-height:297mm;background:#ffffff;
+  display:flex;flex-direction:column;padding:15mm 20mm;
+}
+
+.cr-logo{height:16mm;width:auto;max-width:55mm;object-fit:contain;align-self:flex-start;filter:brightness(0)}
+.mb-fallback{
+  font-size:13pt;font-weight:800;color:var(--navy);letter-spacing:-.02em;align-self:flex-start;
+}
+.mb-fallback span{display:block;font-size:7pt;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:.15em;margin-top:1mm}
+.ph .mb-fallback{color:#fff;font-size:10pt}
+.ph .mb-fallback span{color:var(--goldl)}
+
+.cr-main{flex:1;display:flex;flex-direction:column;justify-content:center;padding:8mm 0}
+.cr-label{
+  font-size:8pt;font-weight:700;color:var(--blue);
+  text-transform:uppercase;letter-spacing:.15em;margin-bottom:5mm;
+}
+.cr-title{
+  font-size:24pt;font-weight:800;color:var(--navy);
+  line-height:1.15;letter-spacing:-.03em;margin-bottom:6mm;
+  hyphens:none;-webkit-hyphens:none;
+}
+.cr-accent{width:24mm;height:4px;background:var(--blue);margin-bottom:8mm;border-radius:2px}
+.cr-sub{font-size:10pt;color:var(--textl);line-height:1.6;font-weight:500}
+.cr-meta{border-top:1px solid var(--border);padding-top:8mm;display:flex;flex-direction:column;gap:3.5mm}
+.cr-meta-row{display:flex;justify-content:space-between;align-items:baseline}
+.cr-meta-k{font-size:7.5pt;color:var(--textl);text-transform:uppercase;letter-spacing:.12em;font-weight:600}
+.cr-meta-v{font-size:9pt;color:var(--navy);font-weight:700}
+.cr-meta-sep{height:1px;background:var(--border);margin:2.5mm 0}
+
+/* ===== SPOLECNE STRANKY ===== */
+.ph{
+  width:210mm;height:16mm;background:var(--navy);
+  display:flex;align-items:center;padding:0 20mm;
+  position:relative;flex-shrink:0;
+}
+.ph::after{content:'';position:absolute;bottom:0;left:0;right:0;height:4px;background:var(--blue)}
+.ph-logo{height:7.5mm;width:auto;object-fit:contain;display:block}
+.ph-right{
+  margin-left:auto;font-size:8pt;color:rgba(255,255,255,.6);
+  font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+}
+.pc{padding:15mm 20mm 20mm;height:calc(297mm - 16mm - 12mm);overflow:hidden}
+.pc.tight{padding-top:11mm}
+.pf{
+  position:absolute;bottom:0;left:0;right:0;height:12mm;
+  border-top:1px solid var(--border);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 20mm;background:#ffffff;
+}
+.pf-l{font-size:8pt;color:var(--textl);font-weight:500}
+.pf-r{font-size:8pt;color:var(--textl);font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+
+.slabel{font-size:8.5pt;font-weight:800;color:var(--blue);text-transform:uppercase;letter-spacing:.15em;margin-bottom:4mm}
+.shead{font-size:26pt;font-weight:800;color:var(--navy);letter-spacing:-.03em;line-height:1.15;margin-bottom:8mm}
+.shead.sm{font-size:22pt;margin-bottom:5mm}
+.shead span{color:var(--blue)}
+.div{height:1px;background:var(--border);margin:6mm 0}
+
+/* ===== STRANA 2 ===== */
+.ptext{font-size:11pt;line-height:1.7;color:var(--text);margin-bottom:8mm;max-width:160mm}
+.dhead{font-size:9pt;font-weight:800;color:var(--navy);text-transform:uppercase;letter-spacing:.15em;margin-bottom:5mm}
+.dlist{list-style:none;display:flex;flex-direction:column;gap:4mm}
+.ditem{display:flex;align-items:flex-start;gap:4mm;font-size:10.5pt;color:var(--text);line-height:1.6;font-weight:500}
+.ddot{
+  width:6mm;height:6mm;min-width:6mm;background:var(--gray);
+  border:1.5px solid var(--blue);border-radius:50%;margin-top:1mm;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+}
+.ddot::after{content:'';width:2.5px;height:2.5px;background:var(--blue);border-radius:50%}
+
+/* ===== NALEZY / PERSONY ===== */
+.fintro{font-size:9.5pt;line-height:1.55;color:var(--text);margin-bottom:5mm;max-width:158mm}
+.flist{display:flex;flex-direction:column;gap:4.1mm}
+.fitem{display:flex;gap:5mm;align-items:flex-start}
+.fnum{
+  width:24mm;min-width:24mm;text-align:right;
+  font-size:17pt;font-weight:800;color:var(--blue);
+  letter-spacing:-.03em;line-height:1.1;padding-top:.5mm;
+}
+.fnum.sm{font-size:12pt;padding-top:1.5mm}
+.fnum small{
+  display:block;font-size:6.5pt;font-weight:700;color:var(--textl);
+  text-transform:uppercase;letter-spacing:.08em;line-height:1.3;margin-top:1mm;
+}
+.fbody{flex:1;border-left:1.5px solid var(--border);padding-left:5mm}
+.ftitle{font-size:10.5pt;font-weight:800;color:var(--navy);margin-bottom:1.5mm;letter-spacing:-.01em}
+.fdesc{font-size:9pt;color:var(--text);line-height:1.55}
+.fimp{
+  display:block;margin-top:1.5mm;font-size:8pt;font-weight:700;
+  color:var(--blue);
+}
+
+/* ===== VAROVNY BOX ===== */
+.warnbox{
+  background:var(--gray);border-radius:4mm;padding:6mm 7mm;
+  border-left:4px solid var(--blue);margin-top:6mm;
+}
+.warntitle{font-size:8pt;font-weight:800;color:var(--navy);text-transform:uppercase;letter-spacing:.12em;margin-bottom:3mm}
+.warntext{font-size:9pt;color:var(--text);line-height:1.6}
+.warntext b{color:var(--navy)}
+
+/* ===== STRUKTURA WEBU ===== */
+.smap{display:flex;gap:5mm;margin-bottom:5mm}
+.sbranch{flex:1;border:1.5px solid var(--border);border-radius:4mm;padding:4.5mm 5mm}
+.sbranch.main{border:2px solid var(--blue)}
+.sbtag{font-size:6.5pt;font-weight:800;color:var(--blue);text-transform:uppercase;letter-spacing:.14em;margin-bottom:1.5mm}
+.sbname{font-size:11.5pt;font-weight:800;color:var(--navy);letter-spacing:-.02em;margin-bottom:1.5mm}
+.sbnote{font-size:8pt;color:var(--textl);line-height:1.45;margin-bottom:3.5mm;padding-bottom:3mm;border-bottom:1px solid var(--border)}
+.sburl{list-style:none;display:flex;flex-direction:column;gap:1.9mm}
+.sburl li{font-size:8.3pt;color:var(--text);line-height:1.35;display:flex;gap:2.5mm;align-items:flex-start}
+.sburl li::before{content:'';width:1.6mm;height:1.6mm;min-width:1.6mm;background:var(--blue);border-radius:50%;margin-top:1.5mm;flex-shrink:0}
+.sburl li b{color:var(--navy);font-weight:700}
+.sshared{background:var(--gray);border-radius:4mm;padding:4mm 5mm;margin-bottom:6mm}
+.sshared b{color:var(--navy);font-weight:800;font-size:8pt;text-transform:uppercase;letter-spacing:.12em;display:block;margin-bottom:2mm}
+.sshared p{font-size:8.5pt;color:var(--text);line-height:1.55}
+
+.chhead{font-size:9pt;font-weight:800;color:var(--navy);text-transform:uppercase;letter-spacing:.15em;margin-bottom:4mm}
+.chlist{display:flex;flex-direction:column;gap:0}
+.chitem{display:flex;gap:5mm;align-items:flex-start;border-bottom:1px solid var(--border);padding:2.8mm 0}
+.chitem:first-child{padding-top:0}
+.chname{width:50mm;min-width:50mm;font-size:9pt;font-weight:800;color:var(--navy);line-height:1.35}
+.chdesc{flex:1;font-size:8.6pt;color:var(--text);line-height:1.5}
+
+/* ===== TABULKA ROZSAHU ===== */
+.stab{width:100%;border-collapse:collapse;margin-bottom:6mm}
+.stab thead tr{border-bottom:2px solid var(--border)}
+.stab thead th{
+  padding:3.5mm 4mm;text-align:left;font-size:7.5pt;font-weight:800;
+  color:var(--textl);text-transform:uppercase;letter-spacing:.15em;
+}
+.stab tbody tr{border-bottom:1px solid var(--border)}
+.stab tbody td{padding:3.2mm 4mm;vertical-align:top}
+.td-n{font-size:9.5pt;font-weight:700;color:var(--navy);width:46mm}
+.td-d{font-size:8.8pt;color:var(--text);line-height:1.5}
+.td-r{font-size:8.8pt;color:var(--textl);font-weight:600;text-align:right;white-space:nowrap}
+
+.nibox{background:var(--gray);border-radius:4mm;padding:6mm 7mm;margin-top:4mm}
+.nititle{font-size:8pt;font-weight:800;color:var(--navy);text-transform:uppercase;letter-spacing:.12em;margin-bottom:4mm}
+.nilist{list-style:none;display:flex;flex-direction:column;gap:2.5mm}
+.niitem{font-size:9pt;color:var(--text);display:flex;align-items:center;gap:3mm}
+.niitem::before{content:'\2715';color:var(--textl);font-size:7pt;font-weight:700;flex-shrink:0}
+
+/* ===== RETAINER KARTY ===== */
+.rcards{display:flex;flex-direction:column;gap:5mm}
+.rcard{border:1.5px solid var(--border);border-radius:4mm;padding:5mm 6.5mm;position:relative}
+.rcard.pick{border:2px solid var(--blue)}
+.rtag{
+  position:absolute;top:-3mm;left:7mm;background:var(--blue);color:#fff;
+  font-size:6.5pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+  padding:1.2mm 3mm;border-radius:1.5mm;
+}
+.rhead{display:flex;justify-content:space-between;align-items:baseline;gap:6mm;padding-bottom:3.5mm;border-bottom:1px solid var(--border);margin-bottom:4mm}
+.rname{font-size:13pt;font-weight:800;color:var(--navy);letter-spacing:-.02em}
+.rname span{display:block;font-size:7pt;font-weight:800;color:var(--blue);text-transform:uppercase;letter-spacing:.15em;margin-bottom:1.5mm}
+.rprice{text-align:right;white-space:nowrap}
+.rprice b{font-size:15pt;font-weight:800;color:var(--navy);display:block;letter-spacing:-.02em}
+.rprice i{font-style:normal;font-size:7.5pt;color:var(--textl);font-weight:600;text-transform:uppercase;letter-spacing:.1em}
+.rlist{list-style:none;display:flex;flex-direction:column;gap:2.1mm}
+.rlist li{font-size:8.8pt;color:var(--text);display:flex;align-items:flex-start;gap:3mm;line-height:1.45}
+.rlist li::before{content:'';width:2mm;height:2mm;min-width:2mm;background:var(--blue);border-radius:50%;margin-top:1.8mm;flex-shrink:0}
+.rlist li b{color:var(--navy);font-weight:700}
+.rfoot{margin-top:3.5mm;padding-top:2.5mm;border-top:1px solid var(--border);font-size:8.2pt;color:var(--textl);line-height:1.45}
+
+.trialbox{background:var(--gray);border:1.5px solid var(--blue);border-radius:4mm;padding:4.5mm 6mm;margin-top:4.5mm}
+.trialtag{display:inline-block;background:var(--navy);color:var(--goldl);font-size:6.8pt;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:1mm 3mm;border-radius:1.5mm;margin-bottom:2mm}
+.trialtitle{font-size:10.5pt;font-weight:800;color:var(--navy);margin-bottom:1.5mm;letter-spacing:-.01em}
+.trialtext{font-size:8.6pt;color:var(--text);line-height:1.5}
+.trialtext b{color:var(--navy);font-weight:700}
+
+/* ===== HARMONOGRAM ===== */
+.tl{display:flex;flex-direction:column;margin-bottom:7mm}
+.tl-item{display:flex;gap:6mm;position:relative}
+.tl-left{display:flex;flex-direction:column;align-items:center;width:10mm;flex-shrink:0}
+.tl-dot{
+  width:10mm;height:10mm;border-radius:50%;background:var(--gray);
+  border:1.5px solid var(--border);display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;position:relative;z-index:1;
+}
+.tl-dot-i{width:4mm;height:4mm;background:var(--blue);border-radius:50%}
+.tl-line{width:2px;flex:1;background:var(--border);margin:2mm auto}
+.tl-body{padding:0 0 6mm 0}
+.tl-week{font-size:7.5pt;font-weight:800;color:var(--textl);text-transform:uppercase;letter-spacing:.15em;margin-bottom:1.5mm}
+.tl-name{font-size:12pt;font-weight:800;color:var(--navy);margin-bottom:1.5mm;letter-spacing:-.02em}
+.tl-desc{font-size:9.5pt;color:var(--text);line-height:1.55}
+
+.reqbox{background:var(--gray);border-radius:4mm;padding:6mm 7mm;border-left:4px solid var(--blue)}
+.reqtitle{font-size:8pt;font-weight:800;color:var(--navy);text-transform:uppercase;letter-spacing:.12em;margin-bottom:4mm}
+.reqlist{list-style:none;display:flex;flex-direction:column;gap:2.5mm}
+.reqitem{font-size:9.5pt;color:var(--text);display:flex;align-items:flex-start;gap:3mm;line-height:1.5}
+.reqitem::before{content:'\2192';color:var(--blue);flex-shrink:0;font-weight:800}
+
+/* ===== INVESTICE ===== */
+.ptab{width:100%;border-collapse:collapse;margin-bottom:2mm}
+.ptab thead tr{border-bottom:2px solid var(--border)}
+.ptab thead th{padding:3.5mm 4mm;text-align:left;font-size:7.5pt;font-weight:800;color:var(--textl);text-transform:uppercase;letter-spacing:.15em}
+.ptab thead th:last-child{text-align:right}
+.ptab tbody tr{border-bottom:1px solid var(--border)}
+.ptab tbody td{padding:2.9mm 4mm;font-size:9.5pt}
+.td-in{color:var(--navy);font-weight:700}
+.td-ip{text-align:right;color:var(--navy);font-weight:800;white-space:nowrap}
+.ptab .tr-total{background:var(--gray) !important}
+.ptab .tr-total td{padding:4mm 4mm !important;font-weight:800 !important;color:var(--navy) !important}
+.ptab .tr-total .td-ip{font-size:14pt !important;color:var(--blue) !important}
+.ptab .tr-total .td-in{font-size:9.5pt !important;color:var(--navy) !important;text-transform:uppercase;letter-spacing:.05em}
+.vatnote{font-size:8pt;color:var(--textl);text-align:right;margin-bottom:4mm}
+
+.mtab{width:100%;border-collapse:collapse;margin-bottom:4mm}
+.mtab thead tr{border-bottom:2px solid var(--border)}
+.mtab thead th{padding:3.5mm 4mm;text-align:left;font-size:7.5pt;font-weight:800;color:var(--textl);text-transform:uppercase;letter-spacing:.15em}
+.mtab thead th:last-child{text-align:right}
+.mtab tbody tr{border-bottom:1px solid var(--border)}
+.mtab tbody td{padding:3mm 4mm;font-size:9.5pt;vertical-align:top}
+.mtab .td-md{font-size:8.8pt;color:var(--text);line-height:1.5}
+
+.paybox{
+  background:#ffffff;border:1.5px solid var(--border);border-radius:4mm;
+  padding:4.5mm 6mm;margin-bottom:3.5mm;display:flex;gap:6mm;
+}
+.pay-col{flex:1}
+.pay-k{font-size:7.5pt;font-weight:800;color:var(--blue);text-transform:uppercase;letter-spacing:.15em;margin-bottom:2mm}
+.pay-v{font-size:9pt;color:var(--navy);font-weight:700;line-height:1.5}
+
+.nsbox{background:var(--navy);border-radius:4mm;padding:5mm 6.5mm;border-left:4px solid var(--goldl)}
+.nstitle{font-size:8pt;font-weight:800;color:var(--goldl);text-transform:uppercase;letter-spacing:.15em;margin-bottom:3mm}
+.nstext{font-size:9.5pt;color:#ffffff;font-weight:600;line-height:1.55}
+
+/* ===== REFERENCE ===== */
+.refgrid{display:flex;flex-direction:column;gap:5mm;margin-bottom:6mm}
+.refcard{border:1.5px solid var(--border);border-radius:4mm;padding:5.5mm 6.5mm}
+.refhead{display:flex;justify-content:space-between;align-items:baseline;gap:5mm;margin-bottom:2.5mm}
+.refname{font-size:12pt;font-weight:800;color:var(--navy);letter-spacing:-.02em}
+.refurl{font-size:8pt;font-weight:700;color:var(--blue);text-transform:lowercase;letter-spacing:.02em}
+.refdesc{font-size:9pt;color:var(--text);line-height:1.55}
+.refres{
+  display:inline-block;margin-top:2.5mm;font-size:8.5pt;font-weight:700;
+  color:var(--navy);background:var(--gray);border-radius:2mm;padding:1.5mm 3mm;
+}
+</style>
+</head>
+<body>
+
+<!-- ================================================================
+     KONFIGURACE
+     ================================================================ -->
+<script>
+const LOGO = "https://matejboska.cz/imgs/logo-websit.webp";
+
+const OFFER = {
+
+  /* --- KLIENT --- */
+  client: {
+    name:      "Jana Affum",
+    color:     "#16120B",
+    textColor: "#ffffff",
+    logo:      "https://janaaffum.com/wp-content/uploads/2026/05/cropped-WhatsApp-Image-2026-05-11-at-17.39.35.jpeg",
+    person:    "Jana Affum",
+    email:     "janaaffum@gmail.com",
+    phone:     "",
+    web:       "janaaffum.com",
+  },
+
+  /* --- NABÍDKA --- */
+  offer: {
+    number:   "2026-041",
+    date:     "30. srpna 2026",
+    validity: "30 dní",
+    title:    "Redesign webu, konverze a&nbsp;SEO viditelnost",
+  },
+
+  /* --- STRANA 2: O PROJEKTU --- */
+  overview: {
+    problem: "Na hovoru jste řekla větu, která je pro celý projekt určující: že web nic negeneruje. Prošel jsem všech pět stránek janaaffum.com a našel jsem proč. Není to obsahem. Máte případové studie s konkrétními čísly, jmenované reference od klientů ze Švýcarska i Německa a deset let mezinárodní praxe. Problém je, že každé tlačítko na webu, včetně Book a 15-min call, vede na kontaktní stránku, která nemá formulář ani rezervační kalendář. Je tam odkaz na e-mail a nic víc. Web tedy návštěvníka přesvědčí a pak ho nechá odejít. K tomu se přidává druhá věc: web dnes prodává tři různé služby třem různým publikům najednou, takže si Google ani AI nedokáže Vás ani Vaši odbornost zařadit. Tato nabídka řeší obojí.",
+    deliverables: [
+      "Redesign a přestavba webu se zaměřením na coaching, recruitment zůstává jako důkaz",
+      "Jedno hlavní konverzní tlačítko Book a call, které je vidět na každé stránce",
+      "Rezervační kalendář, funkční kontaktní formulář a sběr e-mailů přes Vaši knihu",
+      "SEO struktura postavená na dotazech, které Vaši klienti reálně píší do vyhledávače",
+      "Optimalizace pro AI vyhledávače, aby Vás ChatGPT uměl doporučit jako zdroj",
+      "Google firemní profil a sjednocení Vaší online identity napříč kanály",
+      "Administrace, ve které si texty a fotky měníte sama, včetně zaškolení",
+      "Volitelná měsíční SEO spolupráce, aby web rostl i po spuštění",
+    ],
+  },
+
+  /* --- STRANA 3: KOMU WEB MLUVÍ --- */
+  audience: {
+    intro: "Sama jste na hovoru řekla, že Vás klient nekontaktuje kvůli Vám, ale kvůli sobě. Že nechcete web plný toho, co jste dokázala, ale web, který pojmenuje, co potřebuje on. Souhlasím a proto projekt začíná tady, ne u barev. Níže je návrh, komu web mluví. Je postavený z Vašich vlastních referencí, z toho, co jste popsala na hovoru, a z Vaší praxe. Berte to jako podklad k odsouhlasení, ne jako hotovou věc.",
+    items: [
+      {
+        num: "01", label: "hlavní cílovka",
+        title: "Člověk vyhořelý v korporátu, který zvažuje odchod",
+        desc: "Osm až dvacet let ve firmě, slušný plat, žádná radost. Umí si spočítat, že takhle nechce dalších patnáct let, ale bojí se ztráty jistoty a neví, co jiného by dělal. Vy sama jste tuhle otázku na hovoru pojmenovala. Vaše nefér výhoda: nejste kouč z učebnice. Deset let rozhodujete, kdo se do těch firem dostane, takže víte, co trh platí a jestli je ten skok reálný.",
+        imp: "Web to musí říct do pěti sekund, jinak odejde"
+      },
+      {
+        num: "02", label: "druhá cílovka",
+        title: "Podnikatel nebo freelancer s blokem kolem peněz a růstu",
+        desc: "Vaše vlastní reference to potvrzuje: klientka po sezení psala o tom, jak se jí změnil vztah k penězům a k vlastnímu podnikání. Vy jste měla firmu v USA i v Česku, takže o penězích a riziku nemluvíte teoreticky.",
+        imp: "Nejvyšší platební ochota ze všech skupin"
+      },
+      {
+        num: "03", label: "vstupní produkt",
+        title: "Kandidát, který se nedokáže prosadit na trhu",
+        desc: "CV, LinkedIn, příprava na pohovor, positioning. Dnes to na webu máte pod názvem Service for Candidates a je to vedle koučinku jako samostatná služba. Přitom je to stejný typ člověka a stejný typ sezení. Navrhuji to sloučit pod coaching jako podstránku.",
+        imp: "Nejvyšší objem hledání, přivádí lidi k dražším službám"
+      },
+      {
+        num: "04", label: "udržovací režim",
+        title: "Firma, která shání IT, data nebo AI specialisty",
+        desc: "Sama jste řekla, že recruitment klientů máte dost a chcete ho držet spíš pro případ, že se někdo ozve. Tihle klienti navíc nepřichází z Googlu, ale z LinkedIn a z doporučení. Web je pro ně ověřovací nástroj. Držíme ho proto silný a důvěryhodný, ale neinvestujeme do něj SEO rozpočet.",
+        imp: "Silná stránka a případovky, žádná SEO investice navíc"
+      },
+    ],
+    warn: "<b>Tři publika na jednom webu znamenají, že web nemá publikum žádné.</b> Dnes web zároveň prodává nábor pro firmy, služby kandidátům a koučink. Každá skupina hledá něco jiného a rozhoduje se jinak. Google ani AI si Vás pak nedokáže zařadit jako odborníka na cokoliv a lidé nepoznají, kam patří. Návrh je snížit tři publika na dvě: firmy, které nabírají, a jednotlivci, kteří chtějí posunout kariéru nebo život. Coaching dostane hlavní prostor, recruitment zůstane jako důkaz Vaší odbornosti. Kteroukoli větev pak jde kdykoliv utlumit nebo odebrat, aniž bychom sahali na zbytek webu."
+  },
+
+  /* --- STRANA 4: KONVERZE --- */
+  findings1: {
+    intro: "Každý bod níže je ověřený přímo na Vašem webu 30. 8. 2026. Nejsou to obecné rady, ale konkrétní nálezy, které si můžete sama zkontrolovat. Tahle stránka se týká toho, proč web nepřevádí návštěvníky na hovory.",
+    items: [
+      {
+        num: "0", label: "funkčních rezervací",
+        title: "Každé tlačítko na webu končí ve slepé uličce",
+        desc: "Book a 15-min call na úvodní stránce, Interested in consultation na koučinku i na stránce pro kandidáty, Get started na případovkách. Všechna vedou na /contact/. Ta stránka nemá formulář ani rezervační kalendář, jen odkaz na e-mail. Návštěvník je v tu chvíli nejblíž rozhodnutí a nemá kam kliknout.",
+        imp: "Toto je hlavní důvod, proč web negeneruje poptávky"
+      },
+      {
+        num: "0 Kč", label: "ceník koučinku",
+        title: "Stránka Coaching nemá nabídku ani cenu",
+        desc: "Je to text o tom, proč je koučink v náboru podceňovaný. Chybí, co si klient kupuje, jak dlouho sezení trvá, kolik jich je a co stojí. Cena přitom pracuje pro Vás: odfiltruje lidi, kteří by stejně nekoupili, a zvedne důvěru u těch, kdo koupit chtějí. Sama jste na hovoru řekla, že ceník tam chcete.",
+        imp: "Zájemce musí psát e-mail, aby zjistil základní věc"
+      },
+      {
+        num: "5 z 5", label: "referencí bez jména",
+        title: "Reference u koučinku mají vygenerované tváře",
+        desc: "Všech pět referencí u koučinku je anonymních a doprovází je AI avatar. U služby postavené na důvěře je vymyšlená tvář horší než žádná fotka. U recruitmentu to máte správně: George Bakkeren, Zoltan Erdely, Danica Miller ze STADA. Anonymita je v pořádku, jen ji řešme jménem, rolí a oborem, ne umělým obličejem.",
+        imp: "Nejsilnější důkaz u klíčové služby působí vymyšleně"
+      },
+      {
+        num: "4", label: "AI obrázky nad ohybem",
+        title: "Úvodní stránka stojí na obrázcích z ChatGPT a Gemini",
+        desc: "Prozrazují to přímo názvy souborů na serveru. U koučky, která prodává autentický vztah a osobní přístup, pracuje generovaná fotka proti tomu, co prodáváte. Sama jste řekla, že se Vám ty obrázky nelíbí. Loga firem, se kterými jste pracovala, naopak zůstávají, to je skutečný důkaz.",
+        imp: "Vizuál si protiřečí s tím, co nabízíte"
+      },
+      {
+        num: "\u2014", label: "sběr kontaktů",
+        title: "Kniha se objednává e-mailem s názvem v předmětu",
+        desc: "Jediný lead magnet, který máte, je za bariérou, kterou skoro nikdo nepřekoná. Navíc v patičce byla podle Vašich slov tři měsíce špatná adresa. Kniha je přitom ideální vstup do koučinku: člověk ji chce, dá za ni e-mail a Vy s ním můžete dál mluvit.",
+        imp: "Nulový seznam kontaktů, přestože obsah na něj máte"
+      },
+      {
+        num: "2", label: "e-mailové adresy",
+        title: "Web používá dvě různé kontaktní adresy",
+        desc: "Na kontaktu je info@janaaffum.com, u knihy janaaffum@gmail.com. Pro návštěvníka je to zmatek, pro vyhledávače a AI je to rozmělněný signál o tom, kdo jste. Sjednotíme na jednu adresu a nastavíme, aby všechno padalo do Vašeho Gmailu, ne do zaspamovaného webmailu.",
+        imp: "Slabší důvěra i slabší entita pro vyhledávače"
+      },
+    ],
+  },
+
+  /* --- STRANA 5: SEO A AI VIDITELNOST --- */
+  findings2: {
+    intro: "Druhá část se týká toho, proč Vás dnes nenajde Google ani AI. Řekla jste, že chcete, aby Vás ChatGPT našel, když někdo hledá IT rekrutéra nebo kouče. Tady je, co tomu dnes brání.",
+    items: [
+      {
+        num: "Home", label: "titulek úvodní stránky",
+        title: "Nejdůležitější stránka má titulek Home - Jana Affum",
+        desc: "Titulek je to, co člověk vidí ve výsledcích vyhledávání, a zároveň hlavní signál, k jakému dotazu stránka patří. Slovo Home nehledá nikdo. Podobný problém mají i ostatní stránky.",
+        imp: "Nulová šance uspět na jakýkoliv smysluplný dotaz"
+      },
+      {
+        num: "cs_CZ", label: "jazykový signál",
+        title: "Web je anglicky, ale vyhledávačům se hlásí jako český",
+        desc: "Značka jazyka je na všech stránkách nastavená na češtinu, přestože obsah je celý v angličtině. K tomu je na úvodní stránce jako autor uvedený grafik, ne Vy. Google i AI přisuzují autorství a odbornost konkrétní osobě, takže tohle pracuje proti Vám.",
+        imp: "Protichůdné signály o tom, kdo mluví a v jakém jazyce"
+      },
+      {
+        num: "6 v 1", label: "případovek na jedné adrese",
+        title: "Nejsilnější obsah, který máte, je slitý do jedné stránky",
+        desc: "Farmaceutická firma s 2 270 kandidáty a 60 umístěními, 20 milionů korun tržeb pro IT agenturu, projekt v Pittsburghu, překladatelé po celém světě. To jsou data, která nikdo jiný nemá, a přesně kvůli tomu si Vás AI může vybrat jako zdroj. Dnes jsou všechna na jedné adrese, kde soutěží sama se sebou.",
+        imp: "Šest samostatně dohledatelných stránek zabalených v jedné"
+      },
+      {
+        num: "0", label: "strukturovaných dat",
+        title: "AI nemá z čeho poskládat, kdo jste a co nabízíte",
+        desc: "Chybí kód na pozadí, ze kterého se čte, kdo je Jana Affum, jaké nabízí služby, za kolik, s jakým hodnocením a kde působí. Když se někdo zeptá ChatGPT nebo Google AI přehledu, model si odpověď skládá jen z toho, co dokáže přečíst a ověřit.",
+        imp: "Scénář, který jste popsala, dnes technicky nemůže nastat"
+      },
+      {
+        num: "0", label: "stránek na konkrétní dotazy",
+        title: "Web nemá kam poslat člověka, který hledá řešení",
+        desc: "Lidé nehledají slovo kouč. Hledají věci jako co dělat, když mě práce ničí, nebo jestli mám odejít z korporátu. To jsou dotazy nejblíž rozhodnutí a web na ně dnes nemá jedinou stránku, kde by ten člověk přistál a mohl si rovnou rezervovat hovor.",
+        imp: "Nejcennější návštěvnost nemá kde přistát"
+      },
+      {
+        num: "0", label: "firemních profilů",
+        title: "Chybí Google firemní profil",
+        desc: "Je zdarma a je to jeden z prvních signálů, které si Google i AI ověřují, aby si Vás spojily s reálnou osobou a místem. Zároveň drží pohromadě identitu napříč webem, LinkedIn a Instagramem. Založím ho ještě před podpisem a zůstává Vám tak jako tak.",
+        imp: "Chybíte v místě, kde je viditelnost zdarma"
+      },
+    ],
+  },
+
+  /* --- STRANA 6: STRUKTURA A KANÁLY --- */
+  structure: {
+    intro: "Řekla jste, že nechcete lidi zavalit stovkami podstránek, protože dnes už nikdo moc nečte. Máte pravdu a návrh to respektuje: běžný návštěvník projde dvě až tři stránky a nikam jinam se nedostane. Vyhledávačům a AI ale zároveň potřebujeme dát víc než dva vstupní body. Řešení není víc textu, ale správně rozdělený text. Níže je návrh třinácti adres. Konkrétní podstránky koučinku se doladí podle toho, co lidé reálně hledají.",
+    branches: [
+      {
+        tag: "Hlavní větev, plná SEO investice",
+        name: "Coaching",
+        note: "Úvodní stránka vede koučinkem. Každá podstránka odpovídá na jeden konkrétní dotaz a končí rezervací hovoru.",
+        urls: [
+          "<b>/</b> úvodní stránka, vede koučinkem",
+          "<b>/coaching/</b> hlavní prodejní stránka s ceníkem",
+          "<b>/coaching/burnout/</b> vyhoření a odchod z korporátu",
+          "<b>/coaching/career-change/</b> změna kariéry",
+          "<b>/coaching/cv-linkedin/</b> dnešní Service for Candidates",
+          "<b>/book/</b> kniha jako vstup a sběr e-mailů",
+        ],
+        main: true
+      },
+      {
+        tag: "Důkaz, bez SEO investice",
+        name: "Recruitment",
+        note: "Silná prodejní stránka a případovky, každá na vlastní adrese. Slouží k ověření, ne k akvizici.",
+        urls: [
+          "<b>/recruitment/</b> prodejní stránka pro firmy",
+          "<b>/case-studies/</b> rozcestník případovek",
+          "<b>/case-studies/pharma/</b> 60 umístění, 2 270 kandidátů",
+          "<b>/case-studies/tech/</b> 40 umístění, globální projekt",
+          "<b>/case-studies/us-wealth/</b> projekt v Pittsburghu",
+        ],
+        main: false
+      },
+    ],
+    sharedTitle: "Zbývající adresy",
+    sharedText: "/about/ jako Váš příběh a doklad odbornosti pro Google i AI, /contact/ s funkčním formulářem, rezervací a fakturačními údaji, a tři právní stránky: ochrana osobních údajů, obchodní podmínky a fakturační údaje. Právní stránky se do počtu třinácti nepočítají. Adresy /coaching/, /contact/, /gdpr/ a /terms-of-service/ zůstávají stejné, aby web zbytečně nepřišel o to, co dnes funguje.",
+    chTitle: "Odkud budou klienti chodit",
+    channels: [
+      { n: "Google, organické vyhledávání", d: "Podstránky koučinku na konkrétní dotazy. Nejpomalejší kanál, ale jediný, který roste sám a neplatíte za každý klik." },
+      { n: "AI vyhledávače a přehledy", d: "ChatGPT, Google AI přehled a Perplexity. Živí se strukturovanými daty a obsahem, který nikdo jiný nemá. Vaše případovky jsou přesně to." },
+      { n: "Google firemní profil", d: "Lokální dotazy a mapy. Zdarma, zakládám ho ještě před podpisem." },
+      { n: "LinkedIn a Instagram", d: "Vaše nejsilnější dnešní kanály. Web z nich má být místo, kde se člověk přesvědčí a rezervuje hovor, ne kde se ztratí." },
+      { n: "Kniha a seznam e-mailů", d: "Jediný kanál, který skutečně vlastníte. Nikdo Vám ho nemůže vypnout ani změnit algoritmus." },
+      { n: "Doporučení od klientů", d: "Web slouží jako důkaz. Případovky a jmenované reference rozhodují, jestli doporučení dopadne." },
+    ],
+  },
+
+  /* --- STRANA 7: ROZSAH --- */
+  scope: {
+    items: [
+      { name: "Analýza, struktura a návrh designu", description: "Zmapování cílovky, výzkum dotazů, návrh struktury a vizuální koncept úvodní stránky ke schválení.", range: "Týden 1" },
+      { name: "Úvodní stránka, Coaching a kniha", description: "Hlavní prodejní stránka s ceníkem, 3 SEO podstránky na dotazy a stránka knihy se sběrem kontaktů.", range: "Týden 1" },
+      { name: "Recruitment a případové studie", description: "Prodejní stránka pro firmy a rozdělení případovek na samostatné adresy s vlastní strukturou.", range: "Týden 2" },
+      { name: "Konverzní vrstva", description: "Rezervační kalendář, kontaktní formulář (GDPR), sběr e-mailů a notifikace do Vašeho Gmailu.", range: "Týden 2" },
+      { name: "Technické SEO, AI data a právní stránky", description: "Metadata, strukturovaná data pro ChatGPT a Google, rychlost, přesměrování a právní stránky.", range: "Týden 2" },
+      { name: "Administrace, zaškolení a spuštění", description: "Nastavení administrace pro samostatnou správu, zaškolení při předání, převod domény a spuštění.", range: "Týden 2" },
+      { name: "Google firemní profil", description: "Založení a nastavení profilu, sjednocení údajů s webem a sítěmi. Zdarma bez ohledu na spolupráci.", range: "Před podpisem" },
+    ],
+    notIncluded: [
+      "Focení a produkce fotografií",
+      "Druhá jazyková mutace webu (nabídka platí pro jednojazyčnou anglickou verzi)",
+      "Psaní textů od nuly (úprava a optimalizace Vámi dodaných textů je v ceně)",
+      "Reklamní rozpočty (Google Ads, LinkedIn, Meta)",
+      "Poplatky za doménu, hosting a případný placený tarif rezervačního kalendáře",
+      "Právní revize obchodních podmínek a ochrany osobních údajů advokátem",
+    ],
+  },
+
+  /* --- STRANA 8: HARMONOGRAM --- */
+  timeline: [
+    { week: "Týden 1 (dny 1–4)", name: "Analýza a návrh designu", desc: "Struktura webu, výzkum dotazů a vizuální návrh úvodní stránky ke schválení. Tady si odsouhlasíme zlatou a celkový směr." },
+    { week: "Týden 1 (dny 5–7)", name: "Coaching, hlavní větev", desc: "Úvodní stránka, hlavní stránka koučinku s ceníkem, podstránky na konkrétní dotazy a stránka knihy." },
+    { week: "Týden 2 (dny 8–11)", name: "Recruitment a konverze", desc: "Prodejní stránka pro firmy, případovky na vlastních adresách, rezervace hovoru, formulář a sběr e-mailů." },
+    { week: "Týden 2 (dny 12–14)", name: "Technika, administrace, spuštění", desc: "Technické SEO, strukturovaná data, právní stránky, zaškolení do administrace, převod domény a spuštění." },
+  ],
+  requirements: [
+    "Texty pro koučink a recruitment, na kterých už pracujete",
+    "Ceník koučinku s konkrétními čísly, včetně toho, co sezení obsahuje",
+    "Přístupy do WordPressu, k doméně na WEDOS a k e-mailu",
+    "Logo ve vektoru a použitelné fotografie (současné logo má jen 200 px, na web i tisk je málo)",
+    "Potvrzení, že web zůstává jednojazyčně v angličtině",
+    "Odezva na schválení návrhu a textů do 48 hodin, ať držíme termín",
+  ],
+
+  /* --- STRANA 9: MĚSÍČNÍ SPOLUPRÁCE --- */
+  retainers: {
+    intro: "Redesign opraví technické chyby a postaví pevný základ. Sám o sobě ale nezajistí, že Vás Google a AI začnou doporučovat, protože to je práce, která běží v čase. Následující spolupráce je zcela dobrovolná věc navíc – aktivuje se pouze tehdy, pokud se na tom po e-mailu výslovně domluvíme.",
+    plans: [
+      {
+        tag: "1. měsíc zdarma na zkoušku", label: "Měsíční balíček", name: "SEO a AI viditelnost", price: "4 900 Kč", per: "měsíčně (1. měsíc 0 Kč)",
+        items: [
+          "<b>Dva obsahy měsíčně</b> na konkrétní dotazy, které Vaši klienti reálně hledají",
+          "<b>Průběžná optimalizace</b> titulků, popisků a struktury podle toho, co ve výsledcích funguje",
+          "<b>Rozšiřování strukturovaných dat</b> a obsahu ve formátu, který AI umí citovat",
+          "<b>Správa Google firemního profilu</b> a systém pro sbírání hodnocení",
+          "<b>Měsíční report</b>: pozice, prokliky, odkud lidé chodí a co si prohlíželi",
+          "<b>30 minut konzultace</b> měsíčně nad výsledky a dalším krokem",
+        ],
+        foot: "Texty můžete psát sama a já je jen upravím pro vyhledávače a AI, nebo je píšu já. Obojí je v ceně."
+      },
+    ],
+    warn: "<b>Na rovinu ohledně toho, kdy uvidíte výsledky.</b> U úplně nového webu na nové doméně je běžné, že první měřitelný pohyb přijde po třech měsících. Vy jste v lepší pozici: doména běží, Google web zná a indexuje ho, takže nezačínáme od nuly. U dotazů s nižší konkurencí, tedy přesně u těch, na které Vás chceme dostat, se první pohyb běžně objeví za měsíc až dva. U obecnějších a konkurenčnějších dotazů počítejte s půl rokem i více. Konkrétní pozici v konkrétním termínu Vám negarantuji, protože ji negarantuje nikdo. Garantuji rozsah práce, měsíční report s čísly a to, že u každé položky uvidíte, co přesně se udělalo."
+  },
+
+  /* --- STRANA 10: INVESTICE --- */
+  pricing: {
+    items: [
+      { name: "Analýza, struktura webu a výzkum dotazů", price: 2900 },
+      { name: "Návrh designu a vizuální směr", price: 3400 },
+      { name: "Úvodní stránka a stránka Coaching", price: 4200 },
+      { name: "Podstránky koučinku a stránka knihy", price: 3300 },
+      { name: "Recruitment a případovky na vlastních adresách", price: 2800 },
+      { name: "Konverzní vrstva: rezervace, formulář, sběr e-mailů", price: 1800 },
+      { name: "Technické SEO, strukturovaná data a AI viditelnost", price: 1600 },
+      { name: "Administrace, zaškolení, migrace a spuštění", price: 0 },
+      { name: "Google firemní profil", price: 0 },
+    ],
+    monthly: [
+      { name: "Balíček 1: SEO a AI viditelnost", desc: "Dva obsahy měsíčně, průběžná optimalizace, správa profilu, report a konzultace.", price: 4900 },
+    ],
+    vatNote:      "Nejsem plátce DPH. Uvedené ceny jsou konečné. Faktura obsahuje QR kód pro platbu.",
+    paymentTerms: "Redesign webu: 50 % záloha při potvrzení, 50 % po předání. Měsíční spolupráce se fakturuje měsíčně předem, výpovědní lhůta jeden měsíc.",
+    validity:     "Nabídka platí 30 dní od data vystavení. Termín 14 dní na dodání běží od dodání kompletních podkladů, ne od potvrzení nabídky.",
+    nextStep:     "Pokud nabídka sedí, stačí odpovědět na e-mail slovem souhlas a pošlu zálohovou fakturu s QR kódem. Pokud chcete něco upravit nebo je rozsah jinde, než jste čekala, dejte vědět a dáme si patnáct minut hovoru. Google firemní profil Vám založím tak jako tak.",
+  },
+
+  /* --- STRANA 11: REFERENCE --- */
+  references: {
+    intro: "Tři projekty, kde je výsledek měřitelný a ověřitelný. Klidně si je otevřete a zkuste si dotazy sami, nebo se na ně zeptejte ChatGPT.",
+    items: [
+      {
+        name: "Lukáš Kukla", url: "lukas-kukla.cz",
+        desc: "Realitní makléř pro Prahu-západ. Web stavěný od nuly ve vlastním kódu, ke kterému běží dlouhodobá SEO a obsahová spolupráce. Přesně to řešení, které navrhuji Vám, včetně administrace, ve které si sám přidává nemovitosti.",
+        res: "Doporučuje ho i AI, když někdo hledá makléře v jeho regionu"
+      },
+      {
+        name: "Stavdam", url: "stavdam.cz",
+        desc: "Stavební firma, která začínala bez webu a bez jakékoliv viditelnosti. Kompletní web od nuly a technické SEO od začátku, ne dodatečně.",
+        res: "576 prokliků z vyhledávání od spuštění v dubnu"
+      },
+      {
+        name: "Radek Větrovský", url: "radek-vetrovsky.cz",
+        desc: "Obsahová a SEO spolupráce. Odborné texty na témata, která zákazníci reálně hledají, psané tak, aby z nich vyhledávače i AI uměly odpovídat, a napojené na konkrétní služby.",
+        res: "První doporučení v ChatGPT pro svůj obor a region"
+      },
+    ],
+    warn: "<b>Co negarantuji a co ano.</b> Negarantuji konkrétní pozici ve vyhledávání ani počet poptávek, protože to nejde poctivě slíbit. Garantuji rozsah práce popsaný v této nabídce, spuštění do 14 dní od dodání kompletních podkladů a to, že po předání zůstávám k dispozici. Pokud Vám měsíční spolupráce nebude dávat smysl, ukončíte ji k dalšímu měsíci bez sankce."
+  },
+
+};
+</script>
+
+<!-- ================================================================
+     DOKUMENT
+     ================================================================ -->
+
+<!-- ===== STRANA 1: TITULNÍ ===== -->
+<div class="page cover" id="p1">
+  <div class="cover-l" id="cover-l">
+    <div id="cl-logo-wrap"></div>
+    <div class="cl-name" id="cl-name"></div>
+    <div class="cl-web" id="cl-web"></div>
+  </div>
+  <div class="cover-r">
+    <img class="cr-logo mb-logo" alt="Matěj Boška">
+    <div class="cr-main">
+      <div class="cr-label">Cenová nabídka</div>
+      <div class="cr-title" id="cr-title"></div>
+      <div class="cr-accent"></div>
+      <div class="cr-sub" id="cr-sub"></div>
+    </div>
+    <div class="cr-meta">
+      <div class="cr-meta-row"><span class="cr-meta-k">Nabídka č.</span><span class="cr-meta-v" id="m-num"></span></div>
+      <div class="cr-meta-row"><span class="cr-meta-k">Datum</span><span class="cr-meta-v" id="m-date"></span></div>
+      <div class="cr-meta-row"><span class="cr-meta-k">Platnost</span><span class="cr-meta-v" id="m-val"></span></div>
+      <div class="cr-meta-sep"></div>
+      <div class="cr-meta-row"><span class="cr-meta-k">Připravil</span><span class="cr-meta-v">Matěj Boška</span></div>
+      <div class="cr-meta-row"><span class="cr-meta-k">Pro</span><span class="cr-meta-v" id="m-client"></span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== STRANA 2: O PROJEKTU ===== -->
+<div class="page">
+  <div class="ph"><img class="ph-logo mb-logo" alt="Matěj Boška"><span class="ph-right">matejboska.cz</span></div>
+  <div class="pc">
+    <div class="slabel">O projektu</div>
+    <div class="shead">Co pro Vás<br><span>připravuji</span></div>
+    <p class="ptext" id="ptext"></p>
+    <div class="div"></div>
+    <div class="dhead">Co dostanete</div>
+    <ul class="dlist" id="dlist"></ul>
+  </div>
+  <div class="pf"><span class="pf-l">Matěj Boška &nbsp;|&nbsp; IČO: 23482036 &nbsp;|&nbsp; matejboska.cz &nbsp;|&nbsp; matej0boska@gmail.com</span><span class="pf-r pnum"></span></div>
+</div>
+
+<!-- ===== STRANA 3: KOMU WEB MLUVÍ ===== -->
+<div class="page">
+  <div class="ph"><img class="ph-logo mb-logo" alt="Matěj Boška"><span class="ph-right">matejboska.cz</span></div>
+  <div class="pc tight">
+    <div class="slabel">Cílová skupina</div>
+    <div class="shead sm">Komu bude web<br><span>mluvit</span></div>
+    <p class="fintro" id="a-intro"></p>
+    <div class="flist" id="a-list"></div>
+    <div class="warnbox">
+      <div class="warntitle">Nejdůležitější rozhodnutí projektu</div>
+      <div class="warntext" id="a-warn"></div>
+    </div>
+  </div>
+  <div class="pf"><span class="pf-l">Matěj Boška &nbsp;|&nbsp; IČO: 23482036 &nbsp;|&nbsp; matejboska.cz &nbsp;|&nbsp; matej0boska@gmail.com</span><span class="pf-r pnum"></span></div>
+</div>
+
+<!-- ===== STRANA 4: KONVERZE ===== -->
+<div class="page">
+  <div class="ph"><img class="ph-logo mb-logo" alt="Matěj Boška"><span class="ph-right">matejboska.cz</span></div>
+  <div class="pc tight">
+    <div class="slabel">Analýza webu, část 1</div>
+    <div class="shead sm">Proč web<br><span>neprodává</span></div>
+    <p class="fintro" id="f1-intro"></p>
+    <div class="flist" id="f1-list"></div>
+  </div>
+  <div class="pf"><span class="pf-l">Matěj Boška &nbsp;|&nbsp; IČO: 23482036 &nbsp;|&nbsp; matejboska.cz &nbsp;|&nbsp; matej0boska@gmail.com</span><span class="pf-r pnum"></span></div>
+</div>
+
+<!-- ===== STRANA 5: SEO A AI ===== -->
+<div class="page">
+  <div class="ph"><img class="ph-logo mb-logo" alt="Matěj Boška"><span class="ph-right">matejboska.cz</span></div>
+  <div class="pc tight">
+    <div class="slabel">Analýza webu, část 2</div>
+    <div class="shead sm">Proč Vás nenajde<br><span>Google ani AI</span></div>
+    <p class="fintro" id="f2-intro"></p>
+    <div class="flist" id="f2-list"></div>
+  </div>
+  <div class="pf"><span class="pf-l">Matěj Boška &nbsp;|&nbsp; IČO: 23482036 &nbsp;|&nbsp; matejboska.cz &nbsp;|&nbsp; matej0boska@gmail.com</span><span class="pf-r pnum"></span></div>
+</div>
+
+<!-- ===== STRANA 6: STRUKTURA A KANÁLY ===== -->
+<div class="page">
+  <div class="ph"><img class="ph-logo mb-logo" alt="Matěj Boška"><span class="ph-right">matejboska.cz</span></div>
+  <div class="pc tight">
+    <div class="slabel">Struktura webu</div>
+    <div class="shead sm">Jak bude web<br><span>poskládaný</span></div>
+    <p class="fintro" id="s-intro"></p>
+    <div class="smap" id="smap"></div>
+    <div class="sshared"><b id="s-shared-title"></b><p id="s-shared-text"></p></div>
+    <div class="chhead" id="s-ch-title"></div>
+    <div class="chlist" id="s-channels"></div>
+  </div>
+  <div class="pf"><span class="pf-l">Matěj Boška &nbsp;|&nbsp; IČO: 23482036 &nbsp;|&nbsp; matejboska.cz &nbsp;|&nbsp; matej0boska@gmail.com</span><span class="pf-r pnum"></span></div>
+</div>
+
+<!-- ===== STRANA 7: ROZSAH ===== -->
+<div class="page">
+  <div class="ph"><img class="ph-logo mb-logo" alt="Matěj Boška"><span class="ph-right">matejboska.cz</span></div>
+  <div class="pc tight">
+    <div class="slabel">Rozsah práce</div>
+    <div class="shead sm">Co přesně<br><span>udělám</span></div>
+    <table class="stab">
+      <thead><tr><th>Položka</th><th>Popis</th><th style="text-align:right">Termín</th></tr></thead>
+      <tbody id="stab-body"></tbody>
+    </table>
+    <div class="nibox">
+      <div class="nititle">Co není součástí</div>
+      <ul class="nilist" id="nilist"></ul>
+    </div>
+  </div>
+  <div class="pf"><span class="pf-l">Matěj Boška &nbsp;|&nbsp; IČO: 23482036 &nbsp;|&nbsp; matejboska.cz &nbsp;|&nbsp; matej0boska@gmail.com</span><span class="pf-r pnum"></span></div>
+</div>
+
+<!-- ===== STRANA 8: HARMONOGRAM ===== -->
+<div class="page">
+  <div class="ph"><img class="ph-logo mb-logo" alt="Matěj Boška"><span class="ph-right">matejboska.cz</span></div>
+  <div class="pc tight">
+    <div class="slabel">Harmonogram</div>
+    <div class="shead sm">Jak budeme<br><span>postupovat</span></div>
+    <div class="tl" id="tl"></div>
+    <div class="reqbox">
+      <div class="reqtitle">Co od Vás potřebuji</div>
+      <ul class="reqlist" id="reqlist"></ul>
+    </div>
+  </div>
+  <div class="pf"><span class="pf-l">Matěj Boška &nbsp;|&nbsp; IČO: 23482036 &nbsp;|&nbsp; matejboska.cz &nbsp;|&nbsp; matej0boska@gmail.com</span><span class="pf-r pnum"></span></div>
+</div>
+
+<!-- ===== STRANA 9: INVESTICE ===== -->
+<div class="page">
+  <div class="ph"><img class="ph-logo mb-logo" alt="Matěj Boška"><span class="ph-right">matejboska.cz</span></div>
+  <div class="pc tight">
+    <div class="slabel">Investice</div>
+    <div class="shead sm">Vaše <span>investice</span></div>
+    <table class="ptab">
+      <thead><tr><th>Redesign webu, jednorázově</th><th style="text-align:right">Cena</th></tr></thead>
+      <tbody id="ptab-body"></tbody>
+    </table>
+    <p class="vatnote" id="vatnote"></p>
+    <table class="mtab">
+      <thead><tr><th>Dobrovolné dlouhodobé měsíční balíčky spolupráce</th><th style="text-align:right">Cena za měsíc</th></tr></thead>
+      <tbody id="mtab-body"></tbody>
+    </table>
+    <div class="paybox">
+      <div class="pay-col"><div class="pay-k">Platební podmínky</div><div class="pay-v" id="pay-terms"></div></div>
+      <div class="pay-col"><div class="pay-k">Platnost a termín</div><div class="pay-v" id="pay-valid"></div></div>
+    </div>
+    <div class="nsbox">
+      <div class="nstitle">Další krok</div>
+      <div class="nstext" id="nstext"></div>
+    </div>
+  </div>
+  <div class="pf"><span class="pf-l">Matěj Boška &nbsp;|&nbsp; IČO: 23482036 &nbsp;|&nbsp; matejboska.cz &nbsp;|&nbsp; matej0boska@gmail.com</span><span class="pf-r pnum"></span></div>
+</div>
+
+<!-- ===== STRANA 10: MĚSÍČNÍ SPOLUPRÁCE ===== -->
+<div class="page">
+  <div class="ph"><img class="ph-logo mb-logo" alt="Matěj Boška"><span class="ph-right">matejboska.cz</span></div>
+  <div class="pc tight">
+    <div class="slabel">Měsíční spolupráce</div>
+    <div class="shead sm">Aby web<br><span>rostl dál</span></div>
+    <p class="fintro" id="r-intro"></p>
+    <div class="rcards" id="rcards"></div>
+    <div class="trialbox">
+      <div class="trialtag">100% dobrovolné &nbsp;·&nbsp; bez závazku</div>
+      <div class="trialtitle">První měsíc spolupráce máte zdarma na vyzkoušení</div>
+      <div class="trialtext">
+        Měsíční spolupráce je <b>zcela dobrovolná věc navíc</b> – nespouští se automaticky, ale pouze v případě, že se na tom po e-mailu výslovně domluvíme. A pokud do toho budete chtít jít, <b>celý první měsíc pro Vás odpracuji zdarma</b>. Vyzkoušíte si styl naší spolupráce, uvidíte konkrétní výstupy i měsíční report a až poté si v klidu řeknete, zda budete chtít pokračovat.
+      </div>
+    </div>
+    <div class="warnbox">
+      <div class="warntitle">Poznámka na rovinu</div>
+      <div class="warntext" id="r-warn"></div>
+    </div>
+  </div>
+  <div class="pf"><span class="pf-l">Matěj Boška &nbsp;|&nbsp; IČO: 23482036 &nbsp;|&nbsp; matejboska.cz &nbsp;|&nbsp; matej0boska@gmail.com</span><span class="pf-r pnum"></span></div>
+</div>
+
+<!-- ===== STRANA 11: REFERENCE ===== -->
+<div class="page">
+  <div class="ph"><img class="ph-logo mb-logo" alt="Matěj Boška"><span class="ph-right">matejboska.cz</span></div>
+  <div class="pc tight">
+    <div class="slabel">Reference</div>
+    <div class="shead sm">Kde už to<br><span>funguje</span></div>
+    <p class="fintro" id="ref-intro"></p>
+    <div class="refgrid" id="refgrid"></div>
+    <div class="warnbox">
+      <div class="warntitle">Poznámka na rovinu</div>
+      <div class="warntext" id="ref-warn"></div>
+    </div>
+  </div>
+  <div class="pf"><span class="pf-l">Matěj Boška &nbsp;|&nbsp; IČO: 23482036 &nbsp;|&nbsp; matejboska.cz &nbsp;|&nbsp; matej0boska@gmail.com</span><span class="pf-r pnum"></span></div>
+</div>
+
+<!-- ================================================================
+     RENDER
+     ================================================================ -->
+<script>
+(function(){
+  const o = OFFER;
+  const r = document.documentElement;
+
+  r.style.setProperty('--cc', o.client.color);
+  r.style.setProperty('--ct', o.client.textColor);
+
+  /* logo Mateje do vsech hlavicek, s nahradou pokud se nenacte */
+  document.querySelectorAll('.mb-logo').forEach(img => {
+    img.onerror = function(){
+      const d = document.createElement('div');
+      d.className = 'mb-fallback';
+      d.innerHTML = 'Mat\u011bj Bo\u0161ka<span>Weby a SEO</span>';
+      if (this.parentNode) this.parentNode.replaceChild(d, this);
+    };
+    img.src = LOGO;
+  });
+
+  /* cislovani stranek */
+  const pages = document.querySelectorAll('.page');
+  const total = String(pages.length).padStart(2,'0');
+  document.querySelectorAll('.pnum').forEach((el, i) => {
+    el.textContent = String(i + 2).padStart(2,'0') + ' / ' + total;
+  });
+
+  /* COVER */
+  const wrap = document.getElementById('cl-logo-wrap');
+  if (o.client.logo) {
+    const tile = document.createElement('div');
+    tile.className = 'cl-tile';
+    const img = document.createElement('img');
+    img.src = o.client.logo; img.className = 'cl-logo'; img.alt = o.client.name;
+    tile.appendChild(img);
+    wrap.appendChild(tile);
+  }
+  document.getElementById('cl-name').textContent  = o.client.name;
+  document.getElementById('cl-web').textContent   = o.client.web;
+  document.getElementById('cr-title').innerHTML   = o.offer.title;
+  document.getElementById('cr-sub').textContent   = o.client.person + (o.client.email ? '  \u00b7  ' + o.client.email : '');
+  document.getElementById('m-num').textContent    = o.offer.number;
+  document.getElementById('m-date').textContent   = o.offer.date;
+  document.getElementById('m-val').textContent    = o.offer.validity;
+  document.getElementById('m-client').textContent = o.client.name;
+
+  /* O PROJEKTU */
+  document.getElementById('ptext').textContent = o.overview.problem;
+  const dl = document.getElementById('dlist');
+  o.overview.deliverables.forEach(d => {
+    const li = document.createElement('li');
+    li.className = 'ditem';
+    li.innerHTML = '<span class="ddot"></span>' + d;
+    dl.appendChild(li);
+  });
+
+  /* SPOLECNY RENDER SEZNAMU (persony i nalezy) */
+  function renderFindings(cfg, introId, listId, small){
+    document.getElementById(introId).textContent = cfg.intro;
+    const box = document.getElementById(listId);
+    cfg.items.forEach(f => {
+      const d = document.createElement('div');
+      d.className = 'fitem';
+      d.innerHTML =
+        '<div class="fnum' + (small ? ' sm' : '') + '">' + f.num + '<small>' + f.label + '</small></div>' +
+        '<div class="fbody"><div class="ftitle">' + f.title + '</div>' +
+        '<div class="fdesc">' + f.desc + '<span class="fimp">' + f.imp + '</span></div></div>';
+      box.appendChild(d);
+    });
+  }
+  renderFindings(o.audience,  'a-intro',  'a-list', true);
+  renderFindings(o.findings1, 'f1-intro', 'f1-list');
+  renderFindings(o.findings2, 'f2-intro', 'f2-list');
+  document.getElementById('a-warn').innerHTML = o.audience.warn;
+
+  /* STRUKTURA A KANALY */
+  const s = o.structure;
+  document.getElementById('s-intro').textContent = s.intro;
+  const sm = document.getElementById('smap');
+  s.branches.forEach(b => {
+    const d = document.createElement('div');
+    d.className = 'sbranch' + (b.main ? ' main' : '');
+    d.innerHTML =
+      '<div class="sbtag">' + b.tag + '</div>' +
+      '<div class="sbname">' + b.name + '</div>' +
+      '<div class="sbnote">' + b.note + '</div>' +
+      '<ul class="sburl">' + b.urls.map(u => '<li>' + u + '</li>').join('') + '</ul>';
+    sm.appendChild(d);
+  });
+  document.getElementById('s-shared-title').textContent = s.sharedTitle;
+  document.getElementById('s-shared-text').textContent  = s.sharedText;
+  document.getElementById('s-ch-title').textContent     = s.chTitle;
+  const ch = document.getElementById('s-channels');
+  s.channels.forEach(c => {
+    const d = document.createElement('div');
+    d.className = 'chitem';
+    d.innerHTML = '<div class="chname">' + c.n + '</div><div class="chdesc">' + c.d + '</div>';
+    ch.appendChild(d);
+  });
+
+  /* ROZSAH */
+  const sb = document.getElementById('stab-body');
+  o.scope.items.forEach(item => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = '<td class="td-n">' + item.name + '</td><td class="td-d">' + item.description + '</td><td class="td-r">' + item.range + '</td>';
+    sb.appendChild(tr);
+  });
+  const ni = document.getElementById('nilist');
+  o.scope.notIncluded.forEach(n => {
+    const li = document.createElement('li');
+    li.className = 'niitem';
+    li.textContent = n;
+    ni.appendChild(li);
+  });
+
+  /* RETAINERY */
+  document.getElementById('r-intro').textContent = o.retainers.intro;
+  const rc = document.getElementById('rcards');
+  o.retainers.plans.forEach(p => {
+    const d = document.createElement('div');
+    d.className = 'rcard' + (p.tag ? ' pick' : '');
+    d.innerHTML =
+      (p.tag ? '<div class="rtag">' + p.tag + '</div>' : '') +
+      '<div class="rhead"><div class="rname"><span>' + p.label + '</span>' + p.name + '</div>' +
+      '<div class="rprice"><b>' + p.price + '</b><i>' + p.per + '</i></div></div>' +
+      '<ul class="rlist">' + p.items.map(i => '<li>' + i + '</li>').join('') + '</ul>' +
+      '<div class="rfoot">' + p.foot + '</div>';
+    rc.appendChild(d);
+  });
+  document.getElementById('r-warn').innerHTML = o.retainers.warn;
+
+  /* HARMONOGRAM */
+  const tl = document.getElementById('tl');
+  o.timeline.forEach((ph, i) => {
+    const last = i === o.timeline.length - 1;
+    const div = document.createElement('div');
+    div.className = 'tl-item';
+    div.innerHTML =
+      '<div class="tl-left"><div class="tl-dot"><div class="tl-dot-i"></div></div>' +
+      (last ? '' : '<div class="tl-line"></div>') + '</div>' +
+      '<div class="tl-body"><div class="tl-week">' + ph.week + '</div>' +
+      '<div class="tl-name">' + ph.name + '</div>' +
+      '<div class="tl-desc">' + ph.desc + '</div></div>';
+    tl.appendChild(div);
+  });
+  const rl = document.getElementById('reqlist');
+  o.requirements.forEach(req => {
+    const li = document.createElement('li');
+    li.className = 'reqitem';
+    li.textContent = req;
+    rl.appendChild(li);
+  });
+
+  /* INVESTICE */
+  const fmt = n => n.toLocaleString('cs-CZ') + '\u00a0K\u010d';
+  const pb = document.getElementById('ptab-body');
+  let total_price = 0;
+  o.pricing.items.forEach(item => {
+    total_price += item.price;
+    const tr = document.createElement('tr');
+    tr.innerHTML = '<td class="td-in">' + item.name + '</td><td class="td-ip">' +
+      (item.price === 0 ? 'V ceně' : fmt(item.price)) + '</td>';
+    pb.appendChild(tr);
+  });
+  const ttr = document.createElement('tr');
+  ttr.className = 'tr-total';
+  ttr.innerHTML = '<td class="td-in">REDESIGN WEBU CELKEM</td><td class="td-ip">' + fmt(total_price) + '</td>';
+  pb.appendChild(ttr);
+
+  const mb = document.getElementById('mtab-body');
+  o.pricing.monthly.forEach(m => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = '<td><span class="td-in">' + m.name + '</span><div class="td-md">' + m.desc + '</div></td>' +
+      '<td class="td-ip">' + fmt(m.price) + '</td>';
+    mb.appendChild(tr);
+  });
+
+  document.getElementById('vatnote').textContent   = o.pricing.vatNote;
+  document.getElementById('pay-terms').textContent = o.pricing.paymentTerms;
+  document.getElementById('pay-valid').textContent = o.pricing.validity;
+  document.getElementById('nstext').textContent    = o.pricing.nextStep;
+
+  /* REFERENCE */
+  document.getElementById('ref-intro').textContent = o.references.intro;
+  const rg = document.getElementById('refgrid');
+  o.references.items.forEach(rf => {
+    const d = document.createElement('div');
+    d.className = 'refcard';
+    d.innerHTML =
+      '<div class="refhead"><div class="refname">' + rf.name + '</div><div class="refurl">' + rf.url + '</div></div>' +
+      '<div class="refdesc">' + rf.desc + '</div>' +
+      '<div class="refres">' + rf.res + '</div>';
+    rg.appendChild(d);
+  });
+  document.getElementById('ref-warn').innerHTML = o.references.warn;
+
+})();
+</script>
+</body>
+</html>
