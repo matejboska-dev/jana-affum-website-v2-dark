@@ -40,7 +40,7 @@ export default function Signposts() {
               className="case-study-badge"
               style={{ alignSelf: 'flex-start', marginBottom: '16px' }}
             >
-              International Recruitment & Executive Search
+              International Recruitment & Search
             </div>
             <h3
               style={{
@@ -61,7 +61,7 @@ export default function Signposts() {
                 marginBottom: '32px',
               }}
             >
-              A boutique, coaching-informed recruitment practice for companies hiring pivotal technology and leadership roles across Europe and beyond. Fewer candidates, deeper insight, better decisions.
+              A boutique, coaching-informed recruitment practice for companies hiring key technology and leadership roles across Europe and beyond. Fewer candidates, deeper insight, better decisions.
             </p>
             <div className="link-wrap" style={{ marginTop: 'auto' }}>
               <Link
@@ -119,7 +119,7 @@ export default function Signposts() {
                 marginBottom: '16px',
               }}
             >
-              Gain a discreet thinking partner for a pivotal decision
+              Gain a discreet thinking partner for an important decision
             </h3>
             <p
               style={{

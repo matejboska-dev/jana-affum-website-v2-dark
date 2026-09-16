@@ -17,7 +17,7 @@ export default function Hero() {
           <div className="hero-v2-content-left">
             <div className="hero-v2-eyebrow">
               <span>10+ Years In International Recruitment</span>
-              <span>Private Coaching For Pivotal Decisions</span>
+              <span>Private Coaching For Important Decisions</span>
             </div>
 
             <h1 className="hero-v2-title">
@@ -26,8 +26,8 @@ export default function Hero() {
             </h1>
 
             <p className="hero-v2-lead">
-              International recruitment for companies hiring pivotal talent. Private coaching
-              for leaders and professionals navigating pivotal change.
+              International recruitment for companies hiring key talent. Private coaching
+              for leaders, professionals and internationals navigating change.
             </p>
 
             <div className="hero-v2-actions">
@@ -80,7 +80,7 @@ export default function Hero() {
               <div className="hero-v2-stat-number">1,000s</div>
               <div className="hero-v2-stat-label">Career Conversations</div>
               <div className="hero-v2-stat-desc">
-                Deep evaluation of candidate motivation &amp; leadership fit.
+                Evaluating candidate motivation, readiness &amp; fit.
               </div>
             </div>
           </div>

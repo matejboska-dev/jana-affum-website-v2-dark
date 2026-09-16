@@ -9,6 +9,7 @@ import PrivateAdvisory from '@/components/PrivateAdvisory';
 import WhyJana from '@/components/WhyJana';
 import Credibility from '@/components/Credibility';
 import GlobalNote from '@/components/GlobalNote';
+import BookPromo from '@/components/BookPromo';
 import Faq from '@/components/Faq';
 import FinalCta from '@/components/FinalCta';
 import Footer from '@/components/Footer';
@@ -26,6 +27,7 @@ export default function Home() {
       <WhyJana />
       <Credibility />
       <GlobalNote />
+      <BookPromo />
       <Faq />
       <FinalCta />
       <Footer />

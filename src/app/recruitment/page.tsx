@@ -9,11 +9,12 @@ import OnboardingCare from '@/components/recruitment/OnboardingCare';
 import RecruitmentProof from '@/components/recruitment/RecruitmentProof';
 import PhoneRecruiter from '@/components/recruitment/PhoneRecruiter';
 import RecruitmentContact from '@/components/recruitment/RecruitmentContact';
+import BookPromo from '@/components/BookPromo';
 
 export const metadata: Metadata = {
   title: 'International Recruitment & Executive Search | Jana Affum',
   description:
-    'Boutique executive search and technology recruitment across Europe and Switzerland. Fewer candidates, deeper assessment, and 90-day onboarding care for senior tech leadership.',
+    'Boutique international recruitment and search across Europe. Fewer candidates, deeper assessment, and 90-day onboarding care for senior tech leadership.',
   openGraph: {
     title: 'International Recruitment & Executive Search | Jana Affum',
     description:
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
         url: '/images/jana-recruitment-search.jpg',
         width: 1200,
         height: 630,
-        alt: 'Jana Affum - International Executive Search',
+        alt: 'Jana Affum - International Recruitment & Search',
       },
     ],
     type: 'website',
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'International Recruitment & Executive Search | Jana Affum',
     description:
-      'Boutique executive search and tech recruitment across Europe and Switzerland.',
+      'Boutique international recruitment and tech search across Europe.',
     images: ['/images/jana-recruitment-search.jpg'],
   },
 };
@@ -49,6 +50,7 @@ export default function RecruitmentPage() {
       <OnboardingCare />
       <RecruitmentProof />
       <PhoneRecruiter />
+      <BookPromo />
       <RecruitmentContact />
       <Footer />
     </main>

@@ -25,7 +25,7 @@ export default function Credibility() {
             <div className="credibility-signature">
               <span className="credibility-signature-mark">Jana Affum</span>
               <span className="credibility-signature-role">
-                Certified Business &amp; Life Coach &middot; 10+ Years Executive Search
+                Certified Business &amp; Life Coach &middot; 10+ Years International Recruitment
               </span>
             </div>
           </div>

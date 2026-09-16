@@ -70,9 +70,9 @@ export default function PhoneRecruiter() {
               marginBottom: '28px',
             }}
           >
-            Whether unblocking a stalled executive mandate, diagnosing why candidate engagement has slowed,
+            Whether unblocking a stalled search, diagnosing why candidate engagement has slowed,
             or pressure-testing a complex international package negotiation — 60 minutes of unvarnished advice
-            grounded in a decade of global recruitment.
+            grounded in ten years of international recruitment.
           </p>
 
           <div className="link-wrap">

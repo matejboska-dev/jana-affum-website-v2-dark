@@ -65,10 +65,10 @@ export default function TakeOffTheMask() {
             </div>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <li style={{ fontSize: 'var(--t-body)', color: 'var(--par-color)', lineHeight: 'var(--lh-body)' }}>
-                <strong>You want unvarnished honesty:</strong> You do not need superficial cheerleading. You want an objective, senior perspective backed by actual hiring reality.
+                <strong>Honest perspective:</strong> You want objective feedback backed by real hiring experience, not generic cheerleading.
               </li>
               <li style={{ fontSize: 'var(--t-body)', color: 'var(--par-color)', lineHeight: 'var(--lh-body)' }}>
-                <strong>You carry high-impact decisions:</strong> Resignations, international moves, stepping into executive leadership, or transitioning to founder status.
+                <strong>You carry high-impact decisions:</strong> Resignations, international moves, stepping into leadership, or transitioning to founder status.
               </li>
               <li style={{ fontSize: 'var(--t-body)', color: 'var(--par-color)', lineHeight: 'var(--lh-body)' }}>
                 <strong>You value total discretion:</strong> All conversations are held in strict professional confidence under international coaching ethics.
@@ -108,10 +108,10 @@ export default function TakeOffTheMask() {
             </div>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <li style={{ fontSize: 'var(--t-body)', color: 'var(--par-color)', lineHeight: 'var(--lh-body)' }}>
-                <strong>You expect quick overnight formulas:</strong> Real career positioning and executive clarity require deliberate reflection and work.
+                <strong>You expect quick overnight formulas:</strong> Real career clarity and positioning require deliberate reflection and work.
               </li>
               <li style={{ fontSize: 'var(--t-body)', color: 'var(--par-color)', lineHeight: 'var(--lh-body)' }}>
-                <strong>You want a guaranteed placement:</strong> Coaching is private executive advisory. Headhunting is my separate corporate practice.
+                <strong>You want a guaranteed placement:</strong> Coaching is a private thinking partnership. Headhunting is my separate corporate recruitment practice.
               </li>
               <li style={{ fontSize: 'var(--t-body)', color: 'var(--par-color)', lineHeight: 'var(--lh-body)' }}>
                 <strong>You are seeking clinical mental healthcare:</strong> Coaching is career strategy and life transition support, not psychotherapy or crisis care.
@@ -141,7 +141,7 @@ export default function TakeOffTheMask() {
               lineHeight: 'var(--lh-meta)',
             }}
           >
-            <strong>Professional Boundary Notice:</strong> Executive and private coaching focuses on career strategy, leadership decision-making, and professional transitions. It is not psychological, psychiatric, medical, or psychotherapeutic treatment and does not replace medical diagnosis, therapy, or crisis intervention.
+            <strong>Professional Boundary Notice:</strong> Coaching focuses on career strategy, decision-making, and professional transitions. It is not psychological, psychiatric, medical, or psychotherapeutic treatment and does not replace medical diagnosis, therapy, or crisis intervention.
           </p>
         </div>
       </div>

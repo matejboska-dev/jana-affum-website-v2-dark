@@ -5,22 +5,9 @@ export default function GlobalNote() {
     <section id="global" className="global-impact-section">
       <div className="base-container w-container" style={{ maxWidth: '1240px' }}>
         <div className="global-impact-grid">
-          {/* Left Photo Column: 2 Photos */}
+          {/* Left Photo Column */}
           <div className="global-photo-col global-photo-col--left">
-            {/* Photo 1: Jana in Ghana (Portrait) */}
-            <figure className="global-photo-card portrait">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/images/impact-ghana-jana.jpg"
-                alt="Jana Affum supporting children's education and welfare in Ghana"
-                className="global-photo-img"
-                loading="lazy"
-                decoding="async"
-              />
-              <figcaption className="global-photo-caption">Ghana &middot; Welfare &amp; Education</figcaption>
-            </figure>
-
-            {/* Photo 2: Peru School Initiative (Landscape) */}
+            {/* Peru School Initiative (Landscape) */}
             <figure className="global-photo-card landscape">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -125,9 +112,9 @@ export default function GlobalNote() {
             </ul>
           </div>
 
-          {/* Right Photo Column: 2 Photos */}
+          {/* Right Photo Column */}
           <div className="global-photo-col global-photo-col--right">
-            {/* Photo 3: Classroom in Ghana (Landscape) */}
+            {/* Classroom in Ghana (Landscape) */}
             <figure className="global-photo-card landscape">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -138,19 +125,6 @@ export default function GlobalNote() {
                 decoding="async"
               />
               <figcaption className="global-photo-caption">Ghana &middot; St. Anne&apos;s School</figcaption>
-            </figure>
-
-            {/* Photo 4: Children in Ghana (Portrait) */}
-            <figure className="global-photo-card portrait">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/images/impact-ghana-children.jpg"
-                alt="Local children supported through community welfare in Ghana"
-                className="global-photo-img"
-                loading="lazy"
-                decoding="async"
-              />
-              <figcaption className="global-photo-caption">Ghana &middot; Community Welfare</figcaption>
             </figure>
           </div>
         </div>

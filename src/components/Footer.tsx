@@ -44,7 +44,7 @@ export default function Footer() {
                   marginBottom: '24px',
                 }}
               >
-                Executive and career coaching for professionals at a crossroads. Ten years of
+                Career coaching for professionals at a crossroads. Ten years of
                 international hiring intelligence to evaluate your real market value.
               </p>
               <div className="links-socials">

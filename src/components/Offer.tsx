@@ -18,7 +18,7 @@ const slides = [
   {
     badge: 'Recruiter advantage',
     title: 'Stand out to decision makers',
-    desc: 'Position your track record, beat the LinkedIn algorithms, and negotiate executive compensation with confidence.',
+    desc: 'Position your track record, beat the LinkedIn algorithms, and negotiate your compensation with confidence.',
     image: '/images/coaching-cv-card.jpg',
   },
 ];
@@ -74,7 +74,7 @@ export default function Offer() {
           ></div>
           <div className="home-5-services-overlay">
             <div className="case-study-badge" style={{ marginBottom: '12px' }}>
-              1-on-1 executive coaching
+              1-on-1 private coaching
             </div>
             <h3
               style={{
@@ -85,7 +85,7 @@ export default function Offer() {
                 color: 'var(--text-dark)',
               }}
             >
-              Navigate your crossroads with insider insight
+              Navigate your crossroads with real insight
             </h3>
             <p
               className="paragraph-home-4"
@@ -97,11 +97,10 @@ export default function Offer() {
                 maxWidth: 'var(--measure)',
               }}
             >
-              One-on-one executive and career coaching tailored for corporate professionals at
-              a crossroads. Available as a single 60-minute strategic intensive, a
+              One-on-one career coaching for professionals at a crossroads. Available as a single 60-minute intensive, a
               comprehensive transition programme, or ongoing bi-weekly advisory. Every
-              engagement delivers concrete outputs: a deep skills audit, market compensation
-              reality check, executive positioning, and a calculated financial runway.
+              engagement delivers concrete outputs: honest skills assessment, market reality
+              check, positioning strategy, and a clear plan forward.
             </p>
             <div className="link-wrap">
               <a href="#booking" className="cta-pill-button">

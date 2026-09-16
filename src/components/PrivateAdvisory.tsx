@@ -53,7 +53,7 @@ export default function PrivateAdvisory() {
             <div className="private-advisory-photo">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/jana-working.jpg"
+                src="/images/WhatsApp-Image-2026-09-04-at-15.37.20.jpeg"
                 alt="Jana Affum - Private Coaching Advisory & Thinking Partnership"
                 loading="lazy"
                 style={{ objectPosition: 'center center' }}

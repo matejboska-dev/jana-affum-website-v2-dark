@@ -68,7 +68,7 @@ These are marked `[PLACEHOLDER: …]` in `index.html` and must stay visibly unre
 **Real, attributed testimonials** (full text in `index.html`, headshots in `images/testimonials/`):
 
 - George Bakkeren — Founder & Owner, Deliver-IT Switzerland.
-- Zoltan Erdely — Senior NetDevOps Engineer, Hybrid Cloud & Automation; placed by Jana.
+- Placed Candidate (Senior Infrastructure Specialist, Hybrid Cloud & Automation) — placed by Jana. *NDA Rule:* reference is included anonymously; neither candidate name nor client name appears on public-facing site.
 - Danica Miller — Global Senior Manager Talent Acquisition & Employer Branding, STADA Arzneimittel AG. A LinkedIn Superuser recognition with hard figures: 158 active days over eight months, 1,394 profiles viewed, 1,113 InMails sent, 297 accepted.
 - Obinna Stanley Okpara — candidate and IT professional.
 - Brian S. Piper — executive client.

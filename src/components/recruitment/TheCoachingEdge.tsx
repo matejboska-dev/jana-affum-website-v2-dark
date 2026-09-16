@@ -105,7 +105,7 @@ export default function TheCoachingEdge() {
               The Coaching-Informed Approach
             </div>
             <h3 style={{ fontSize: 'var(--t-subhead)', lineHeight: 'var(--lh-head)', color: '#FFFFFF', marginBottom: '20px' }}>
-              Depth, candid insight &amp; high certainty
+              Depth, candidate insight &amp; high certainty
             </h3>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <li style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
@@ -117,7 +117,7 @@ export default function TheCoachingEdge() {
               <li style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
                 <span style={{ color: 'var(--primary)', fontWeight: 700, fontSize: '18px', lineHeight: 1 }}>&#10003;</span>
                 <p style={{ margin: 0, fontSize: 'var(--t-body)', color: 'rgba(255,255,255,0.85)', lineHeight: 'var(--lh-body)' }}>
-                  <strong>Psychological &amp; motivational alignment:</strong> As a certified executive coach, Jana uncovers what actually drives the candidate, tests counter-offer risk, and verifies exit readiness before you make an offer.
+                  <strong>Motivation &amp; readiness assessment:</strong> As a certified coach, Jana uncovers what actually drives the candidate, tests counter-offer risk, and verifies exit readiness before you make an offer.
                 </p>
               </li>
               <li style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
@@ -150,10 +150,10 @@ export default function TheCoachingEdge() {
             }}
           >
             &ldquo;Senior passive professionals rarely respond to pushy sales pitches. They open up to a trusted
-            peer who understands executive career strategy, cross-border complexity, and the real stakes of a life move.&rdquo;
+            peer who understands career strategy, cross-border complexity, and the real stakes of a life move.&rdquo;
           </p>
           <span style={{ fontSize: 'var(--t-meta)', fontWeight: 600, color: 'var(--gold-deep)' }}>
-            Jana Affum &mdash; Certified Executive Coach &amp; Senior Recruiter
+            Jana Affum &mdash; Certified Coach &amp; Senior Recruiter
           </span>
         </div>
       </div>

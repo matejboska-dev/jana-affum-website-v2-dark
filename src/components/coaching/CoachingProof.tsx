@@ -20,7 +20,7 @@ export default function CoachingProof() {
             <span className="h2-span light">Confidential impact:</span> What clients say
           </h2>
           <p className="item-description-white" style={{ maxWidth: '680px', margin: '14px auto 0 auto' }}>
-            Because our work touches sensitive corporate positions, board negotiations, and personal crossroads, most engagements remain strictly private.
+            Because our work touches sensitive career situations and personal crossroads, most engagements remain strictly private.
           </p>
         </div>
 
@@ -67,7 +67,7 @@ export default function CoachingProof() {
                 Brian S. Piper
               </div>
               <div style={{ fontSize: '13px', color: 'rgba(255, 255, 255, 0.65)' }}>
-                Executive Client &bull; International Business
+                Coaching Client &bull; International Business
               </div>
             </div>
           </div>

@@ -195,9 +195,9 @@ Credibility má přijít brzy a pak se tiše opakovat. Web má nejdřív působi
 6. Case study
 7. Kredenciály: Certified Coach, NLP Practitioner, recruitment certifikace
 
-**Reference k použití:** George Bakkeren (Deliver-IT Switzerland, klientský hlas), Zoltan Erdely (Senior NetDevOps Engineer, kandidátský hlas), Danica, Brian (Brianovu referenci lze zařadit do coachingové sekce), plus jedna reference z koučinku.
+**Reference k použití:** George Bakkeren (Deliver-IT Switzerland, klientský hlas), Placed Candidate (Senior Infrastructure Specialist, kandidátský hlas – **anonymizováno pod NDA, bez uvedení jména kandidáta i klienta**), Danica, Brian (Brianovu referenci lze zařadit do coachingové sekce), plus jedna reference z koučinku.
 
-**Case study:** senior infrastructure kandidát ve vícekolovém mezinárodním výběrovém řízení. Konzistentní zpětná vazba a příprava zabránily tomu, aby nejistota přerostla v odpojení.
+**Case study:** senior infrastructure kandidát ve vícekolovém mezinárodním výběrovém řízení. Zahrnuje anonymizovanou citaci kandidáta jako důkaz výsledku. **Pravidlo NDA:** nesmí se objevit jméno klienta ani kandidáta.
 
 **Loga:** Jana chce **jen jména firem, ne loga**. Zobrazit jako zdrženlivou textovou řádku s formulací, že jde o organizace, se kterými pracovala nebo které podporovala v rámci přímého zaměstnání, konzultací a zakázek přes mezinárodní agentury. Nesmí to působit, že každá byla přímý klient.
 

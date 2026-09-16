@@ -10,7 +10,7 @@ export default function RecruitmentHero() {
         <img
           className="right-img"
           src="/images/jana-recruitment-search.jpg"
-          alt="Jana Affum - International Executive Search"
+          alt="Jana Affum - International Recruitment & Search"
           loading="eager"
           style={{ objectFit: 'cover', objectPosition: 'center top' }}
         />
@@ -27,7 +27,7 @@ export default function RecruitmentHero() {
                   border: '1px solid rgba(211,175,101,0.3)',
                 }}
               >
-                Executive Search &amp; Talent Advisory
+                International Recruitment &amp; Search
               </div>
               <h1 className="banner-1-title" style={{ fontSize: 'clamp(34px, 4.5vw, 56px)' }}>
                 You do not need more CVs.{' '}
@@ -35,7 +35,7 @@ export default function RecruitmentHero() {
               </h1>
               <div className="banner-par-wrap">
                 <p className="new-banner-text">
-                  Boutique international recruitment and executive search for high-growth tech companies,
+                  Boutique international recruitment and search for high-growth tech companies,
                   founders, and talent leaders. Specializing in hard-to-reach senior talent across
                   Data, AI, Cloud, Cybersecurity, and Software Leadership.
                 </p>
@@ -151,7 +151,7 @@ export default function RecruitmentHero() {
               Geography
             </span>
             <p style={{ margin: 0, fontSize: 'var(--t-meta)', color: 'var(--text-dark)', fontWeight: 600 }}>
-              Czech Republic &bull; Switzerland &bull; Across Europe &amp; Global Remote
+              Across Europe &amp; Global Remote
             </p>
           </div>
         </div>
@@ -193,8 +193,7 @@ export default function RecruitmentHero() {
               fontWeight: 400,
             }}
           >
-            Direct employment, advisory, and international agency mandates across Europe, North
-            America, Australia, and Africa. Conversations in Czech or English.
+            Across Europe and beyond. Conversations in Czech or English.
           </p>
         </div>
       </div>

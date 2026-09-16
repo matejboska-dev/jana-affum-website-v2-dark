@@ -10,19 +10,19 @@ const questions = [
   {
     num: '02',
     title: 'What does mutual success look like in months 3, 6, and 12?',
-    desc: 'Surface interviews focus on past achievements. We interrogate expected pace, required autonomy, team communication styles, and the exact deliverables that define a successful first year.',
+    desc: 'Surface interviews focus on past achievements. We explore expected pace, required autonomy, team communication styles, and the exact deliverables that define a successful first year.',
     outcome: 'Prevents post-hire expectation mismatches and early friction.',
   },
   {
     num: '03',
     title: 'How do they navigate high-stakes ambiguity & friction?',
-    desc: 'Testing how they handle pressure, cross-functional roadblocks, and differing opinions in executive rooms. Not through hypothetical interview scripts, but grounded in their actual conflict-resolution patterns.',
+    desc: 'Testing how they handle pressure, cross-functional roadblocks, and differing opinions in leadership discussions. Not through hypothetical interview scripts, but grounded in their actual conflict-resolution patterns.',
     outcome: 'Ensures the candidate has the emotional maturity to lead.',
   },
   {
     num: '04',
     title: 'What would their current employer have to offer for them to stay?',
-    desc: 'Counter-offers derail 40% of standard agency placements. We rigorously stress-test the psychological ties to their current company, salary benchmarks, and unspoken emotional reservations before you invest your board’s time.',
+    desc: 'Counter-offers derail 40% of standard agency placements. We honestly explore the real ties to their current company, salary benchmarks, and unspoken emotional reservations before you invest your board’s time.',
     outcome: 'Guards against counter-offer surprises and wasted recruitment cycles.',
   },
 ];

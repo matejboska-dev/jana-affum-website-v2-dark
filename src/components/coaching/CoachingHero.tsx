@@ -30,12 +30,12 @@ export default function CoachingHero() {
               </div>
               <h1 className="banner-1-title" style={{ fontSize: 'clamp(34px, 4.5vw, 56px)' }}>
                 For leaders and professionals navigating{' '}
-                <span className="h1-span">pivotal change.</span>
+                <span className="h1-span">change.</span>
               </h1>
               <div className="banner-par-wrap">
                 <p className="new-banner-text">
-                  A discreet, high-touch thinking partnership for senior professionals at a career
-                  crossroads, expat executives, and founders. Coaching grounded in ten years of
+                  A confidential thinking partnership for professionals at a career
+                  crossroads, expats, and founders. Coaching grounded in ten years of
                   deciding who gets hired and how the market actually values talent.
                 </p>
                 <p
@@ -49,7 +49,7 @@ export default function CoachingHero() {
                     maxWidth: 'var(--measure)',
                   }}
                 >
-                  Certified Business &amp; Life Coach &bull; NLP Practitioner &bull; 10+ Years International Executive Search
+                  Certified Business &amp; Life Coach &bull; NLP Practitioner &bull; 10+ Years International Recruitment
                 </p>
               </div>
               <div className="button-con" style={{ marginTop: '28px' }}>
@@ -114,7 +114,7 @@ export default function CoachingHero() {
               Selective Practice
             </span>
             <p style={{ margin: 0, fontSize: 'var(--t-meta)', color: 'var(--text-dark)', fontWeight: 600 }}>
-              Limited concurrent clients &bull; High-touch bespoke advisory
+              Limited concurrent clients &bull; Personal and focused advisory
             </p>
           </div>
           <div>

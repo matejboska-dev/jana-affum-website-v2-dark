@@ -7,7 +7,7 @@ export default function ForCompanies() {
       <div className="base-container w-container">
         <div className="recruitment-offramp-card">
           <div className="recruitment-offramp-content">
-            <span className="eyebrow">For companies hiring pivotal talent</span>
+            <span className="eyebrow">For companies hiring key talent</span>
             <h2 className="recruitment-offramp-title">
               A critical vacancy is a{' '}
               <span className="h2-span" style={{ color: 'var(--primary)', fontStyle: 'italic' }}>
@@ -44,10 +44,9 @@ export default function ForCompanies() {
           <div className="recruitment-offramp-photo">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/jana-companies-advisory.jpg"
-              alt="Jana Affum presenting an international recruitment strategy"
+              src="/images/jana-companies-advisory.png"
+              alt="Jana Affum - International Recruitment"
               loading="lazy"
-              style={{ objectPosition: 'center 15%' }}
             />
           </div>
         </div>

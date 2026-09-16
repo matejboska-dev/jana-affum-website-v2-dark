@@ -219,7 +219,7 @@ export default function CoachingContact() {
                   name="navigationNotes"
                   className="form-input w-input"
                   rows={4}
-                  placeholder="e.g. Considering leaving a 12-year corporate role, weighing a relocation to Prague, or stepping into an executive position..."
+                  placeholder="e.g. Considering leaving a corporate role, weighing an international move, or figuring out what comes next..."
                   value={formData.navigationNotes}
                   onChange={handleChange}
                   style={{

@@ -13,7 +13,7 @@ export default function WhyJana() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/jana-cafe.jpg"
-              alt="Jana Affum - Executive Recruiter & Leadership Coach"
+              alt="Jana Affum - International Recruiter & Coach"
               loading="lazy"
               decoding="async"
               style={{ objectPosition: 'center 20%' }}
@@ -34,14 +34,14 @@ export default function WhyJana() {
                 </svg>
               </div>
               <p className="why-portrait-badge-text">
-                <strong>10+ Years Executive Search</strong>
+                <strong>10+ Years International Search</strong>
                 Certified Business &amp; Life Coach
               </p>
             </div>
           </div>
 
           <div className="why-content">
-            <span className="eyebrow">Executive recruiter advantage</span>
+            <span className="eyebrow">The recruiter advantage</span>
             <h2 className="flex-title" style={{ textAlign: 'left' }}>
               <span className="h2-span">Why me:</span> ten years on the other side of the table
             </h2>
@@ -57,8 +57,8 @@ export default function WhyJana() {
               be worth in real boardroom negotiations.
             </p>
             <p className="why-body">
-              I am a certified business and life coach, and I still recruit. The market read you
-              get is current, verified, and unvarnished — never remembered theory.
+              I am a certified business and life coach, and I still recruit. My advice is grounded
+              in what is actually happening in the market today — not in theory.
             </p>
             <p className="why-body">
               Before recruitment, my path ran through international business and diplomacy, and a

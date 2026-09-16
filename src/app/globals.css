@@ -19386,20 +19386,29 @@ h1, h2, h3, h4, h5, h6,
   box-shadow: 0 6px 20px rgba(211, 175, 101, 0.4) !important;
 }
 
-/* Navigation Overhaul with Scroll Inversion */
+/* Navigation Bar (Solid White Background) */
 .nav-fixed-menu {
-  transition: background-color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease !important;
+  background-color: #FFFFFF !important;
+  border-bottom: 1px solid rgba(36, 30, 20, 0.08) !important;
+  box-shadow: 0 2px 14px rgba(36, 30, 20, 0.04) !important;
+  transition: background-color 0.35s ease, border-bottom 0.35s ease, box-shadow 0.35s ease !important;
   z-index: 1000 !important;
 }
 
-.white-nav-bg {
-  transition: background-color 0.35s ease, opacity 0.35s ease, box-shadow 0.35s ease !important;
+.nav-fixed-menu .nav-hero-container {
+  position: relative !important;
+  z-index: 5 !important;
 }
 
-/* 1. At the top of the website (over the hero): No background */
+.white-nav-bg {
+  background-color: #FFFFFF !important;
+  opacity: 1 !important;
+}
+
+/* ── At top: transparent nav with white text ── */
 .nav-fixed-menu.nav-at-top {
   background-color: transparent !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-bottom: none !important;
   box-shadow: none !important;
 }
 
@@ -19412,15 +19421,20 @@ h1, h2, h3, h4, h5, h6,
   color: #FFFFFF !important;
 }
 
+.nav-fixed-menu.nav-at-top .logo-consultant-w {
+  filter: brightness(0) invert(1) !important;
+  transition: filter 0.35s ease !important;
+}
+
 .nav-fixed-menu.nav-at-top .nav-intro-item-2 {
   font-size: 15px !important;
   font-weight: 600 !important;
-  color: rgba(255, 255, 255, 0.9) !important;
+  color: #FFFFFF !important;
   transition: color 0.25s ease !important;
 }
 
 .nav-fixed-menu.nav-at-top .nav-intro-item-2:hover {
-  color: var(--primary) !important;
+  color: rgba(255, 255, 255, 0.7) !important;
 }
 
 .nav-fixed-menu.nav-at-top .nav-line-white-2,
@@ -19428,22 +19442,34 @@ h1, h2, h3, h4, h5, h6,
   background-color: #FFFFFF !important;
 }
 
-/* 2. Scrolled down: Give it background and invert colors */
+.nav-fixed-menu.nav-at-top .new-primary-button {
+  border-color: #FFFFFF !important;
+  color: #FFFFFF !important;
+}
+
+.nav-fixed-menu.nav-at-top .new-primary-button:hover {
+  background-color: #FFFFFF !important;
+  color: var(--text-dark) !important;
+}
+
+/* ── Scrolled: solid white nav with dark text ── */
 .nav-fixed-menu.nav-scrolled {
-  background-color: rgba(255, 255, 255, 0.96) !important;
-  backdrop-filter: blur(12px) !important;
-  -webkit-backdrop-filter: blur(12px) !important;
+  background-color: #FFFFFF !important;
   border-bottom: 1px solid rgba(36, 30, 20, 0.08) !important;
-  box-shadow: 0 4px 24px rgba(36, 30, 20, 0.06) !important;
+  box-shadow: 0 4px 24px rgba(36, 30, 20, 0.08) !important;
 }
 
 .nav-fixed-menu.nav-scrolled .white-nav-bg {
-  background-color: rgba(255, 255, 255, 0.96) !important;
+  background-color: #FFFFFF !important;
   opacity: 1 !important;
 }
 
 .nav-fixed-menu.nav-scrolled .brand-name-text {
   color: var(--text-dark) !important;
+}
+
+.nav-fixed-menu.nav-scrolled .logo-consultant-w {
+  filter: none !important;
 }
 
 .nav-fixed-menu.nav-scrolled .nav-intro-item-2 {
@@ -19454,7 +19480,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .nav-fixed-menu.nav-scrolled .nav-intro-item-2:hover {
-  color: var(--gold-deep) !important;
+  color: var(--span-text) !important;
 }
 
 .nav-fixed-menu.nav-scrolled .nav-line-white-2,
@@ -23165,19 +23191,23 @@ p.services-description-animation.services-description-animation {
   background: linear-gradient(135deg, #1C1710 0%, #16120B 100%);
   border: 1px solid rgba(211, 175, 101, 0.3);
   border-radius: 16px;
-  padding: 48px;
+  padding: 48px 48px 0 48px;
   display: grid;
   grid-template-columns: 1fr 340px;
   gap: 48px;
-  align-items: center;
+  align-items: stretch;
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
   color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
 }
 
 .recruitment-offramp-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
+  padding-bottom: 48px;
 }
 
 .recruitment-offramp-title {
@@ -23198,21 +23228,25 @@ p.services-description-animation.services-description-animation {
 }
 
 .recruitment-offramp-photo {
-  border-radius: 16px;
-  overflow: hidden;
-  border: 1px solid rgba(211, 175, 101, 0.3);
-  aspect-ratio: 4 / 3;
   width: 100%;
   height: 100%;
-  max-height: 280px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  align-self: end;
+  margin-bottom: 0;
 }
 
 .recruitment-offramp-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 18%;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 440px;
+  object-fit: contain;
+  object-position: bottom center;
   display: block;
+  vertical-align: bottom;
+  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.5));
 }
 
 /* ==========================================================================
@@ -23361,15 +23395,21 @@ p.services-description-animation.services-description-animation {
   }
   .recruitment-offramp-card {
     grid-template-columns: 1fr;
-    padding: 36px 28px;
-    gap: 32px;
+    padding: 36px 28px 0 28px;
+    gap: 24px;
+  }
+  .recruitment-offramp-content {
+    padding-bottom: 0;
   }
   .recruitment-offramp-photo {
-    max-width: 360px;
+    max-width: 300px;
     max-height: none;
     margin: 0 auto;
-    aspect-ratio: 4 / 3;
+    margin-bottom: 0;
     width: 100%;
+  }
+  .recruitment-offramp-photo img {
+    max-height: 360px;
   }
   .private-advisory-block {
     grid-template-columns: 1fr;
@@ -24299,6 +24339,14 @@ p.services-description-animation.services-description-animation {
 .quote-card {
   display: flex;
   flex-direction: column;
+  padding: 16px !important;
+}
+
+.quote-text-clamped {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 .quote-mark {
@@ -24558,7 +24606,7 @@ p.services-description-animation.services-description-animation {
   .global-photo-col--left {
     order: 2;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 16px;
     width: 100%;
     align-items: stretch;
@@ -24567,7 +24615,7 @@ p.services-description-animation.services-description-animation {
   .global-photo-col--right {
     order: 3;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 16px;
     width: 100%;
     align-items: stretch;

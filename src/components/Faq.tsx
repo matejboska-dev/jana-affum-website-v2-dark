@@ -8,12 +8,12 @@ const faqs = [
     a: 'Most agencies match keywords on a CV. I bring ten years of hiring intelligence and a coaching-trained ear to every search: understanding what genuinely drives a candidate to move, where expectations might diverge, and what could weaken their commitment after an offer. You receive a small, thoroughly vetted shortlist, not a stack of CVs to sort through yourself.',
   },
   {
-    q: 'Do you recruit outside the Czech Republic?',
-    a: 'Yes. My search work spans the Czech Republic, Switzerland, and clients across Europe, alongside international and remote mandates. I specialize in Data, AI, Cloud, Cybersecurity, and Software leadership roles, and conversations run in Czech or English depending on what works for your team.',
+    q: 'Do you work internationally?',
+    a: 'Yes. I work with clients across Europe alongside international and remote mandates. I specialize in Data, AI, Cloud, Cybersecurity, and Software leadership roles, and conversations run in Czech or English depending on what works for your team.',
   },
   {
     q: 'How does coaching with a former recruiter differ from traditional career coaching?',
-    a: 'Most career coaches work from theoretical frameworks or life-coaching models. Because I spent ten years on the hiring side of the table managing executive IT recruitment across 9 countries, our work is backed by real hiring intelligence: how decision-makers evaluate senior talent, what the market actually pays, and how to position your track record to negotiate maximum compensation.',
+    a: 'Most career coaches work from theoretical frameworks or life-coaching models. Because I spent ten years on the hiring side of the table managing international IT recruitment across 9 countries, our work is backed by real hiring intelligence: how decision-makers evaluate senior talent, what the market actually pays, and how to position your track record to negotiate maximum compensation.',
   },
   {
     q: 'What happens during the free 20-minute fit call? Is there really no pitch?',
@@ -21,11 +21,11 @@ const faqs = [
   },
   {
     q: 'Can I participate in coaching while still employed in my full-time corporate role?',
-    a: 'Yes. The majority of my clients are currently in demanding senior corporate positions. All sessions and async messaging are strictly confidential, flexible around executive schedules, and designed to map out a safe transition plan without risking your current employment or reputation.',
+    a: 'Yes. The majority of my clients are currently in demanding senior corporate positions. All sessions and async messaging are strictly confidential, flexible around busy schedules, and designed to map out a safe transition plan without risking your current employment or reputation.',
   },
   {
     q: 'How do I know if I need career transition coaching versus therapy or medical leave?',
-    a: 'Coaching focuses on career strategy, market value, executive decision-making, and navigating professional transitions. It is not psychotherapy, psychiatric care, or clinical crisis support. If you are experiencing clinical depression or severe medical exhaustion, healthcare professionals must come first.',
+    a: 'Coaching focuses on career strategy, market value, decision-making, and navigating professional transitions. It is not psychotherapy, psychiatric care, or clinical crisis support. If you are experiencing clinical depression or severe medical exhaustion, healthcare professionals must come first.',
   },
   {
     q: 'What if I decide during coaching that I want to stay in corporate?',

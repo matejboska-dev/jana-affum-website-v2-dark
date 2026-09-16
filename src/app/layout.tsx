@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://janaaffum.com'),
   title: 'Jana Affum | International Recruitment & Private Coaching',
   description:
-    'Find and assess hard-to-reach international talent with greater depth, or gain a discreet private thinking partner for a pivotal career, business or life decision.',
+    'Find and assess hard-to-reach international talent with greater depth, or gain a discreet private thinking partner for an important career, business or life decision.',
   icons: {
     icon: [
       { url: '/images/jana-favicon-32.png', sizes: '32x32', type: 'image/png' },
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Jana Affum | International Recruitment & Private Coaching',
     description:
-      'Find and assess hard-to-reach international talent with greater depth, or gain a discreet private thinking partner for a pivotal career, business or life decision.',
+      'Find and assess hard-to-reach international talent with greater depth, or gain a discreet private thinking partner for an important career, business or life decision.',
     url: 'https://janaaffum.com',
     siteName: 'Jana Affum',
     images: [
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         url: '/images/jana-affum-hero.png',
         width: 1200,
         height: 630,
-        alt: 'Jana Affum - Executive Career Coach',
+        alt: 'Jana Affum - International Recruiter & Private Coach',
       },
     ],
     type: 'website',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Jana Affum | International Recruitment & Private Coaching',
-    description: 'International recruitment and private coaching for pivotal decisions.',
+    description: 'International recruitment and private coaching for important decisions.',
     images: ['/images/jana-affum-hero.png'],
   },
 };
@@ -57,7 +57,7 @@ const jsonLd = {
       image: 'https://janaaffum.com/images/jana-affum-hero.png',
       jobTitle: 'International Recruiter & Private Coach',
       description:
-        'Certified business and life coach with over 10 years of international executive recruitment experience.',
+        'Certified business and life coach with over 10 years of international recruitment experience.',
       sameAs: [
         'https://www.linkedin.com/in/jana-affum-0aa979197',
         'https://www.instagram.com/janaaffum/',
@@ -66,12 +66,12 @@ const jsonLd = {
     {
       '@type': 'Service',
       '@id': 'https://janaaffum.com/#service-recruitment',
-      name: 'International Recruitment & Executive Search',
+      name: 'International Recruitment & Search',
       provider: {
         '@id': 'https://janaaffum.com/#person',
       },
       description:
-        'Boutique international executive search for companies hiring pivotal technology and leadership talent across Europe and beyond.',
+        'Boutique international recruitment for companies hiring key technology and leadership talent across Europe and beyond.',
       serviceType: 'Executive Recruitment',
     },
     {
@@ -82,7 +82,7 @@ const jsonLd = {
         '@id': 'https://janaaffum.com/#person',
       },
       description:
-        'Private coaching for leaders and professionals navigating career transitions, cross-cultural moves, or pivotal life decisions.',
+        'Private coaching for leaders and professionals navigating career transitions, cross-cultural moves, or important life decisions.',
       serviceType: 'Career and Life Coaching',
     },
     {
@@ -99,10 +99,10 @@ const jsonLd = {
         },
         {
           '@type': 'Question',
-          name: 'Do you recruit outside the Czech Republic?',
+          name: 'Do you work internationally?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes. My search work spans the Czech Republic, Switzerland, and clients across Europe, alongside international and remote mandates. I specialize in Data, AI, Cloud, Cybersecurity, and Software leadership roles, and conversations run in Czech or English depending on what works for your team.',
+            text: 'Yes. I work with clients across Europe alongside international and remote mandates. I specialize in Data, AI, Cloud, Cybersecurity, and Software leadership roles, and conversations run in Czech or English depending on what works for your team.',
           },
         },
         {
@@ -110,7 +110,7 @@ const jsonLd = {
           name: 'How does coaching with a former recruiter differ from traditional career coaching?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Most career coaches work from theoretical frameworks or life-coaching models. Because I spent ten years on the hiring side of the table managing executive IT recruitment across 9 countries, our work is backed by real hiring intelligence: how decision-makers evaluate senior talent, what the market actually pays, and how to position your track record to negotiate maximum compensation.',
+            text: 'Most career coaches work from theoretical frameworks or life-coaching models. Because I spent ten years on the hiring side of the table managing international IT recruitment across 9 countries, our work is backed by real hiring intelligence: how decision-makers evaluate senior talent, what the market actually pays, and how to position your track record to negotiate maximum compensation.',
           },
         },
         {
@@ -126,7 +126,7 @@ const jsonLd = {
           name: 'Can I participate in coaching while still employed in my full-time corporate role?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes. The majority of my clients are currently in demanding senior corporate positions. All sessions and async messaging are strictly confidential, flexible around executive schedules, and designed to map out a safe transition plan without risking your current employment or reputation.',
+            text: 'Yes. The majority of my clients are currently in demanding senior corporate positions. All sessions and async messaging are strictly confidential, flexible around busy schedules, and designed to map out a safe transition plan without risking your current employment or reputation.',
           },
         },
         {
@@ -134,7 +134,7 @@ const jsonLd = {
           name: 'How do I know if I need career transition coaching versus therapy or medical leave?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Coaching focuses on career strategy, market value, executive decision-making, and navigating professional transitions. It is not psychotherapy, psychiatric care, or clinical crisis support. If you are experiencing clinical depression or severe medical exhaustion, healthcare professionals must come first.',
+            text: 'Coaching focuses on career strategy, market value, decision-making, and navigating professional transitions. It is not psychotherapy, psychiatric care, or clinical crisis support. If you are experiencing clinical depression or severe medical exhaustion, healthcare professionals must come first.',
           },
         },
         {

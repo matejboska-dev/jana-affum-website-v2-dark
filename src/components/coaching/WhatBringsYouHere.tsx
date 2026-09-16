@@ -10,7 +10,7 @@ const scenarios = [
   {
     tag: 'The High-Stakes Dilemma',
     title: 'Carrying a major decision with no one to talk to',
-    desc: 'You cannot discuss exit thoughts, executive burnout, or organizational friction with your colleagues, your board, or your team. You need a discreet thinking partner completely untangled from your internal corporate politics.',
+    desc: 'You cannot discuss exit thoughts, burnout, or organizational friction with your colleagues, your board, or your team. You need a discreet thinking partner completely untangled from your internal corporate politics.',
     context: 'A private space to test ideas, weigh trade-offs, and speak plainly without damaging your professional standing.',
   },
   {
@@ -22,8 +22,8 @@ const scenarios = [
   {
     tag: 'Cross-Border Complexity',
     title: 'International relocation or redefining your identity abroad',
-    desc: 'Adapting to a new country, navigating Central European or Swiss business culture, or managing an international career across borders. Finding your footing in a new market without losing your core strengths.',
-    context: 'English-speaking executive guidance grounded in cross-cultural fluency and global business acumen.',
+    desc: 'Adapting to a new country, navigating European business culture, or managing an international career across borders. Finding your footing in a new market without losing your core strengths.',
+    context: 'English-speaking guidance grounded in real cross-cultural experience.',
   },
 ];
 
@@ -47,7 +47,7 @@ export default function WhatBringsYouHere() {
             <span className="h2-span">What might bring you here?</span>
           </h2>
           <p className="item-description-gray" style={{ maxWidth: '720px', margin: '14px auto 0 auto', textAlign: 'center' }}>
-            Coaching is not for fixing broken careers. It is for accomplished professionals and leaders facing moments where the next move requires greater clarity, courage, and strategic certainty.
+            Coaching is not for fixing broken careers. It is for accomplished professionals and leaders facing moments where the next move requires greater clarity, courage, and direction.
           </p>
         </div>
 

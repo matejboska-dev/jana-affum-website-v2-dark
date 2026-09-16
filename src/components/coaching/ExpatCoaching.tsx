@@ -26,7 +26,7 @@ export default function ExpatCoaching() {
               Expat &amp; Global Professionals
             </div>
             <h2 className="banner-1-title" style={{ fontSize: 'clamp(28px, 3.2vw, 42px)', marginBottom: '18px' }}>
-              English-speaking executive coaching in Prague{' '}
+              English-speaking coaching in Prague{' '}
               <span className="h1-span" style={{ fontStyle: 'italic' }}>
                 for international careers.
               </span>
@@ -38,7 +38,7 @@ export default function ExpatCoaching() {
             <p className="dark-text" style={{ fontSize: 'var(--t-body)', lineHeight: 'var(--lh-body)', color: 'var(--par-color)', marginBottom: '24px' }}>
               With personal experience founding a business in the United States, managing high-stakes international
               mandates across Europe and Africa, and living in Prague, Jana provides a confidential, culturally
-              nuanced thinking partnership for expats, diplomats, and international tech executives.
+              nuanced thinking partnership for expats, diplomats, and international professionals.
             </p>
 
             <div className="link-wrap">
@@ -73,10 +73,10 @@ export default function ExpatCoaching() {
               }}
             >
               <h4 style={{ margin: '0 0 10px 0', fontSize: 'var(--t-card)', color: 'var(--text-dark)' }}>
-                Cross-Cultural Executive Dynamics
+                Cross-Cultural Dynamics
               </h4>
               <p style={{ margin: 0, fontSize: 'var(--t-meta)', color: 'var(--par-color)', lineHeight: 'var(--lh-body)' }}>
-                Decoding implicit communication styles, corporate hierarchy norms, and negotiation rituals in Central European, Swiss, and global matrix environments.
+                Understanding communication styles, workplace norms, and expectations across European and international environments.
               </p>
             </div>
 
@@ -92,7 +92,7 @@ export default function ExpatCoaching() {
                 Career &amp; Life Transitions Abroad
               </h4>
               <p style={{ margin: 0, fontSize: 'var(--t-meta)', color: 'var(--par-color)', lineHeight: 'var(--lh-body)' }}>
-                Whether moving to the Czech Republic, contemplating a repatriation leap, or transitioning from corporate expat packages to independent consulting.
+                Deciding whether to stay, return home, relocate internationally, or build a new direction outside your familiar environment.
               </p>
             </div>
 
@@ -105,10 +105,10 @@ export default function ExpatCoaching() {
               }}
             >
               <h4 style={{ margin: '0 0 10px 0', fontSize: 'var(--t-card)', color: 'var(--text-dark)' }}>
-                Dual-Language Fluency &amp; Discretion
+                Language &amp; Discretion
               </h4>
               <p style={{ margin: 0, fontSize: 'var(--t-meta)', color: 'var(--par-color)', lineHeight: 'var(--lh-body)' }}>
-                Available fully in native-level English or Czech. In-person sessions in central Prague or high-touch video consultations across European timezones.
+                Available fully in native-level English or Czech. In-person sessions in central Prague or video consultations across European and global time zones.
               </p>
             </div>
           </div>

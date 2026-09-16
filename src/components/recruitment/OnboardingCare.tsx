@@ -35,7 +35,7 @@ export default function OnboardingCare() {
               Most recruitment mandates end on contract signature. But senior placements are rarely lost on technical ability — they fail due to early communication disconnects, unspoken cultural friction, or unmanaged role ambiguities in the first 90 days.
             </p>
             <p className="dark-text" style={{ fontSize: 'var(--t-body)', lineHeight: 'var(--lh-body)', color: 'var(--par-color)', marginBottom: '28px' }}>
-              With Onboarding Care, Jana stays actively engaged through structured check-ins with both the candidate and your hiring executive. We detect small misalignments before they compound, ensuring the senior hire you worked hard to secure actually integrates, delivers, and stays.
+              With Onboarding Care, Jana stays actively engaged through structured check-ins with both the candidate and your hiring leader. We detect small misalignments before they compound, ensuring the senior hire you worked hard to secure actually integrates, delivers, and stays.
             </p>
             <div className="link-wrap">
               <a href="#hiring-inquiry" className="cta-pill-button">
@@ -93,7 +93,7 @@ export default function OnboardingCare() {
             >
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
                 <h4 style={{ margin: 0, fontSize: 'var(--t-card)', color: 'var(--text-dark)' }}>
-                  Day 60 &bull; Autonomy &amp; Velocity Check
+                  Day 60 &bull; Progress &amp; Clarity Check
                 </h4>
                 <span style={{ fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', color: 'var(--gold-deep)', letterSpacing: '0.06em' }}>
                   Month 2
@@ -115,7 +115,7 @@ export default function OnboardingCare() {
             >
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
                 <h4 style={{ margin: 0, fontSize: 'var(--t-card)', color: 'var(--text-dark)' }}>
-                  Day 90 &bull; Probation &amp; Long-Term Lock-in
+                  Day 90 &bull; Probation &amp; Long-Term Commitment
                 </h4>
                 <span style={{ fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', color: 'var(--gold-deep)', letterSpacing: '0.06em' }}>
                   Month 3

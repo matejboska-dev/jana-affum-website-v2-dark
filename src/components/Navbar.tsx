@@ -59,6 +59,7 @@ export default function Navbar() {
                 fontWeight: 700,
                 fontSize: '20px',
                 letterSpacing: '0.02em',
+                color: 'var(--text-dark)',
                 transition: 'color 0.35s ease',
               }}
             >

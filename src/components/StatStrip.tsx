@@ -9,7 +9,7 @@ const stats = [
       </svg>
     ),
     number: '10+',
-    label: 'Years of international recruitment across Europe, North America & Australia.',
+    label: 'Years of international recruitment across Europe & beyond.',
   },
   {
     icon: (
@@ -18,7 +18,7 @@ const stats = [
       </svg>
     ),
     number: '1,000s',
-    label: 'Career conversations evaluating candidate motivation & leadership fit.',
+    label: 'Career conversations evaluating motivation, readiness & fit.',
   },
   {
     icon: (
