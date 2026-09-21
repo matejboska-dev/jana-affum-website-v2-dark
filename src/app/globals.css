@@ -23638,13 +23638,14 @@ p.services-description-animation.services-description-animation {
   position: absolute;
   top: clamp(100px, 14vh, 150px);
   right: clamp(24px, 7vw, 120px);
-  font-family: var(--f-ui), sans-serif;
-  font-weight: 900;
-  font-size: clamp(38px, 5.5vw, 82px);
+  font-family: var(--f-display) !important;
+  font-style: italic;
+  font-weight: 600;
+  font-size: clamp(48px, 7vw, 108px);
   line-height: 1;
-  letter-spacing: 0.02em;
-  color: rgba(211, 175, 101, 0.14);
-  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: rgba(211, 175, 101, 0.16);
+  text-transform: none;
   white-space: nowrap;
 }
 
@@ -24644,3 +24645,36 @@ p.services-description-animation.services-description-animation {
 }
 
 
+
+
+/* ==========================================================================
+   BUTTONS — pill with a circular arrow chip (sitewide)
+   The chip is drawn in CSS so every existing CTA picks it up, on the
+   homepage and both service pages. Any inline arrow icon is hidden.
+   ========================================================================== */
+.cta-pill-button,
+.hero-v2-cta-primary {
+  gap: 16px !important;
+  padding: 7px 7px 7px 26px !important;
+  justify-content: space-between !important;
+}
+
+.cta-pill-button > svg { display: none !important; }
+
+.cta-pill-button::after,
+.hero-v2-cta-primary::after {
+  content: "";
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--green) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23D3AF65' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'/%3E%3Cpolyline points='12 5 19 12 12 19'/%3E%3C/svg%3E") center / 16px 16px no-repeat;
+  transition: transform .45s cubic-bezier(.16, 1, .3, 1);
+}
+
+.cta-pill-button:hover::after,
+.hero-v2-cta-primary:hover::after { transform: rotate(-45deg); }
+
+@media (prefers-reduced-motion: reduce) {
+  .cta-pill-button::after, .hero-v2-cta-primary::after { transition: none; }
+}

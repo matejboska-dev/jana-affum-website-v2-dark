@@ -55,7 +55,7 @@ export default function CoachingHero() {
               <div className="button-con" style={{ marginTop: '28px' }}>
                 <div className="no-srink-btn">
                   <a href="#coaching-inquiry" className="primary-button hero-v2-cta-primary w-button">
-                    Book a complimentary 20-minute conversation
+                    Book a complimentary 15-minute conversation
                   </a>
                 </div>
                 <div className="link-wrap">

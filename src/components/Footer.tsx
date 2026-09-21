@@ -106,6 +106,13 @@ export default function Footer() {
                   </svg>
                   janaaffum@gmail.com
                 </a>
+                <span className="footer-contact-link" style={{ cursor: 'default' }}>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path>
+                    <circle cx="12" cy="10" r="2.5"></circle>
+                  </svg>
+                  Prague &middot; English &amp; Czech
+                </span>
               </div>
             </div>
           </div>
@@ -129,7 +136,14 @@ export default function Footer() {
             Jana Affum &bull; Business ID: 13956248 &bull; VAT ID: CZ8952264651 &bull; Registered
             office: tř. Dukelských hrdinů 3789/84, 695 01 Hodonín, Czech Republic
           </div>
-          <div>&copy; 2026 Jana Affum. All rights reserved.</div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', alignItems: 'flex-end' }}>
+            <div style={{ display: 'flex', gap: '18px', flexWrap: 'wrap' }}>
+              <a href="/privacy" className="footer-copyright-5">Privacy</a>
+              <a href="/cookies" className="footer-copyright-5">Cookies</a>
+              <a href="/terms" className="footer-copyright-5">Terms</a>
+            </div>
+            <div>&copy; 2026 Jana Affum. All rights reserved.</div>
+          </div>
         </div>
       </div>
     </footer>

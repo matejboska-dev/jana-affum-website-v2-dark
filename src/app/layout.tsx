@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
 import { Playfair_Display } from 'next/font/google';
 import './globals.css';
+import RouteStructuredData from '@/components/services/RouteStructuredData';
+import CookieBar from '@/components/CookieBar';
+import StickyBook from '@/components/StickyBook';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -28,21 +31,12 @@ export const metadata: Metadata = {
       'Find and assess hard-to-reach international talent with greater depth, or gain a discreet private thinking partner for an important career, business or life decision.',
     url: 'https://janaaffum.com',
     siteName: 'Jana Affum',
-    images: [
-      {
-        url: '/images/jana-affum-hero.png',
-        width: 1200,
-        height: 630,
-        alt: 'Jana Affum - International Recruiter & Private Coach',
-      },
-    ],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Jana Affum | International Recruitment & Private Coaching',
     description: 'International recruitment and private coaching for important decisions.',
-    images: ['/images/jana-affum-hero.png'],
   },
 };
 
@@ -86,6 +80,40 @@ const jsonLd = {
       serviceType: 'Career and Life Coaching',
     },
     {
+      '@type': 'ProfessionalService',
+      '@id': 'https://janaaffum.com/#business',
+      name: 'Jana Affum',
+      url: 'https://janaaffum.com',
+      image: 'https://janaaffum.com/opengraph-image',
+      email: 'janaaffum@gmail.com',
+      founder: { '@id': 'https://janaaffum.com/#person' },
+      taxID: 'CZ8952264651',
+      identifier: '13956248',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'tř. Dukelských hrdinů 3789/84',
+        postalCode: '695 01',
+        addressLocality: 'Hodonín',
+        addressCountry: 'CZ',
+      },
+      areaServed: ['Prague', 'Czech Republic', 'Europe', 'Remote'],
+      knowsLanguage: ['en', 'cs'],
+      sameAs: [
+        'https://www.linkedin.com/in/jana-affum-0aa979197',
+        'https://www.instagram.com/janaaffum/',
+      ],
+    },
+    ...[
+      ['George Bakkeren', 'Jana is one of the most dedicated recruiters I have met. She combines professionalism with genuine care for both clients and candidates.'],
+      ['Danica Miller', 'You are one of our LinkedIn Superusers. These are amazing numbers that illustrate your dedication to finding the right talent.'],
+      ['Brian S. Piper', 'Jana is both intellectually sound and passionate about her work. Also she is humble and respectful of others, a person I highly respect and recommend.'],
+    ].map(([author, reviewBody]) => ({
+      '@type': 'Review',
+      itemReviewed: { '@id': 'https://janaaffum.com/#business' },
+      author: { '@type': 'Person', name: author },
+      reviewBody,
+    })),
+    {
       '@type': 'FAQPage',
       '@id': 'https://janaaffum.com/#faq',
       mainEntity: [
@@ -115,10 +143,10 @@ const jsonLd = {
         },
         {
           '@type': 'Question',
-          name: 'What happens during the free 20-minute fit call? Is there really no pitch?',
+          name: 'What happens during the free 15-minute fit call? Is there really no pitch?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'There is zero pitch and zero pressure. We spend twenty minutes evaluating your situation, where you feel stuck, and what move you are considering. If coaching is a fit and can solve your problem, I explain how we would work together. If it is not what you need, I will tell you directly and point you toward better resources.',
+            text: 'There is zero pitch and zero pressure. We spend fifteen minutes evaluating your situation, where you feel stuck, and what move you are considering. If coaching is a fit and can solve your problem, I explain how we would work together. If it is not what you need, I will tell you directly and point you toward better resources.',
           },
         },
         {
@@ -180,12 +208,10 @@ export default function RootLayout({
           type="font/otf"
           crossOrigin="anonymous"
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <RouteStructuredData data={jsonLd} />
       </head>
-      <body className="body-white">{children}</body>
+      <body className="body-white">{children}<StickyBook />
+        <CookieBar /></body>
     </html>
   );
 }

@@ -52,7 +52,7 @@ export default function CoachingContact() {
             </span>
           </h2>
           <p className="final-cta-sub" style={{ maxWidth: '620px', margin: '0 auto 40px auto' }}>
-            A complimentary 20-minute introductory call. We explore where you are, what choice you
+            A complimentary 15-minute introductory call. We explore where you are, what choice you
             are facing, and whether working together is a natural fit.
           </p>
 
@@ -289,10 +289,10 @@ export default function CoachingContact() {
                 fontWeight: 500,
               }}
             >
-              Prefer to book your 20-minute conversation directly into the calendar?
+              Prefer to book your 15-minute conversation directly into the calendar?
             </p>
             <a
-              href="https://calendly.com/janaaffum"
+              href="https://calendly.com/janaaffum/15min"
               target="_blank"
               rel="noopener noreferrer"
               className="cta-pill-secondary"
@@ -313,7 +313,7 @@ export default function CoachingContact() {
                 <line x1="8" y1="2" x2="8" y2="6"></line>
                 <line x1="3" y1="10" x2="21" y2="10"></line>
               </svg>
-              <span>Schedule 20-minute fit call via Calendly</span>
+              <span>Schedule 15-minute fit call via Calendly</span>
               <svg
                 width="18"
                 height="18"
@@ -344,7 +344,7 @@ export default function CoachingContact() {
             >
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
             </svg>
-            <span>Strict professional confidentiality &bull; Zero sales pressure &bull; 20 minutes complimentary</span>
+            <span>Strict professional confidentiality &bull; Zero sales pressure &bull; 15 minutes complimentary</span>
           </p>
         </div>
       </div>

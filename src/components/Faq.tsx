@@ -16,8 +16,8 @@ const faqs = [
     a: 'Most career coaches work from theoretical frameworks or life-coaching models. Because I spent ten years on the hiring side of the table managing international IT recruitment across 9 countries, our work is backed by real hiring intelligence: how decision-makers evaluate senior talent, what the market actually pays, and how to position your track record to negotiate maximum compensation.',
   },
   {
-    q: 'What happens during the free 20-minute fit call? Is there really no pitch?',
-    a: 'There is zero pitch and zero pressure. We spend twenty minutes evaluating your situation, where you feel stuck, and what move you are considering. If coaching is a fit and can solve your problem, I explain how we would work together. If it is not what you need, I will tell you directly and point you toward better resources.',
+    q: 'What happens during the free 15-minute fit call? Is there really no pitch?',
+    a: 'There is zero pitch and zero pressure. We spend fifteen minutes evaluating your situation, where you feel stuck, and what move you are considering. If coaching is a fit and can solve your problem, I explain how we would work together. If it is not what you need, I will tell you directly and point you toward better resources.',
   },
   {
     q: 'Can I participate in coaching while still employed in my full-time corporate role?',

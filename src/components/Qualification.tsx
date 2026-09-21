@@ -1,3 +1,4 @@
+import CalendlyButton from './CalendlyButton';
 import React from 'react';
 
 export default function Qualification() {
@@ -255,9 +256,7 @@ export default function Qualification() {
 
         {/* CTA button */}
         <div className="fit-cta-wrap">
-          <a href="#booking" className="primary-button w-button">
-            Book a 20-minute conversation
-          </a>
+          <CalendlyButton>Book a 15-minute conversation</CalendlyButton>
         </div>
 
         {/* Right side: Jana cutout photo */}

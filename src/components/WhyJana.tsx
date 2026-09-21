@@ -1,3 +1,4 @@
+import CalendlyButton from './CalendlyButton';
 import React from 'react';
 
 export default function WhyJana() {
@@ -135,23 +136,7 @@ export default function WhyJana() {
             </div>
 
             <div className="link-wrap">
-              <a href="#booking" className="cta-pill-button">
-                <span>Book a 20-minute conversation</span>
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  aria-hidden="true"
-                >
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </a>
+              <CalendlyButton>Book a 15-minute conversation</CalendlyButton>
             </div>
           </div>
         </div>

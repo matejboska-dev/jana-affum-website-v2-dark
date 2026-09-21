@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import { sendEnquiry } from '@/lib/sendEnquiry';
 
 export default function FinalCta() {
   const [formData, setFormData] = useState({
@@ -21,11 +22,14 @@ export default function FinalCta() {
     e.preventDefault();
     setSending(true);
 
-    const subject = encodeURIComponent('Website inquiry');
-    const body = encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-    );
-    window.location.href = `mailto:janaaffum@gmail.com?subject=${subject}&body=${body}`;
+    const delivered = await sendEnquiry({ ...formData, source: 'home' });
+    if (!delivered) {
+      const subject = encodeURIComponent('Website inquiry');
+      const body = encodeURIComponent(
+        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+      );
+      window.location.href = `mailto:janaaffum@gmail.com?subject=${subject}&body=${body}`;
+    }
 
     setSending(false);
     setSubmitted(true);
@@ -81,14 +85,14 @@ export default function FinalCta() {
                   maxWidth: '44ch',
                 }}
               >
-                Twenty minutes. No cost. No pitch. Whether you are hiring or
+                Fifteen minutes. No cost. No pitch. Whether you are hiring or
                 navigating a personal crossroads, the first step is a
                 straightforward conversation.
               </p>
 
               {/* Primary CTA — Calendly booking */}
               <a
-                href="https://calendly.com/placeholder"
+                href="https://calendly.com/janaaffum/15min"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="primary-button w-button"
@@ -118,7 +122,7 @@ export default function FinalCta() {
                   <line x1="8" y1="2" x2="8" y2="6" />
                   <line x1="3" y1="10" x2="21" y2="10" />
                 </svg>
-                <span>Book your free 20-min consultation</span>
+                <span>Book your free 15-min consultation</span>
                 <svg
                   width="18"
                   height="18"
@@ -154,6 +158,15 @@ export default function FinalCta() {
                 </svg>
                 <span>Zero sales pressure&ensp;·&ensp;Confidential &amp; direct</span>
               </p>
+              {/* Proof near the decision point */}
+              <figure style={{ margin: '28px 0 0', padding: '18px 0 0', borderTop: '1px solid rgba(211,175,101,0.25)', maxWidth: '44ch' }}>
+                <blockquote style={{ margin: 0, padding: 0, background: 'none', border: 0, textAlign: 'left', fontStyle: 'italic', fontSize: 'var(--t-body)', lineHeight: 'var(--lh-body)', color: 'rgba(255,255,255,0.88)', fontWeight: 400 }}>
+                  &ldquo;She acted as a true career partner and followed up after every interview stage.&rdquo;
+                </blockquote>
+                <figcaption style={{ marginTop: '8px', fontSize: 'var(--t-meta)', color: 'rgba(255,255,255,0.6)', textAlign: 'left' }}>
+                  Senior Infrastructure Specialist &middot; Placed candidate
+                </figcaption>
+              </figure>
             </div>
 
             {/* ─── RIGHT: Contact form ─── */}

@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import FullscreenMobileMenu from './FullscreenMobileMenu';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -69,10 +70,8 @@ export default function Navbar() {
 
           <nav
             role="navigation"
-            className={`nav-menu-2 w-nav-menu ${mobileMenuOpen ? 'w--open' : ''}`}
-            style={{
-              display: mobileMenuOpen ? 'block' : undefined,
-            }}
+            className="nav-menu-2 w-nav-menu"
+            aria-label="Main navigation"
           >
             <div className="nav-menu-shadow-overlay-4">
               <div className="tablet-menu-4">
@@ -126,7 +125,9 @@ export default function Navbar() {
                 <div className="login-tablet-wrap">
                   <div className="btn-wrap-tablet">
                     <a
-                      href="#booking"
+                      href="https://calendly.com/janaaffum/15min"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="new-primary-button w-button"
                       onClick={() => setMobileMenuOpen(false)}
                     >
@@ -139,7 +140,7 @@ export default function Navbar() {
           </nav>
 
           <div className="btn-wrap">
-            <a href="#booking" className="new-primary-button w-button">
+            <a href="https://calendly.com/janaaffum/15min" target="_blank" rel="noopener noreferrer" className="new-primary-button w-button">
               Book a private conversation
             </a>
           </div>
@@ -148,7 +149,10 @@ export default function Navbar() {
             type="button"
             className="menu-button-3 w-nav-button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle navigation"
+            aria-label="Open navigation"
+            aria-expanded={mobileMenuOpen}
+            aria-controls="fullscreen-mobile-navigation"
+            aria-haspopup="dialog"
             style={{ background: 'transparent', border: 'none', cursor: 'pointer' }}
           >
             <div className="wrapper-item-home-2">
@@ -158,6 +162,7 @@ export default function Navbar() {
           </button>
         </div>
       </div>
+      <FullscreenMobileMenu open={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)} />
     </header>
   );
 }

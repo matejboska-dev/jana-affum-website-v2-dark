@@ -13,6 +13,10 @@ import BookPromo from '@/components/BookPromo';
 import Faq from '@/components/Faq';
 import FinalCta from '@/components/FinalCta';
 import Footer from '@/components/Footer';
+import Reveal from '@/components/services/Reveal';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = { alternates: { canonical: '/' } };
 
 export default function Home() {
   return (
@@ -20,16 +24,16 @@ export default function Home() {
       <Navbar />
       <Hero />
       <StatStrip />
-      <Recognition />
-      <ForCompanies />
-      <Proof />
-      <PrivateAdvisory />
-      <WhyJana />
-      <Credibility />
-      <GlobalNote />
-      <BookPromo />
-      <Faq />
-      <FinalCta />
+      <Reveal><Recognition /></Reveal>
+      <Reveal><ForCompanies /></Reveal>
+      <Reveal><Proof /></Reveal>
+      <Reveal><PrivateAdvisory /></Reveal>
+      <Reveal><WhyJana /></Reveal>
+      <Reveal><Credibility /></Reveal>
+      <Reveal><GlobalNote /></Reveal>
+      <Reveal><BookPromo /></Reveal>
+      <Reveal><Faq /></Reveal>
+      <Reveal><FinalCta /></Reveal>
       <Footer />
     </main>
   );

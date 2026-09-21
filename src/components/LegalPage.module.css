@@ -1,0 +1,13 @@
+.page { background: var(--green); color: #fff; padding: clamp(120px, 16vh, 168px) 0 clamp(72px, 10vw, 120px); }
+.article { max-width: 760px; margin-inline: 0; }
+.article h1 { font-size: clamp(36px, 4.4vw, 56px) !important; color: #fff; margin: 12px 0 20px; }
+.article h2 { font-size: var(--t-card) !important; color: var(--primary); margin: 44px 0 12px; }
+.article p, .article li { font-size: var(--t-body); line-height: var(--lh-body); color: rgba(255, 255, 255, .82); font-weight: 400; max-width: 68ch; }
+.article ul { margin: 0 0 16px; padding-left: 20px; }
+.article li { margin-bottom: 8px; }
+.article a { color: var(--primary); text-decoration: underline; text-underline-offset: 3px; }
+.lead { font-size: var(--t-lede) !important; line-height: var(--lh-lede) !important; color: #fff !important; }
+.meta { font-size: var(--t-meta) !important; color: rgba(255, 255, 255, .55) !important; margin-bottom: 8px; }
+.article table { width: 100%; border-collapse: collapse; margin: 8px 0 20px; font-size: var(--t-meta); }
+.article th, .article td { text-align: left; padding: 10px 12px; border-bottom: 1px solid rgba(211, 175, 101, .25); color: rgba(255, 255, 255, .82); vertical-align: top; }
+.article th { color: var(--primary); font-weight: 700; }

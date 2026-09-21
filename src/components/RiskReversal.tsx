@@ -1,3 +1,4 @@
+import CalendlyButton from './CalendlyButton';
 import React from 'react';
 
 export default function RiskReversal() {
@@ -6,7 +7,7 @@ export default function RiskReversal() {
       <div className="base-container w-container">
         <div className="section-title-wrap">
           <h2 id="zero-sales-traps" className="flex-title" style={{ justifyContent: 'center' }}>
-            <span className="h2-span">Zero sales traps:</span> What the 20-minute call actually is
+            <span className="h2-span">Zero sales traps:</span> What the 15-minute call actually is
           </h2>
           <p className="item-description-gray" style={{ margin: '12px auto 0 auto' }}>
             I hate aggressive sales pitches as much as you do. Here is my upfront commitment
@@ -243,9 +244,7 @@ export default function RiskReversal() {
           </div>
 
           <div style={{ textAlign: 'center', marginTop: '44px' }}>
-            <a href="#booking" className="primary-button w-button">
-              Book a 20-minute conversation
-            </a>
+            <CalendlyButton>Book a 15-minute conversation</CalendlyButton>
           </div>
         </div>
       </div>

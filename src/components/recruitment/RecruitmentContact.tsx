@@ -52,7 +52,7 @@ export default function RecruitmentContact() {
             </span>
           </h2>
           <p className="final-cta-sub" style={{ maxWidth: '620px', margin: '0 auto 40px auto' }}>
-            A 20-minute direct conversation to map your search requirements, technical bar,
+            A 15-minute direct conversation to map your search requirements, technical bar,
             and timeline. No sales pitches, no obligation.
           </p>
 
@@ -293,7 +293,7 @@ export default function RecruitmentContact() {
               Want to skip the form and discuss your mandate directly?
             </p>
             <a
-              href="https://calendly.com/janaaffum"
+              href="https://calendly.com/janaaffum/15min"
               target="_blank"
               rel="noopener noreferrer"
               className="cta-pill-secondary"
@@ -314,7 +314,7 @@ export default function RecruitmentContact() {
                 <line x1="8" y1="2" x2="8" y2="6"></line>
                 <line x1="3" y1="10" x2="21" y2="10"></line>
               </svg>
-              <span>Book a 20-minute briefing via Calendly</span>
+              <span>Book a 15-minute briefing via Calendly</span>
               <svg
                 width="18"
                 height="18"

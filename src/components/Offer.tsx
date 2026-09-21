@@ -104,7 +104,7 @@ export default function Offer() {
             </p>
             <div className="link-wrap">
               <a href="#booking" className="cta-pill-button">
-                <span>Book a 20-minute conversation</span>
+                <span>Book a 15-minute conversation</span>
                 <svg
                   width="18"
                   height="18"

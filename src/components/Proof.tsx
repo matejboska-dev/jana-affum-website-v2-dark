@@ -1,4 +1,5 @@
 'use client';
+import CalendlyButton from './CalendlyButton';
 
 import React, { useState } from 'react';
 
@@ -243,11 +244,9 @@ export default function Proof() {
         <div className="base-container w-container">
           <div className="proof-cta">
             <p className="proof-cta-text">
-              Ready to start a conversation? Twenty minutes, no cost, no obligation.
+              Ready to start a conversation? Fifteen minutes, no cost, no obligation.
             </p>
-            <a href="#booking" className="primary-button w-button">
-              Book a 20-minute conversation
-            </a>
+            <CalendlyButton>Book a 15-minute conversation</CalendlyButton>
           </div>
         </div>
       </div>

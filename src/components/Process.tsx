@@ -66,7 +66,7 @@ export default function Process() {
                     </div>
                     <div className="clarity-node-badge">1</div>
                   </div>
-                  <h3 className="clarity-flow-title">Book a 20-minute call</h3>
+                  <h3 className="clarity-flow-title">Book a 15-minute call</h3>
                   <p className="clarity-flow-desc">
                     No form marathon, pick a slot that suits you. In one short conversation, we
                     explore your situation and see if we are a natural fit.
@@ -144,7 +144,7 @@ export default function Process() {
                     <line x1="8" y1="3" x2="8" y2="7"></line>
                     <line x1="16" y1="3" x2="16" y2="7"></line>
                   </svg>
-                  <span>Book a 20-minute conversation</span>
+                  <span>Book a 15-minute conversation</span>
                 </a>
               </div>
             </div>

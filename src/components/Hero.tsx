@@ -9,7 +9,7 @@ export default function Hero() {
 
         {/* Background Watermark Typography */}
         <div className="hero-v2-bg-text-layer" aria-hidden="true">
-          <div className="hero-v2-bg-name">JANA AFFUM</div>
+          <div className="hero-v2-bg-name">Jana Affum</div>
         </div>
 
         {/* Main Body: Left Content + Person Image + Bottom Right Glass Cards */}
