@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: 'Do you work internationally?',
-    a: 'Yes. I work with clients across Europe alongside international and remote mandates. I specialize in Data, AI, Cloud, Cybersecurity, and Software leadership roles, and conversations run in Czech or English depending on what works for your team.',
+    a: 'Yes. I work with clients across Europe and worldwide, including international and remote mandates. My recruitment experience spans multiple industries and functions, including technology, finance, healthcare, sales, marketing, and leadership roles. Conversations run in Czech or English depending on what works for you.',
   },
   {
     q: 'How does coaching with a former recruiter differ from traditional career coaching?',

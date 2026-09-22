@@ -27,8 +27,8 @@ export default function Privacy() {
     <p>Enquiries that do not lead to cooperation are deleted after 12 months. Data connected to a contract is kept for the duration of the cooperation and then for the periods required by tax and accounting law.</p>
     <h2>Your rights</h2>
     <p>You can ask for access to your data, correction, deletion, restriction, portability, and you can object to processing based on legitimate interest. Write to <a href="mailto:janaaffum@gmail.com">janaaffum@gmail.com</a>. You also have the right to complain to the Czech data protection authority, Úřad pro ochranu osobních údajů (<a href="https://uoou.gov.cz" target="_blank" rel="noopener noreferrer">uoou.gov.cz</a>).</p>
-    <h2>Cookies</h2>
-    <p>See the <a href="/cookies">Cookie Policy</a>.</p>
+    <h2>Candidate Privacy &amp; Cookies</h2>
+    <p>For details on candidate data processed during executive search and recruitment, see the <a href="/candidate-privacy">Candidate Privacy Notice</a>. For technical cookies, see the <a href="/cookies">Cookie Policy</a>.</p>
     <h2>Changes</h2>
     <p>If I change how I handle data, this page will be updated and the date above will change.</p>
   </LegalPage>;

@@ -3,13 +3,27 @@ import { useEffect, useRef, useState } from 'react';
 import s from './SiteChrome.module.css';
 
 const KEY = 'ja-cookie-notice';
+const EXPIRY_MS = 365 * 24 * 60 * 60 * 1000; // 12 months (365 days)
 
 /** Technical-cookies notice. The site sets no analytics or marketing cookies, so this informs rather than asks. */
 export default function CookieBar() {
   const [show, setShow] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    try { if (!localStorage.getItem(KEY)) setShow(true); } catch { setShow(true); }
+    try {
+      const stored = localStorage.getItem(KEY);
+      if (!stored) {
+        setShow(true);
+        return;
+      }
+      const timestamp = Number(stored);
+      if (!timestamp || isNaN(timestamp) || Date.now() - timestamp > EXPIRY_MS) {
+        localStorage.removeItem(KEY);
+        setShow(true);
+      }
+    } catch {
+      setShow(true);
+    }
   }, []);
   useEffect(() => {
     const root = document.documentElement;

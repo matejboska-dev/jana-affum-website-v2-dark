@@ -133,16 +133,24 @@ export default function Footer() {
           }}
         >
           <div className="footer-copyright-5">
-            Jana Affum &bull; Business ID: 13956248 &bull; VAT ID: CZ8952264651 &bull; Registered
-            office: tř. Dukelských hrdinů 3789/84, 695 01 Hodonín, Czech Republic
+            <div>
+              Jana Affum &bull; Business ID: 13956248 &bull; VAT ID: CZ8952264651 &bull; Registered office: tř. Dukelských hrdinů 3789/84, 695 01 Hodonín, Czech Republic
+            </div>
+            <div style={{ marginTop: '4px', opacity: 0.85 }}>
+              Registered in the Czech Trade Register.
+            </div>
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', alignItems: 'flex-end' }}>
+          <div className="footer-bottom-col-right" style={{ display: 'flex', flexDirection: 'column', gap: '6px', alignItems: 'flex-end' }}>
             <div style={{ display: 'flex', gap: '18px', flexWrap: 'wrap' }}>
               <a href="/privacy" className="footer-copyright-5">Privacy</a>
+              <a href="/candidate-privacy" className="footer-copyright-5">Candidate Privacy</a>
               <a href="/cookies" className="footer-copyright-5">Cookies</a>
               <a href="/terms" className="footer-copyright-5">Terms</a>
             </div>
             <div>&copy; 2026 Jana Affum. All rights reserved.</div>
+            <div className="footer-ai-note">
+              Certain images on this website were created or enhanced using artificial intelligence.
+            </div>
           </div>
         </div>
       </div>

@@ -21891,6 +21891,23 @@ h1 span, h2 span, h3 span, h4 span,
   color: rgba(255, 255, 255, .88) !important;
 }
 .footer-socials:hover, .footer-project-link:hover { color: var(--primary) !important; }
+.footer-ai-note {
+  font-size: 11.5px !important;
+  line-height: 1.4 !important;
+  color: rgba(255, 255, 255, .42) !important;
+  margin-top: 2px;
+  text-align: right;
+}
+
+@media screen and (max-width: 991px) {
+  .footer-bottom-col-right {
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .footer-ai-note {
+    text-align: center !important;
+  }
+}
 
 /* ---- 6. SECTION RHYTHM ---- */
 .section-reviews { padding-top: 100px; padding-bottom: 100px; }

@@ -69,7 +69,7 @@ export default function RecruitmentPage() {
         </div></Reveal>
         <div className={s.photoPair}>
           <Reveal><div className={`${s.tile} ${s.photoTile}`}><Image src="/images/jana-international-recruiting.jpg" alt="Jana Affum at a whiteboard sketching international recruiting" fill sizes="(max-width: 600px) 100vw, 570px" style={{ objectPosition: '50% 34%' }}/></div></Reveal>
-          <Reveal delay={120}><div className={`${s.tile} ${s.photoTile}`}><Image src="/images/jana-working.jpg" alt="Jana Affum working at a laptop above the city skyline" fill sizes="(max-width: 600px) 100vw, 570px" style={{ objectPosition: '50% 42%' }}/></div></Reveal>
+          <Reveal delay={120}><div className={`${s.tile} ${s.photoTile}`}><Image src="/images/jana-working.jpg" alt="Jana Affum working at a laptop" fill sizes="(max-width: 600px) 100vw, 570px" style={{ objectPosition: '50% 20%' }}/></div></Reveal>
         </div>
         <div className={s.statTrio}>{hiringStats.map((stat, i) => <Reveal key={stat.label} delay={i * 100}><div className={s.stat}>
           <div className={s.statTop}><span className={s.statNum}><CountUp to={stat.to} suffix={stat.suffix}/></span><span className={s.iconCircle}><Icon name={stat.icon}/></span></div>

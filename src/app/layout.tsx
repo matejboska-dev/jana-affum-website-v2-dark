@@ -130,7 +130,7 @@ const jsonLd = {
           name: 'Do you work internationally?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes. I work with clients across Europe alongside international and remote mandates. I specialize in Data, AI, Cloud, Cybersecurity, and Software leadership roles, and conversations run in Czech or English depending on what works for your team.',
+            text: 'Yes. I work with clients across Europe and worldwide, including international and remote mandates. My recruitment experience spans multiple industries and functions, including technology, finance, healthcare, sales, marketing, and leadership roles. Conversations run in Czech or English depending on what works for you.',
           },
         },
         {

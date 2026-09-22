@@ -8,31 +8,36 @@ export default function FinalCta() {
     name: '',
     email: '',
     message: '',
+    website: '',
   });
   const [submitted, setSubmitted] = useState(false);
   const [sending, setSending] = useState(false);
+  const [error, setError] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    if (error) setError(false);
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSending(true);
+    setError(false);
 
-    const delivered = await sendEnquiry({ ...formData, source: 'home' });
-    if (!delivered) {
-      const subject = encodeURIComponent('Website inquiry');
-      const body = encodeURIComponent(
-        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-      );
-      window.location.href = `mailto:janaaffum@gmail.com?subject=${subject}&body=${body}`;
+    try {
+      const delivered = await sendEnquiry({ ...formData, source: 'home' });
+      setSending(false);
+      if (delivered) {
+        setSubmitted(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setSending(false);
+      setError(true);
     }
-
-    setSending(false);
-    setSubmitted(true);
   };
 
   return (
@@ -122,7 +127,7 @@ export default function FinalCta() {
                   <line x1="8" y1="2" x2="8" y2="6" />
                   <line x1="3" y1="10" x2="21" y2="10" />
                 </svg>
-                <span>Book your free 15-min consultation</span>
+                <span>Book your free 15-minute consultation</span>
                 <svg
                   width="18"
                   height="18"
@@ -201,6 +206,15 @@ export default function FinalCta() {
                     gap: '14px',
                   }}
                 >
+                  <input
+                    name="website"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    aria-hidden="true"
+                    style={{ position: 'absolute', left: '-9999px', width: 1, height: 1, opacity: 0 }}
+                    value={formData.website}
+                    onChange={handleChange}
+                  />
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px' }}>
                     <div>
                       <label
@@ -355,6 +369,66 @@ export default function FinalCta() {
                   >
                     {sending ? 'Sending…' : 'Send message'}
                   </button>
+
+                  <p
+                    style={{
+                      fontSize: 'var(--t-meta)',
+                      lineHeight: 'var(--lh-meta)',
+                      color: 'rgba(255,255,255,0.65)',
+                      marginTop: '12px',
+                      marginBottom: 0,
+                    }}
+                  >
+                    By submitting this form, you acknowledge that your personal data will be used to respond to your enquiry as described in the{' '}
+                    <a
+                      href="/privacy"
+                      style={{
+                        color: 'var(--primary)',
+                        textDecoration: 'underline',
+                        textUnderlineOffset: '2px',
+                      }}
+                    >
+                      Privacy Policy
+                    </a>
+                    . Please do not include sensitive personal data or confidential candidate information.
+                  </p>
+
+                  {error && (
+                    <div
+                      role="alert"
+                      style={{
+                        marginTop: '16px',
+                        padding: '14px 16px',
+                        background: 'rgba(220, 38, 38, 0.12)',
+                        border: '1px solid rgba(220, 38, 38, 0.35)',
+                        borderRadius: '8px',
+                        fontSize: 'var(--t-meta)',
+                        lineHeight: 1.5,
+                      }}
+                    >
+                      <p style={{ margin: '0 0 6px 0', fontWeight: 600, color: '#fca5a5' }}>
+                        Your message could not be sent automatically.
+                      </p>
+                      <p style={{ margin: 0, color: 'rgba(255, 255, 255, 0.85)' }}>
+                        Please email Jana directly at{' '}
+                        <a
+                          href={`mailto:janaaffum@gmail.com?subject=${encodeURIComponent(
+                            'Website enquiry'
+                          )}&body=${encodeURIComponent(
+                            `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+                          )}`}
+                          style={{
+                            color: 'var(--primary)',
+                            textDecoration: 'underline',
+                            fontWeight: 600,
+                          }}
+                        >
+                          janaaffum@gmail.com
+                        </a>
+                        .
+                      </p>
+                    </div>
+                  )}
                 </form>
               ) : (
                 <div

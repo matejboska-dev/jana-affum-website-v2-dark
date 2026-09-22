@@ -14,7 +14,7 @@ The two service pages are rebuilt around Jana’s supplied brief and her 15 Sept
 - The candidate testimonial is anonymous (Senior Infrastructure Specialist, Cloud & NetDevOps, placed candidate) under NDA. No candidate or client name appears anywhere on the pages. The case study text is Jana's own from the supplied docx. Do not identify a client, connect a named person to a placement, or repeat unsupported claims about immediate offer acceptance or successful probation.
 - Include Onboarding Care before recruitment proof and a smaller Phone a Recruiter section near the end. These remain supporting services.
 - Give expats and international professionals a distinct coaching section. Avoid hourly packages, invented prices, guaranteed outcomes or coaching-as-therapy claims.
-- All introduction copy uses 20 minutes, superseding the older 15-minute concept.
+- All introduction copy uses 15 minutes.
 
 ## Design and implementation
 
@@ -43,7 +43,7 @@ The user explicitly requested filler because Jana’s Calendly link is not avail
 
 Onboarding, mentoring and expat CTAs preselect the correct topic. Editing the form clears an older draft to prevent sending stale details. The forms also work with direct email links as a fallback.
 
-Before a full live booking/form launch, replace the placeholder with Jana’s confirmed 20-minute event and connect the agreed delivery provider if direct web submission is desired. Client-approved privacy/candidate notices, analytics consent configuration, CMS and external directory work remain outside this two-page rebuild and should not be represented as completed. No tracking or third-party calendar embed was added.
+Before a full live booking/form launch, replace the placeholder with Jana’s confirmed 15-minute event and connect the agreed delivery provider if direct web submission is desired. Client-approved privacy/candidate notices, analytics consent configuration, CMS and external directory work remain outside this two-page rebuild and should not be represented as completed. No tracking or third-party calendar embed was added.
 
 ## Verification
 

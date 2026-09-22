@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import { sendEnquiry } from '@/lib/sendEnquiry';
 
 export default function CoachingContact() {
   const [formData, setFormData] = useState({
@@ -12,27 +13,39 @@ export default function CoachingContact() {
   });
   const [submitted, setSubmitted] = useState(false);
   const [sending, setSending] = useState(false);
+  const [error, setError] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
   ) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    if (error) setError(false);
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSending(true);
+    setError(false);
 
-    const subject = encodeURIComponent(
-      `Private Coaching Inquiry: ${formData.name || 'Confidential'}`
-    );
-    const body = encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\nCurrent Role: ${formData.currentRole}\nPreferred Language: ${formData.language}\n\nWhat I am navigating:\n${formData.navigationNotes}`
-    );
-    window.location.href = `mailto:janaaffum@gmail.com?subject=${subject}&body=${body}`;
-
-    setSending(false);
-    setSubmitted(true);
+    try {
+      const delivered = await sendEnquiry({
+        name: formData.name,
+        email: formData.email,
+        message: `Current role: ${formData.currentRole}\n\n${formData.navigationNotes}`,
+        topic: 'Private coaching',
+        language: formData.language,
+        source: 'coaching-inquiry',
+      });
+      setSending(false);
+      if (delivered) {
+        setSubmitted(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setSending(false);
+      setError(true);
+    }
   };
 
   return (
@@ -243,6 +256,65 @@ export default function CoachingContact() {
                 >
                   {sending ? 'Sending…' : 'Send confidential inquiry'}
                 </button>
+                <p
+                  style={{
+                    fontSize: 'var(--t-meta)',
+                    lineHeight: 'var(--lh-meta)',
+                    color: 'rgba(255,255,255,0.65)',
+                    marginTop: '12px',
+                    marginBottom: 0,
+                  }}
+                >
+                  By submitting this form, you acknowledge that your personal data will be used to respond to your enquiry as described in the{' '}
+                  <a
+                    href="/privacy"
+                    style={{
+                      color: 'var(--primary)',
+                      textDecoration: 'underline',
+                      textUnderlineOffset: '2px',
+                    }}
+                  >
+                    Privacy Policy
+                  </a>
+                  . Please do not include sensitive personal data or confidential candidate information.
+                </p>
+                {error && (
+                  <div
+                    role="alert"
+                    style={{
+                      marginTop: '16px',
+                      padding: '14px 16px',
+                      background: 'rgba(220, 38, 38, 0.12)',
+                      border: '1px solid rgba(220, 38, 38, 0.35)',
+                      borderRadius: '8px',
+                      fontSize: 'var(--t-meta)',
+                      lineHeight: 1.5,
+                      textAlign: 'left',
+                    }}
+                  >
+                    <p style={{ margin: '0 0 6px 0', fontWeight: 600, color: '#fca5a5' }}>
+                      Your message could not be sent automatically.
+                    </p>
+                    <p style={{ margin: 0, color: 'rgba(255, 255, 255, 0.85)' }}>
+                      Please email Jana directly at{' '}
+                      <a
+                        href={`mailto:janaaffum@gmail.com?subject=${encodeURIComponent(
+                          'Private Coaching Inquiry'
+                        )}&body=${encodeURIComponent(
+                          `Name: ${formData.name}\nEmail: ${formData.email}\nCurrent Role: ${formData.currentRole}\n\nWhat I am navigating:\n${formData.navigationNotes}`
+                        )}`}
+                        style={{
+                          color: 'var(--primary)',
+                          textDecoration: 'underline',
+                          fontWeight: 600,
+                        }}
+                      >
+                        janaaffum@gmail.com
+                      </a>
+                      .
+                    </p>
+                  </div>
+                )}
               </div>
             </form>
           ) : (

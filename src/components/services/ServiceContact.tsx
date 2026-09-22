@@ -26,9 +26,10 @@ export default function ServiceContact({ kind }: { kind: 'recruitment' | 'coachi
     e.preventDefault();
     const data = new FormData(e.currentTarget);
     setSending(true);
+    const form = e.currentTarget;
     const delivered = await sendEnquiry({ name: String(data.get('name')), email: String(data.get('email')), message: String(data.get('message')), topic: String(data.get('topic')), language: String(data.get('language')), company: String(data.get('company') || ''), source: kind, website: String(data.get('website') || '') });
     setSending(false);
-    if (delivered) { setSent(true); setDraft(''); return; }
+    if (delivered) { setSent(true); setDraft(''); form.reset(); return; }
     const body = `Hello Jana,\n\nI would like to discuss: ${data.get('topic')}\nName: ${data.get('name')}\nEmail: ${data.get('email')}\n${recruitment ? `Company: ${data.get('company') || 'Not specified'}\n` : ''}Preferred language: ${data.get('language')}\n\n${data.get('message')}\n\nI would like to arrange a complimentary 15-minute conversation.`;
     setDraft(body); setCopied(false);
   }
@@ -59,11 +60,11 @@ export default function ServiceContact({ kind }: { kind: 'recruitment' | 'coachi
               </div>
               <input name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" style={{ position: 'absolute', left: '-9999px', width: 1, height: 1, opacity: 0 }}/>
               <label>{recruitment ? 'Tell me about your hiring needs' : 'What would make this conversation valuable?'}<textarea name="message" rows={4} required maxLength={3000} placeholder={recruitment ? 'For example: We need a Finance Director for our European team. The role is hybrid, and finding the right experience has been difficult…' : 'For example: My career looks good on paper, but I am considering a change. I would value an independent perspective…'}/></label>
-              <p className={s.formPrivacy}>Your message is sent to me by email, and if that is unavailable the form prepares an email draft on your device instead. Please leave out sensitive personal or candidate information.</p>
               <button className="cta-pill-button" type="submit" disabled={!ready || sending}><span>{sending ? 'Sending…' : 'Send my enquiry'}</span><Arrow/></button>
+              <p className={s.formPrivacy}>By submitting this form, you acknowledge that your personal data will be used to respond to your enquiry as described in the <a href="/privacy" style={{ color: 'var(--primary)', textDecoration: 'underline' }}>Privacy Policy</a>. Please do not include sensitive personal data or confidential candidate information.</p>
               <noscript><p className={s.formPrivacy}>Please use the email link to contact Jana. Preparing an enquiry on this page requires JavaScript.</p></noscript>
               {sent && <div className={s.draftResult} role="status"><strong>Thank you. Your message has been sent.</strong><p>I will reply to you by email.</p></div>}
-              {draft && <div className={s.draftResult} role="status"><strong>Your email draft is ready.</strong><p>Open it in your email app, review it and press send. Nothing has been sent yet.</p><a className={s.textLinkLight} href={`mailto:janaaffum@gmail.com?subject=${encodeURIComponent(`${topic} — introductory conversation`)}&body=${encodeURIComponent(draft)}`}>Open email draft <Arrow diagonal/></a><details><summary>No email app? Copy your message</summary><textarea readOnly aria-label="Your enquiry draft" value={draft} rows={7}/><button type="button" className={s.textLinkLight} onClick={async () => { try { await navigator.clipboard.writeText(draft); setCopied(true); } catch { setCopied(false); } }}>{copied ? 'Copied to clipboard' : 'Copy message'}</button><p>Send to janaaffum@gmail.com using your preferred email service.</p></details></div>}
+              {draft && <div className={s.draftResult} role="status"><strong>Your message could not be sent automatically.</strong><p>Your email draft is ready. Open it in your email app, review it and press send, or write directly to <a href={`mailto:janaaffum@gmail.com?subject=${encodeURIComponent(`${topic} — introductory conversation`)}&body=${encodeURIComponent(draft)}`} style={{ color: 'var(--primary)', textDecoration: 'underline' }}>janaaffum@gmail.com</a>.</p><a className={s.textLinkLight} href={`mailto:janaaffum@gmail.com?subject=${encodeURIComponent(`${topic} — introductory conversation`)}&body=${encodeURIComponent(draft)}`}>Open email draft <Arrow diagonal/></a><details><summary>No email app? Copy your message</summary><textarea readOnly aria-label="Your enquiry draft" value={draft} rows={7}/><button type="button" className={s.textLinkLight} onClick={async () => { try { await navigator.clipboard.writeText(draft); setCopied(true); } catch { setCopied(false); } }}>{copied ? 'Copied to clipboard' : 'Copy message'}</button><p>Send to janaaffum@gmail.com using your preferred email service.</p></details></div>}
             </form>
           </div>
         </div>

@@ -142,7 +142,7 @@ Každá sekce má odpovídat na jednu ze tří otázek: „Je to pro mě?", „C
 - What might bring you here?
 - **Coaching for Expats & International Professionals** — vlastní jasně oddělená sekce, zařadit za „What might bring you here?" a před závěrečné CTA
 - A space where you can take off the mask
-- CTA na 20minutový úvodní hovor zdarma
+- CTA na 15minutový úvodní hovor zdarma
 
 ---
 
@@ -169,7 +169,7 @@ Texty jsou hotové v angličtině. Web je celý anglicky, cílí primárně na z
 - Ask about onboarding support
 - Discuss recruitment mentoring
 - Tell me what you are navigating
-- Book a complimentary 20-minute conversation
+- Book a complimentary 15-minute conversation
 
 **Silné argumenty z textů:**
 - „You do not need more CVs. You need greater certainty."
@@ -257,7 +257,7 @@ Dále nemá být na webu:
 - Hero obsahuje dvě klientské cesty: „I need to hire" a „I am considering change"
 - Relevantní CTA se opakuje po každé službě, obě cesty se spojí ve finálním CTA
 - Kalendář musí rozlišovat Hiring a Private Coaching, ať rozhovor začne ve správném kontextu
-- Každá spolupráce začíná bezplatným 20minutovým úvodním hovorem
+- Každá spolupráce začíná bezplatným 15minutovým úvodním hovorem
 
 **Navrhovaný poptávkový formulář:**
 - Jméno
@@ -266,7 +266,7 @@ Dále nemá být na webu:
 - What would make this conversation valuable for you?
 - Preferred language: English / Czech
 
-**Rezervace:** Calendly. Jana ho v USA už používala, ale platila ho i v obdobích bez klientů. Na free tieru stačí jedna kategorie schůzky (20 min zdarma), placené je až víc typů. Založit jeden typ, jeden tip schůzky.
+**Rezervace:** Calendly. Jana ho v USA už používala, ale platila ho i v obdobích bez klientů. Na free tieru stačí jedna kategorie schůzky (15 min zdarma), placené je až víc typů. Založit jeden typ, jeden tip schůzky.
 
 **Test finální jasnosti:**
 | Do 3 sekund | Chápu, že Jana je mezinárodní recruiterka s odlišným coaching-informed přístupem |
@@ -374,7 +374,7 @@ Text v dokumentu: otevřená vybraným mezinárodním partnerstvím, kde se potk
 4. **Platba zálohy 7 500 Kč** — ověřit, jestli přišla
 5. **Ceny coachingu na webu ano, nebo ne** — rozpor mezi hovorem a dokumentem
 6. **Právní texty** — Jana je řeší přes právníka, potřebujeme termín, aby neblokovaly spuštění
-7. **Calendly** — založit jeden typ schůzky (20 min zdarma), Jana chce pomoct s nastavením
+7. **Calendly** — založit jeden typ schůzky (15 min zdarma), Jana chce pomoct s nastavením
 8. **Přesun komunikace na WhatsApp** — domluveno 4. 9., +420 725 111 597
 
 ---
