@@ -36,9 +36,9 @@
 .heroGrid { width: 100%; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 64px; align-items: center; }
 .heroCopy { max-width: 600px; }
 .hero :global(.eyebrow) { color: var(--primary); }
-.heroTitle { font-size: clamp(38px, 4.5vw, 64px) !important; color: #fff; margin: 0 0 20px; }
+.heroTitle { font-size: clamp(34px, min(4.2vw, 5.2vh), 56px) !important; color: #fff; margin: 0 0 clamp(10px, 1.8vh, 18px); }
 .heroTitle :global(.h1-span) { color: var(--primary) !important; display: inline-block; }
-.heroLead { font-size: clamp(16px, 1.3vw, 18px); line-height: 1.6; color: rgba(255, 255, 255, .78); max-width: 46ch; margin: 0 0 32px; }
+.heroLead { font-size: clamp(15px, min(1.15vw, 1.75vh), 17px); line-height: 1.5; color: rgba(255, 255, 255, .78); max-width: 48ch; margin: 0 0 clamp(14px, 2.2vh, 24px); }
 .heroActions :global(.hero-v2-cta-primary) { gap: 10px; }
 .heroActions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
 .heroMeta, .heroFacts { margin: 28px 0 0; font-size: var(--t-meta); line-height: var(--lh-meta); color: rgba(255, 255, 255, .68); max-width: 52ch; }
@@ -241,11 +241,116 @@ details[open] > summary > .plus { transform: rotate(45deg); background: var(--pr
 .heroFullMedia { position: absolute; inset: 0 0 0 auto; width: min(68%, 980px); -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 42%); mask-image: linear-gradient(90deg, transparent 0%, #000 42%); }
 .heroFullMedia::after { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(0deg, rgba(14, 12, 9, .7) 0%, rgba(14, 12, 9, 0) 28%); }
 .heroFullMedia img { object-fit: cover; object-position: 50% 4%; }
-.heroFullInner { position: relative; z-index: 2; padding-block: clamp(128px, 17vh, 176px) clamp(64px, 10vh, 104px); }
+.heroFullInner { position: relative; z-index: 2; width: 100%; padding-block: clamp(80px, 10.5vh, 116px) clamp(24px, 3.8vh, 44px); }
 .heroFullCopy { align-self: flex-start; max-width: 580px; }
 .heroFullCopy :global(.eyebrow) { color: var(--primary); }
 .pills { display: flex; flex-direction: row; flex-wrap: wrap; gap: 10px; list-style: none; margin: 36px 0 0; padding: 0; }
 .pills li { padding: 8px 16px; border-radius: 100px; border: 1px solid rgba(255, 255, 255, .2); background: rgba(255, 255, 255, .07); backdrop-filter: blur(10px); font-size: 13px; font-weight: 600; color: #fff; }
+
+/* ---- Hero Practice Area Pills ---- */
+.heroPractice {
+  margin-top: clamp(14px, 2.2vh, 26px);
+  padding-top: clamp(10px, 1.6vh, 18px);
+  border-top: 1px solid rgba(211, 175, 101, .2);
+}
+.heroPracticeLabel {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--primary);
+  margin-bottom: clamp(5px, 0.9vh, 9px);
+}
+.heroPracticePills {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(6px, 0.9vh, 10px);
+  margin: 0 0 clamp(8px, 1.2vh, 13px);
+  padding: 0;
+  list-style: none;
+  max-width: 480px;
+}
+.heroPracticePills li {
+  display: flex;
+}
+.heroPracticePill {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  padding: clamp(7px, 0.95vh, 9px) 14px;
+  border-radius: 100px;
+  border: 1px solid rgba(211, 175, 101, .28);
+  background: rgba(255, 255, 255, .04);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #fff;
+  font-size: clamp(12px, 0.95vw, 13px);
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: border-color .25s ease, background-color .25s ease, transform .25s ease, box-shadow .25s ease, color .2s ease;
+}
+.heroPracticePill:hover {
+  border-color: var(--primary);
+  background: rgba(211, 175, 101, .14);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(211, 175, 101, .18);
+}
+.heroPracticeIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 18px;
+  color: var(--primary);
+  transition: transform .25s ease;
+}
+.heroPracticePill:hover .heroPracticeIcon {
+  transform: scale(1.14);
+}
+@media (max-width: 440px) {
+  .heroPracticePills {
+    gap: 8px;
+  }
+  .heroPracticePill {
+    padding: 8px 10px;
+    font-size: 12px;
+    gap: 7px;
+  }
+}
+@media (max-width: 340px) {
+  .heroPracticePills {
+    grid-template-columns: 1fr;
+  }
+}
+.heroPracticeFooter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: clamp(12px, 0.88vw, 13px);
+  line-height: 1.4;
+  color: rgba(255, 255, 255, .7);
+  margin: 0;
+}
+.heroPracticeLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(211, 175, 101, .45);
+  text-underline-offset: 3px;
+  transition: color .2s ease, text-decoration-color .2s ease;
+}
+.heroPracticeLink:hover {
+  color: #fff;
+  text-decoration-color: #fff;
+}
 @media (prefers-reduced-motion: no-preference) {
   .heroFullMedia img { animation: settle 1.8s cubic-bezier(.16, 1, .3, 1) both; }
   .heroFullCopy > * { animation: rise .9s cubic-bezier(.16, 1, .3, 1) both; }
@@ -479,4 +584,92 @@ details[open] > summary > .plus { transform: rotate(45deg); background: var(--pr
   linear-gradient(90deg, rgba(14, 12, 9, .85) 0%, rgba(14, 12, 9, 0) 40%, rgba(14, 12, 9, 0) 80%, rgba(14, 12, 9, .7) 100%); }
 @media (min-width: 992px) {
   .heroFullMediaCutout { -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 14%, #000 86%, transparent 100%); mask-image: linear-gradient(90deg, transparent 0%, #000 14%, #000 86%, transparent 100%); height: min(90%, 800px); }
+
+  /* Ensure hero section fits within 100vh / 100dvh on desktop & laptop screens */
+  .heroFull {
+    height: 100vh;
+    height: 100dvh;
+    min-height: 560px;
+    box-sizing: border-box;
+  }
+  .heroFullInner {
+    padding-top: clamp(74px, 10vh, 104px);
+    padding-bottom: clamp(20px, 3.5vh, 40px);
+  }
 }
+
+/* Specific height adjustments for compact laptop screens (e.g. 13" MacBook, 14" laptops, 768p displays) */
+@media (min-width: 992px) and (max-height: 820px) {
+  .heroFullInner {
+    padding-top: 74px;
+    padding-bottom: 16px;
+  }
+  .heroTitle {
+    font-size: clamp(30px, 4.4vh, 38px) !important;
+    margin-bottom: 8px;
+  }
+  .heroLead {
+    font-size: 14.5px;
+    line-height: 1.45;
+    margin-bottom: 12px;
+  }
+  .heroPractice {
+    margin-top: 12px;
+    padding-top: 10px;
+  }
+  .heroPracticeLabel {
+    margin-bottom: 5px;
+  }
+  .heroPracticePills {
+    gap: 7px;
+    margin-bottom: 7px;
+  }
+  .heroPracticePill {
+    padding: 6px 12px;
+    font-size: 12px;
+    gap: 7px;
+  }
+  .heroPracticeFooter {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 992px) and (max-height: 690px) {
+  .heroFull {
+    min-height: 500px;
+  }
+  .heroFullInner {
+    padding-top: 66px;
+    padding-bottom: 10px;
+  }
+  .heroTitle {
+    font-size: 26px !important;
+    margin-bottom: 6px;
+  }
+  .heroLead {
+    font-size: 13.5px;
+    line-height: 1.35;
+    margin-bottom: 10px;
+  }
+  .heroPractice {
+    margin-top: 8px;
+    padding-top: 8px;
+  }
+  .heroPracticeLabel {
+    margin-bottom: 3px;
+    font-size: 10px;
+  }
+  .heroPracticePills {
+    gap: 5px;
+    margin-bottom: 5px;
+  }
+  .heroPracticePill {
+    padding: 5px 10px;
+    font-size: 11px;
+    gap: 6px;
+  }
+  .heroPracticeFooter {
+    font-size: 11px;
+  }
+}
+

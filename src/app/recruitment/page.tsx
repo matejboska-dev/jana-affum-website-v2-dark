@@ -13,6 +13,7 @@ import CountUp from '@/components/services/CountUp';
 import { Icon } from '@/components/services/ServiceIcons';
 import { Button, Kicker, ServiceSchema, SkipLink } from '@/components/services/ServiceShared';
 import { approachRows, caseStudy, hiringStats, industries, industryIcons, insightItems, mentoringPoints, onboardingOffer, recruitmentFaq, references, searchOffer } from '@/components/services/service-data';
+import HeroPracticePills from '@/components/recruitment/HeroPracticePills';
 import s from '@/components/services/services.module.css';
 
 const title = 'International Recruitment & Executive Search | Jana Affum';
@@ -52,6 +53,7 @@ export default function RecruitmentPage() {
           <h1 id="recruitment-heading" className={s.heroTitle}>A pivotal role is open. <span className="h1-span">The right person is not applying.</span></h1>
           <p className={s.heroLead}>What you need is access to experienced people — and enough insight to know who is genuinely ready, aligned and worth meeting.</p>
           <div className={s.heroActions}><Button variant="hero">Tell me about the role you need to fill</Button><Button variant="ghost" href="#expertise">Explore my experience</Button></div>
+          <HeroPracticePills/>
         </div></div>
       </section>
 

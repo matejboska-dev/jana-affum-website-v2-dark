@@ -1,5 +1,5 @@
 'use client';
-import { useState, type KeyboardEvent } from 'react';
+import { useState, useEffect, type KeyboardEvent } from 'react';
 import { Icon, type IconName } from './ServiceIcons';
 import { Button } from './ServiceShared';
 import s from './services.module.css';
@@ -8,6 +8,17 @@ type Industry = { name: string; icon: IconName; groups: { name?: string; roles: 
 
 export default function IndustrySelector({ industries }: { industries: Industry[] }) {
   const [active, setActive] = useState(0);
+
+  useEffect(() => {
+    function handleSelect(e: Event) {
+      const customEvent = e as CustomEvent<{ index: number }>;
+      if (typeof customEvent.detail?.index === 'number') {
+        setActive(customEvent.detail.index);
+      }
+    }
+    window.addEventListener('select-industry', handleSelect);
+    return () => window.removeEventListener('select-industry', handleSelect);
+  }, []);
   function onKey(e: KeyboardEvent, i: number) {
     const next = e.key === 'ArrowDown' ? i + 1 : e.key === 'ArrowUp' ? i - 1 : e.key === 'Home' ? 0 : e.key === 'End' ? industries.length - 1 : null;
     if (next === null) return;

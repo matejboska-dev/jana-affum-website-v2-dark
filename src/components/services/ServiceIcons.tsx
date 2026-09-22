@@ -15,6 +15,8 @@ const paths = {
   building: <><path d="M4 21V6l8-3v18M12 9l8 3v9M2 21h20"/><path d="M8 9h.01M8 13h.01M8 17h.01M16 15h.01M16 18h.01"/></>,
   swap: <path d="M4 8h14m-4-4 4 4-4 4M20 16H6m4-4-4 4 4 4"/>,
   anchor: <><circle cx="12" cy="5" r="2.2"/><path d="M12 7.2V21M8 11h8M4.5 14a7.5 7.5 0 0 0 15 0"/></>,
+  cpu: <><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></>,
+  cloud: <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>,
   monitor: <><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></>,
   gear: <><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="6.5"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1"/></>,
   flask: <><path d="M9 3h6M10 3v6L4.8 18a2 2 0 0 0 1.8 3h10.8a2 2 0 0 0 1.8-3L14 9V3"/><path d="M7.5 15h9"/></>,
