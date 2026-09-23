@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import LogoMarquee from '@/components/LogoMarquee';
+import ProfessionalExperienceStrip from '@/components/ProfessionalExperienceStrip';
 
 export default function Hero() {
   return (
@@ -96,19 +96,8 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Trust Strip in matching Dark Luxury Aesthetic */}
-      <div className="hero-v2-trust-strip">
-        <div className="base-container w-container">
-          <span className="hero-v2-trust-label">
-            EXPERIENCE WITH GLOBAL ENTERPRISES &amp; HIRING PARTNERS
-          </span>
-          <LogoMarquee />
-          <p className="hero-v2-trust-meta">
-            Direct employment, advisory, and international agency mandates across Europe, North
-            America, Australia, and Africa. Conversations in Czech or English.
-          </p>
-        </div>
-      </div>
+      {/* Selected Professional Experience */}
+      <ProfessionalExperienceStrip />
     </div>
   );
 }

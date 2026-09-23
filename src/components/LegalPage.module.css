@@ -7,7 +7,77 @@
 .article li { margin-bottom: 8px; }
 .article a { color: var(--primary); text-decoration: underline; text-underline-offset: 3px; }
 .lead { font-size: var(--t-lede) !important; line-height: var(--lh-lede) !important; color: #fff !important; }
-.meta { font-size: var(--t-meta) !important; color: rgba(255, 255, 255, .55) !important; margin-bottom: 8px; }
-.article table { width: 100%; border-collapse: collapse; margin: 8px 0 20px; font-size: var(--t-meta); }
+.meta { font-size: var(--t-meta) !important; color: rgba(255, 255, 255, .55) !important; margin-bottom: 24px; }
+
+/* Subnavigation tabs */
+.legalNav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 24px;
+}
+.legalNavLink {
+  display: inline-flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.7) !important;
+  text-decoration: none !important;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: all 0.18s ease;
+}
+.legalNavLink:hover {
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(211, 175, 101, 0.4);
+}
+.legalNavLinkActive {
+  color: var(--primary) !important;
+  background: rgba(211, 175, 101, 0.12);
+  border-color: var(--primary);
+  font-weight: 600;
+}
+
+/* Responsive table */
+.tableWrap { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 16px 0 24px; }
+.article table { width: 100%; border-collapse: collapse; margin: 0; font-size: var(--t-meta); min-width: 520px; }
 .article th, .article td { text-align: left; padding: 10px 12px; border-bottom: 1px solid rgba(211, 175, 101, .25); color: rgba(255, 255, 255, .82); vertical-align: top; }
 .article th { color: var(--primary); font-weight: 700; }
+
+/* Bottom cross-links */
+.legalBottomNav {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.legalBottomLabel {
+  font-size: var(--t-meta);
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+.legalBottomLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.legalBottomLink {
+  font-size: var(--t-body);
+  color: var(--primary) !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.legalBottomLinkActive {
+  color: #fff !important;
+  text-decoration: none !important;
+  pointer-events: none;
+  opacity: 0.65;
+}

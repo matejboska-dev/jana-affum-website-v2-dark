@@ -122,7 +122,7 @@ const jsonLd = {
           name: 'How is this different from a standard recruitment agency?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Most agencies match keywords on a CV. I bring ten years of hiring intelligence and a coaching-trained ear to every search: understanding what genuinely drives a candidate to move, where expectations might diverge, and what could weaken their commitment after an offer. You receive a small, thoroughly vetted shortlist, not a stack of CVs to sort through yourself.',
+            text: 'Many traditional agencies focus primarily on matching keywords to a CV. I bring ten years of hiring intelligence and a coaching-trained ear to every search, exploring what genuinely motivates a candidate to move, where expectations may diverge, and what could weaken their commitment after receiving an offer. You receive a small, thoroughly vetted shortlist — not a stack of CVs to sort through yourself.',
           },
         },
         {
@@ -138,7 +138,7 @@ const jsonLd = {
           name: 'How does coaching with a former recruiter differ from traditional career coaching?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Most career coaches work from theoretical frameworks or life-coaching models. Because I spent ten years on the hiring side of the table managing international IT recruitment across 9 countries, our work is backed by real hiring intelligence: how decision-makers evaluate senior talent, what the market actually pays, and how to position your track record to negotiate maximum compensation.',
+            text: 'Many career coaches work primarily with coaching frameworks. I complement these with ten years of international recruitment experience and first-hand insight into how hiring decisions are made. Our work is grounded in how decision-makers evaluate experienced professionals, how the market values their expertise, and how to position and communicate their track record effectively.',
           },
         },
         {
@@ -162,7 +162,7 @@ const jsonLd = {
           name: 'How do I know if I need career transition coaching versus therapy or medical leave?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Coaching focuses on career strategy, market value, decision-making, and navigating professional transitions. It is not psychotherapy, psychiatric care, or clinical crisis support. If you are experiencing clinical depression or severe medical exhaustion, healthcare professionals must come first.',
+            text: 'Coaching supports personal and professional decision-making, greater clarity, meaningful change, and navigating important transitions. It is not psychotherapy, psychiatric treatment, medical care, or crisis support. If you are experiencing significant emotional distress or concerns about your mental or physical health, please seek support from a qualified healthcare professional.',
           },
         },
         {
@@ -178,7 +178,7 @@ const jsonLd = {
           name: 'How are sessions conducted and what is the typical structure?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'All sessions take place 1-on-1 via secure video call. Depending on your format (single 60-minute intensive or multi-session transition programme), we conduct skills audits, market reality checks, CV & LinkedIn overhauls, and interview preparation, with ongoing async WhatsApp/email support between calls.',
+            text: 'All sessions take place one-to-one via video call. The structure is tailored to your situation and may range from a single 60-minute intensive to a multi-session coaching programme. For career-focused engagements, our work may include clarifying your strengths and direction, evaluating your market positioning, refining your CV and LinkedIn profile, interview preparation, and agreed email or WhatsApp support between sessions.',
           },
         },
       ],

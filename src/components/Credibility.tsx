@@ -18,9 +18,10 @@ export default function Credibility() {
           <div>
             <span className="eyebrow">In her own words</span>
             <p className="credibility-quote">
-              &ldquo;I spent ten years deciding who gets hired. I bring that same lens to your
-              career: not what you hope your experience is worth, but what I have watched it
-              actually be worth in the room.&rdquo;
+              &ldquo;After ten years in international recruitment, I understand how experience is
+              evaluated behind the scenes. I bring that perspective to your career &mdash; helping
+              you recognise your value, communicate it clearly, and make your next move with
+              confidence.&rdquo;
             </p>
             <div className="credibility-signature">
               <span className="credibility-signature-mark">Jana Affum</span>

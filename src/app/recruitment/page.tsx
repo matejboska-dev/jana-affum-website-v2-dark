@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import LogoMarquee from '@/components/LogoMarquee';
+import ProfessionalExperienceStrip from '@/components/ProfessionalExperienceStrip';
 import ServiceContact from '@/components/services/ServiceContact';
 import ServiceFaq from '@/components/services/ServiceFaq';
 import IndustrySelector from '@/components/services/IndustrySelector';
@@ -57,11 +57,7 @@ export default function RecruitmentPage() {
         </div></div>
       </section>
 
-      <div className="hero-v2-trust-strip"><div className="base-container w-container">
-        <span className="hero-v2-trust-label">Experience with global enterprises &amp; hiring partners</span>
-        <LogoMarquee/>
-        <p className="hero-v2-trust-meta">Through direct employment, independent consulting and assignments delivered through international agencies and outsourcing partners.</p>
-      </div></div>
+      <ProfessionalExperienceStrip/>
 
       <section id="challenge" className={`${s.sec} ${s.white}`} aria-labelledby="certainty-heading"><div className="base-container w-container">
         <Reveal><div className={s.head}>

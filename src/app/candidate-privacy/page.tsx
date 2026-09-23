@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
-import LegalPage from '@/components/LegalPage';
+import LegalPage, { TableWrap } from '@/components/LegalPage';
 
 export const metadata: Metadata = {
   title: 'Candidate Privacy Notice | Jana Affum',
-  description: 'How Jana Affum collects, processes, and protects personal data of job candidates and prospective professionals during recruitment and executive search.',
+  description:
+    'This notice explains how I process personal data about candidates and potential candidates in connection with recruitment, executive search and talent advisory services.',
   alternates: { canonical: '/candidate-privacy' },
 };
 
@@ -11,89 +12,134 @@ export default function CandidatePrivacy() {
   return (
     <LegalPage
       title="Candidate Privacy Notice"
-      intro="This notice explains how personal data of job candidates and prospective professionals is collected, used, and protected during recruitment and executive search engagements conducted by Jana Affum."
+      intro="This notice explains how I process personal data about candidates and potential candidates in connection with recruitment, executive search and talent advisory services. It applies whether you contact me directly, are referred to me, or I identify your professional profile through a professional network or another lawful public source."
+      updated="22 September 2026"
+      currentPath="/candidate-privacy"
     >
-      <h2>Who is responsible for your data</h2>
+      <h2>1. Who is the controller?</h2>
       <p>
-        Jana Affum, sole trader (fyzická osoba podnikající), Business ID (IČO) 13956248, VAT ID CZ8952264651, registered office tř. Dukelských hrdinů 3789/84, 695 01 Hodonín, Czech Republic. Contact email: <a href="mailto:janaaffum@gmail.com">janaaffum@gmail.com</a>.
+        The data controller is Jana Affum, a sole trader established in the Czech Republic, Business ID (IČO) 13956248, VAT ID CZ8952264651, with registered office at tř. Dukelských hrdinů 3789/84, 695 01 Hodonín, Czech Republic.
+      </p>
+      <p>
+        Email: <a href="mailto:janaaffum@gmail.com">janaaffum@gmail.com</a>
+      </p>
+      <p>
+        For a particular hiring process, the prospective employer will usually be a separate data controller and will provide its own privacy information.
       </p>
 
-      <h2>What data is collected and why</h2>
-      <p>
-        In the context of international recruitment and executive search, I process personal data to evaluate your professional background and qualifications for relevant career opportunities. This may include:
-      </p>
+      <h2>2. What candidate data may I process?</h2>
+      <p>Depending on the role and our interaction, I may process:</p>
       <ul>
-        <li><strong>Identification and contact details:</strong> Name, email address, telephone number, residential city/country, and professional links (such as LinkedIn).</li>
-        <li><strong>Professional history and qualifications:</strong> Your CV/resume, employment background, project experience, education, certifications, and skills.</li>
-        <li><strong>Interview notes and career preferences:</strong> Notes from screening and exploratory conversations, salary or compensation expectations, availability, notice period, and role preferences.</li>
-        <li><strong>Publicly available professional information:</strong> Information you publish publicly on professional networks and platforms.</li>
+        <li>identification and contact details;</li>
+        <li>CV, employment history, education, qualifications, professional skills and languages;</li>
+        <li>public professional-profile information, including LinkedIn profile data;</li>
+        <li>role preferences, location, availability, remuneration expectations and right-to-work information;</li>
+        <li>notes from calls, interviews, assessments and communications;</li>
+        <li>information provided by a person who referred you;</li>
+        <li>references, but only where appropriate and with prior notice to you;</li>
+        <li>information needed to assess suitability for a particular role and to manage the recruitment process.</li>
       </ul>
       <p>
-        Please do not include sensitive personal data (e.g. health information, political opinions, or religious beliefs) in your CV or initial correspondence.
+        Please do not provide special-category data such as health, ethnicity, religion, political opinions or trade-union membership unless it is genuinely necessary. If such data must be processed, I will use an appropriate legal basis and meet the additional requirements of Article 9 GDPR.
       </p>
 
-      <h2>Purpose and legal basis for processing</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Purpose</th>
-            <th>Data involved</th>
-            <th>Legal basis (GDPR)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Assessing suitability for an active search mandate</td>
-            <td>CV details, interview notes, skills, contact information</td>
-            <td>Steps taken at your request prior to entering into an agreement (Art. 6(1)(b)) and legitimate interest in executive recruitment (Art. 6(1)(f)).</td>
-          </tr>
-          <tr>
-            <td>Presenting your candidacy to a prospective hiring client</td>
-            <td>Candidate summary, relevant work experience, CV</td>
-            <td>Your consent and consultation with you prior to submission (Art. 6(1)(a)), and pre-contractual steps (Art. 6(1)(b)).</td>
-          </tr>
-          <tr>
-            <td>Keeping your profile on file for future opportunities</td>
-            <td>CV, contact details, career preferences</td>
-            <td>Your consent (Art. 6(1)(a)). You can withdraw consent at any time.</td>
-          </tr>
-          <tr>
-            <td>Legal and accounting obligations</td>
-            <td>Documentation related to completed placements</td>
-            <td>Compliance with statutory legal obligations (Art. 6(1)(c)).</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h2>Confidentiality and recipients</h2>
-      <p>
-        Candidate data is treated with strict professional confidentiality. I do not share candidate profiles with prospective employers without discussing the role with you first.
-      </p>
+      <h2>3. Where does the data come from?</h2>
+      <p>Data may come:</p>
       <ul>
-        <li><strong>Hiring clients:</strong> Relevant profile details are submitted to specific hiring organisations only with your knowledge and agreement.</li>
-        <li><strong>Service providers:</strong> Trusted technical tools that enable communication and file management (such as Google Workspace).</li>
-        <li><strong>Public authorities:</strong> Only where required by applicable Czech or EU law.</li>
+        <li>directly from you;</li>
+        <li>from a person who refers or recommends you;</li>
+        <li>from professional networking platforms such as LinkedIn;</li>
+        <li>from company websites, professional biographies or other lawful public professional sources;</li>
+        <li>from recruitment clients or service providers involved in a hiring process.</li>
       </ul>
       <p>
-        Your data is never sold to third parties or used for commercial advertising. Where external providers operate outside the EU/EEA, appropriate safeguards (such as European Commission Standard Contractual Clauses) are in place.
+        Where I obtain your data from another source, I will provide the information required by Article 14 GDPR within the applicable time limit, normally when I first contact you and no later than one month after obtaining it, unless a lawful exception applies.
       </p>
 
-      <h2>How long your data is kept</h2>
+      <h2>4. Why do I process candidate data?</h2>
+      <TableWrap>
+        <table>
+          <thead>
+            <tr>
+              <th>Purpose</th>
+              <th>Legal basis</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>To contact you about a potentially relevant opportunity and assess your possible fit</td>
+              <td>My legitimate interests and those of my recruitment client in identifying and engaging suitable professional talent (Art. 6(1)(f) GDPR)</td>
+            </tr>
+            <tr>
+              <td>To discuss your application, preferences and suitability, and to take steps you request in relation to a potential role</td>
+              <td>Steps before a possible contract (Art. 6(1)(b) GDPR), where applicable, and legitimate interests (Art. 6(1)(f) GDPR)</td>
+            </tr>
+            <tr>
+              <td>To present your profile to a recruitment client and manage a hiring process</td>
+              <td>Legitimate interests (Art. 6(1)(f) GDPR); in practice, I will tell you about the client and obtain your agreement before submitting your identifiable profile</td>
+            </tr>
+            <tr>
+              <td>To comply with legal duties or respond to lawful requests</td>
+              <td>Legal obligation (Art. 6(1)(c) GDPR)</td>
+            </tr>
+            <tr>
+              <td>To retain your profile for unrelated future opportunities</td>
+              <td>Your consent (Art. 6(1)(a) GDPR), where I ask to keep you in a talent pool beyond the current process</td>
+            </tr>
+          </tbody>
+        </table>
+      </TableWrap>
       <p>
-        For active search mandates, candidate information is kept for the duration of the selection process. If you agree to remain in my candidate network for future roles, your details are held for up to 2 years, or until you request deletion. Data related to completed placements is retained for the period required by commercial and tax legislation.
+        You are not legally required to provide candidate data. However, without relevant information I may be unable to assess or present you for a role.
+      </p>
+      <p>
+        I do not make decisions producing legal or similarly significant effects solely by automated means.
       </p>
 
-      <h2>Your rights under GDPR</h2>
+      <h2>5. Who may receive candidate data?</h2>
+      <p>Where relevant and after I have discussed the opportunity with you, candidate data may be shared with:</p>
+      <ul>
+        <li>the named recruitment client and people involved in its hiring process;</li>
+        <li>service providers supporting communication, document storage, scheduling or recruitment administration;</li>
+        <li>professional advisers and public authorities where required by law.</li>
+      </ul>
       <p>
-        You have the right to request access to your personal data, correction of inaccurate details, erasure (right to be forgotten), restriction of processing, data portability, and the right to object to processing. Where processing is based on consent, you may withdraw it at any time.
+        I do not sell candidate data. I will not send your identifiable CV or profile to a prospective employer without first telling you which opportunity and client are involved and obtaining your agreement to the submission.
       </p>
       <p>
-        To exercise any of these rights, write directly to <a href="mailto:janaaffum@gmail.com">janaaffum@gmail.com</a>. You also have the right to lodge a complaint with the Czech data protection authority, Úřad pro ochranu osobních údajů (<a href="https://uoou.gov.cz" target="_blank" rel="noopener noreferrer">uoou.gov.cz</a>).
+        Some recipients or providers may be located outside the EEA. Where required, transfers are protected by an adequacy decision, the European Commission&apos;s Standard Contractual Clauses, or another lawful safeguard under Chapter V GDPR. If a specific prospective employer is outside the EEA, I will tell you before your profile is submitted.
       </p>
 
-      <h2>Related policies</h2>
+      <h2>6. How long do I retain candidate data?</h2>
+      <ul>
+        <li>Data used for a specific recruitment process: normally for the duration of that process and up to 12 months after it ends, unless a longer period is reasonably necessary for a legal claim or required by law.</li>
+        <li>Talent-pool data for future, unrelated opportunities: for up to 24 months from your consent or last meaningful contact, after which I will delete it or ask whether you wish to remain in contact.</li>
+        <li>A minimal suppression record may be kept where necessary to respect an objection, deletion request or request not to be contacted again.</li>
+      </ul>
       <p>
-        For information on general website browsing and technical cookies, see the <a href="/privacy">Privacy Policy</a>, <a href="/cookies">Cookie Policy</a>, and <a href="/terms">Website Terms</a>.
+        Retention should always be limited to what is necessary for the stated purpose.
+      </p>
+
+      <h2>7. Your rights</h2>
+      <p>
+        You may request access, correction, deletion, restriction or portability of your personal data, where applicable. You may object at any time to processing based on legitimate interests, including sourcing contact. Where processing relies on consent, you may withdraw it at any time without affecting earlier lawful processing.
+      </p>
+      <p>
+        To exercise your rights or ask not to be contacted again, email <a href="mailto:janaaffum@gmail.com">janaaffum@gmail.com</a>.
+      </p>
+      <p>
+        You may lodge a complaint with the Czech supervisory authority, Úřad pro ochranu osobních údajů, at{' '}
+        <a href="https://uoou.gov.cz" target="_blank" rel="noopener noreferrer">
+          https://uoou.gov.cz
+        </a>.
+      </p>
+
+      <h2>8. Updates</h2>
+      <p>
+        I may update this notice if my recruitment processes or systems change. The current version and its date will appear on this page.
+      </p>
+      <p>
+        For details on general website browsing, technical storage, and client engagements, see the <a href="/privacy">Privacy Policy</a>, <a href="/cookies">Cookie Policy</a>, and <a href="/terms">Website Terms</a>.
       </p>
     </LegalPage>
   );

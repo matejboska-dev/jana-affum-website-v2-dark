@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import ProfessionalExperienceStrip from '@/components/ProfessionalExperienceStrip';
 import ServiceContact from '@/components/services/ServiceContact';
 import ServiceFaq from '@/components/services/ServiceFaq';
 import { Button, Kicker, ServiceSchema, SkipLink } from '@/components/services/ServiceShared';
@@ -39,6 +40,8 @@ export default function CoachingPage() {
           <p className={s.heroFacts}>Certified Coach &amp; NLP Practitioner · 10+ years of international recruitment · English &amp; Czech</p>
         </div></div>
       </section>
+
+      <ProfessionalExperienceStrip />
 
       <section id="your-next-chapter" className={`${s.sec} ${s.white}`} aria-labelledby="situations-heading"><div className="base-container w-container">
         <Reveal><div className={s.head}>
@@ -133,7 +136,7 @@ export default function CoachingPage() {
         </figure></Reveal>
       </div></section>
 
-      <ServiceFaq items={coachingFaq} number="06" about="private coaching" note="Coaching supports reflection, decisions and change. It is not psychological, psychiatric, medical or psychotherapeutic care and does not replace diagnosis, treatment or crisis intervention."/>
+      <ServiceFaq items={coachingFaq} number="06" about="private coaching"/>
       <ServiceContact kind="coaching"/>
     </main>
     <Footer/>

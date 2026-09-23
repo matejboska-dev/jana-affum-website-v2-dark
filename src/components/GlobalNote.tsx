@@ -76,7 +76,7 @@ export default function GlobalNote() {
               <div className="global-book-content">
                 <span className="global-book-tag">Author Giving Commitment</span>
                 <p className="global-book-text">
-                  All proceeds from the print edition of her book,{' '}
+                  All proceeds from the digital edition of her book,{' '}
                   <strong>
                     <em>AI Meets Recruitment</em>
                   </strong>

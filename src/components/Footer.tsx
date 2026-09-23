@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -44,20 +45,20 @@ export default function Footer() {
                   marginBottom: '24px',
                 }}
               >
-                Career coaching for professionals at a crossroads. Ten years of
-                international hiring intelligence to evaluate your real market value.
+                International recruitment for companies hiring key talent, alongside
+                private coaching for professionals navigating important decisions and change.
               </p>
               <div className="links-socials">
                 <div className="links-container">
-                  <a href="/" className="footer-project-link">
+                  <Link href="/" className="footer-project-link">
                     Home
-                  </a>
-                  <a href="/recruitment" className="footer-project-link">
+                  </Link>
+                  <Link href="/recruitment" className="footer-project-link">
                     Recruitment
-                  </a>
-                  <a href="/coaching" className="footer-project-link">
+                  </Link>
+                  <Link href="/coaching" className="footer-project-link">
                     Coaching
-                  </a>
+                  </Link>
                   <a href="#proof" className="footer-project-link">
                     Results
                   </a>
@@ -142,10 +143,10 @@ export default function Footer() {
           </div>
           <div className="footer-bottom-col-right" style={{ display: 'flex', flexDirection: 'column', gap: '6px', alignItems: 'flex-end' }}>
             <div style={{ display: 'flex', gap: '18px', flexWrap: 'wrap' }}>
-              <a href="/privacy" className="footer-copyright-5">Privacy</a>
-              <a href="/candidate-privacy" className="footer-copyright-5">Candidate Privacy</a>
-              <a href="/cookies" className="footer-copyright-5">Cookies</a>
-              <a href="/terms" className="footer-copyright-5">Terms</a>
+              <Link href="/privacy" className="footer-copyright-5">Privacy &amp; GDPR</Link>
+              <Link href="/candidate-privacy" className="footer-copyright-5">Candidate GDPR</Link>
+              <Link href="/cookies" className="footer-copyright-5">Cookies</Link>
+              <Link href="/terms" className="footer-copyright-5">Terms</Link>
             </div>
             <div>&copy; 2026 Jana Affum. All rights reserved.</div>
             <div className="footer-ai-note">

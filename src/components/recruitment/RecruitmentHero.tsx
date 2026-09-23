@@ -1,5 +1,5 @@
 import React from 'react';
-import LogoMarquee from '@/components/LogoMarquee';
+import ProfessionalExperienceStrip from '@/components/ProfessionalExperienceStrip';
 
 export default function RecruitmentHero() {
   return (
@@ -157,46 +157,8 @@ export default function RecruitmentHero() {
         </div>
       </div>
 
-      {/* Text-only Trust Strip */}
-      <div
-        className="social-proof-strip"
-        style={{
-          background: '#FAF7F0',
-          border: '1px solid rgba(211,175,101,0.2)',
-          borderRadius: '16px',
-          padding: '22px 20px',
-          marginTop: '20px',
-        }}
-      >
-        <div className="base-container w-container" style={{ textAlign: 'center' }}>
-          <div style={{ marginBottom: '10px' }}>
-            <span
-              style={{
-                fontSize: 'var(--t-label)',
-                fontWeight: 700,
-                color: 'var(--gold-deep)',
-                textTransform: 'uppercase',
-                letterSpacing: 'var(--ls-label)',
-              }}
-            >
-              EXPERIENCE WITH GLOBAL ENTERPRISES &amp; HIRING PARTNERS
-            </span>
-          </div>
-          <LogoMarquee />
-          <p
-            style={{
-              fontSize: '13px',
-              color: 'var(--par-color)',
-              margin: '6px auto 0 auto',
-              maxWidth: '640px',
-              lineHeight: 1.5,
-              fontWeight: 400,
-            }}
-          >
-            Across Europe and beyond. Conversations in Czech or English.
-          </p>
-        </div>
-      </div>
+      {/* Selected Professional Experience */}
+      <ProfessionalExperienceStrip />
     </div>
   );
 }

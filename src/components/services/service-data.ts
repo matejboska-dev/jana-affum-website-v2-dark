@@ -46,7 +46,7 @@ export const coachingFaq = [
   ['Do you work with expats and international professionals?', 'Yes. Career coaching for expats and coaching for international professionals can address career direction, belonging, identity and decisions about staying, returning home or moving again. I am based in Prague and work internationally.'],
   ['Can we speak in English?', 'Yes. I am an English-speaking coach in Prague, and conversations are available in English or Czech. We agree the practical arrangements together.'],
   ['What happens in the introductory conversation?', 'The first conversation is complimentary and lasts 15 minutes. We discuss what brings you here, the support you may need and whether we are a good fit. If we continue, we agree the scope, structure and fee together.'],
-  ['Is coaching the same as therapy?', 'No. Coaching is a space for reflection, decisions and change. It is not psychological, psychiatric, medical or psychotherapeutic care, and it does not replace diagnosis, treatment or crisis intervention.'],
+  ['Is coaching the same as therapy?', 'Coaching supports personal and professional decision-making, greater clarity, meaningful change, and navigating important transitions. It is not psychotherapy, psychiatric treatment, medical care, or crisis support. If you are experiencing significant emotional distress or concerns about your mental or physical health, please seek support from a qualified healthcare professional.'],
 ];
 
 export const situations = [

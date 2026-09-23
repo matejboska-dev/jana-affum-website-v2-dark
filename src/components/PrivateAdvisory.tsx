@@ -13,20 +13,20 @@ export default function PrivateAdvisory() {
           <div className="why-content">
             <span className="eyebrow">Private coaching &amp; thinking partnership</span>
             <h2 className="flex-title" style={{ textAlign: 'left' }}>
-              <span className="h2-span">A consequential decision,</span> and no one you can
-              think out loud with
+              <span className="h2-span">A consequential decision,</span> and no space to think it
+              through clearly
             </h2>
             <p className="why-statement">
-              Staying, leaving, negotiating, or a completely different path: several
-              possibilities are competing for your attention, and each one carries a different
-              risk to what you have built. These are not thoughts you can safely share with your
-              team, your partner, or your boss.
+              Staying, leaving, negotiating, or choosing a completely different path: several
+              possibilities may be competing for your attention, and each carries a different risk
+              to what you have built. Some decisions are difficult to explore openly with
+              colleagues, managers, or others personally involved in the outcome.
             </p>
             <p className="why-body">
               You need a confidential space to weigh the options with someone who understands
               what the market will actually bear, not just what feels brave. That is what this
-              conversation is for: private, direct, and grounded in ten years of watching how
-              these decisions really play out.
+              conversation is for: private, direct, and grounded in ten years of seeing how career
+              decisions play out in the real world.
             </p>
             <div className="link-wrap">
               <Link href="/coaching" className="cta-pill-button">
@@ -53,7 +53,7 @@ export default function PrivateAdvisory() {
             <div className="private-advisory-photo">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/WhatsApp-Image-2026-09-04-at-15.37.20.jpeg"
+                src="/images/jana-private-advisory-portrait.jpg"
                 alt="Jana Affum - Private Coaching Advisory & Thinking Partnership"
                 loading="lazy"
                 style={{ objectPosition: 'center center' }}
