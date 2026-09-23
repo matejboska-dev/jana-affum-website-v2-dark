@@ -3373,7 +3373,6 @@ label {
 
 blockquote {
   text-align: center;
-  background-image: url("/images/656363843a32e4fa57eb53eb_bxs_quote-left.png");
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: auto;
@@ -5202,7 +5201,6 @@ figure {
 }
 
 .blog-background-image {
-  background-image: url("/images/background-image.svg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5336,7 +5334,6 @@ figure {
 }
 
 .notaro-image-all-services {
-  background-image: url("/images/background-image.svg");
   background-position: 50%;
   background-size: cover;
   border-radius: 20px;
@@ -5788,7 +5785,6 @@ figure {
 }
 
 .image-card {
-  background-image: url("/images/background-image.svg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -6098,7 +6094,6 @@ figure {
   z-index: 30;
   grid-row-gap: 40px;
   box-shadow: none;
-  background-image: url("/images/65671b51ea4edf7c7414eb14_Team%201.webp");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -6197,7 +6192,6 @@ figure {
 
 .block-absolute {
   background-color: var(--primary);
-  background-image: url("/images/656363843a32e4fa57eb534a_Mask%20Group%20%281%29.webp");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -6212,7 +6206,6 @@ figure {
 }
 
 .image-block-left {
-  background-image: url("/images/656363843a32e4fa57eb5362_Mini%20Img%201%20%281%29.webp");
   background-position: 50%;
   background-size: cover;
   border-radius: 20px;
@@ -7655,7 +7648,6 @@ figure {
 }
 
 .home-1-service-img {
-  background-image: url("/images/656363843a32e4fa57eb5376_Banner%20Saas%209%20%281%29%20%281%29%20%281%29.webp");
   background-position: 0%;
   background-size: cover;
   border-radius: 30px;
@@ -8183,7 +8175,6 @@ figure {
 }
 
 .animal-background-img {
-  background-image: url("/images/background-image.svg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8613,7 +8604,6 @@ figure {
   object-fit: cover;
   object-position: 50% 50%;
   transform-style: preserve-3d;
-  background-image: url("/images/background-image.svg");
   background-position: 50%;
   background-size: cover;
   border-radius: 20px;
@@ -8831,7 +8821,6 @@ figure {
 }
 
 .offer-image {
-  background-image: url("/images/background-image.svg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9611,14 +9600,12 @@ figure {
 }
 
 .card-background-2.founder-one {
-  background-image: url("/images/65671b51ea4edf7c7414eb14_Team%201.webp");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .card-background-2.founder-two {
-  background-image: url("/images/65671b553fc11031511c3926_Team%202.webp");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9975,7 +9962,6 @@ figure {
 
 .background {
   z-index: 1;
-  background-image: url("/images/background-image.svg");
   background-position: 50%;
   background-size: cover;
   width: 100%;
@@ -10266,7 +10252,6 @@ figure {
 }
 
 .map-bg {
-  background-image: url("/images/background-image.svg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -10805,7 +10790,6 @@ figure {
 
 .testimonial-autor-photo {
   border: 3px solid var(--primary);
-  background-image: url("/images/65675e02e12e6e7c647eb028_Avatar%206.webp");
   background-position: 50%;
   background-size: cover;
   border-radius: 100%;
@@ -10814,17 +10798,14 @@ figure {
 }
 
 .testimonial-autor-photo.autor-4 {
-  background-image: url("/images/65671b51ea4edf7c7414eb14_Team%201.webp");
   background-position: 50% 0;
 }
 
 .testimonial-autor-photo.autor-3 {
-  background-image: url("/images/65675e02e12e6e7c647eb025_Avatar%207.webp");
   background-position: 50% 0;
 }
 
 .testimonial-autor-photo.autor-2 {
-  background-image: url("/images/65671b553fc11031511c3926_Team%202.webp");
   background-position: 50% 0;
 }
 
@@ -11184,7 +11165,6 @@ figure {
   border-width: 1px;
   border-color: var(--green);
   background-color: var(--green);
-  background-image: url("/images/6565ebc482819a816c4470d0_V-1.webp");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: auto;
@@ -11591,7 +11571,6 @@ figure {
 }
 
 .hero-inner-background {
-  background-image: url("/images/background-image.svg");
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11768,7 +11747,6 @@ figure {
 }
 
 .hero-background-image {
-  background-image: url("/images/background-image.svg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11790,7 +11768,6 @@ figure {
 
 .home-2-bg {
   z-index: 1;
-  background-image: url("/images/background-image.svg");
   background-position: 50%;
   background-size: cover;
   width: 100%;
@@ -11877,7 +11854,6 @@ figure {
 }
 
 .background-image-2 {
-  background-image: url("/images/65671b51ea4edf7c7414eb14_Team%201.webp");
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12188,7 +12164,6 @@ figure {
 }
 
 .blog-details-background-image-2 {
-  background-image: url("/images/background-image.svg");
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12242,7 +12217,6 @@ figure {
 }
 
 .photo-autor-2 {
-  background-image: url("/images/6567132b03e1c7eae299fbe1_chef%201.webp");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -14295,7 +14269,6 @@ figure {
   }
 
   .shop-tablet-image {
-    background-image: url("/images/background-image.svg");
     background-position: 50%;
     background-size: cover;
     border-radius: 50px;
@@ -18714,181 +18687,6 @@ figure {
 }
 
 @font-face {
-  font-family: 'Uncut Sans';
-  src: url('/fonts/65646bf59260170134d09a4c_Uncut-Sans-Medium.woff2') format('woff2'), url('/fonts/65646bf59260170134d09a4c_Uncut-Sans-Medium.woff2') format('woff2'), url('/fonts/65646bf543c676dda5795295_Uncut-Sans-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Uncut Sans';
-  src: url('/fonts/65646bf5446e64326d0ec43c_Uncut-Sans-SemiboldOblique.woff2') format('woff2'), url('/fonts/65646bf5a19859cf44fbb07b_Uncut-Sans-SemiboldOblique.woff') format('woff');
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Uncut Sans';
-  src: url('/fonts/65646bf593257c05ebd2d930_Uncut-Sans-Regular.woff2') format('woff2'), url('/fonts/65646bf55869d9816f53ce3b_Uncut-Sans-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Uncut Sans';
-  src: url('/fonts/65646bf5e2ab8cf7eef46c5a_Uncut-Sans-MediumOblique.woff2') format('woff2'), url('/fonts/65646bf516fa27c11f8e87f6_Uncut-Sans-MediumOblique.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Uncut Sans Vf';
-  src: url('/fonts/65646bf5ed3e3a7bc0cd3728_Uncut-Sans-VF.woff2') format('woff2');
-  font-weight: 400 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Uncut Sans';
-  src: url('/fonts/65646bf55197c482a8ca9764_Uncut-Sans-Semibold.woff2') format('woff2'), url('/fonts/65646bf55197c482a8ca9764_Uncut-Sans-Semibold.woff2') format('woff2'), url('/fonts/65646bf55197c482a8ca9764_Uncut-Sans-Semibold.woff2') format('woff2'), url('/fonts/65646bf566b26e7bc5a3b86e_Uncut-Sans-Semibold.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Uncut Sans';
-  src: url('/fonts/65646bf57acc6b9113adbca5_Uncut-Sans-RegularOblique.woff2') format('woff2'), url('/fonts/65646bf507d8b8c07dfa67fd_Uncut-Sans-RegularOblique.woff') format('woff');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Uncut Sans';
-  src: url('/fonts/65646bf594bd3f119c6074e2_Uncut-Sans-BoldOblique.woff2') format('woff2'), url('/fonts/65646bf58f5d721db80d7ea9_Uncut-Sans-BoldOblique.woff') format('woff');
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Uncut Sans';
-  src: url('/fonts/65646bf57ff16efdc9235e39_Uncut-Sans-Bold.woff2') format('woff2'), url('/fonts/65646bf57ff16efdc9235e39_Uncut-Sans-Bold.woff2') format('woff2'), url('/fonts/65646bf57ff16efdc9235e39_Uncut-Sans-Bold.woff2') format('woff2'), url('/fonts/65646bf55197c482a8ca9756_Uncut-Sans-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Redaction 10';
-  src: url('/fonts/6572ee50405b59d75e358a8a_Redaction_10-Italic.woff2') format('woff2');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Fa brands 400';
-  src: url('/fonts/656363843a32e4fa57eb52e1_fa-brands-400.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Fa solid 900';
-  src: url('/fonts/656363843a32e4fa57eb52e8_fa-solid-900.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Fa 400';
-  src: url('/fonts/656363843a32e4fa57eb52e4_fa-regular-400.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Build';
-  src: url('/fonts/656363843a32e4fa57eb52ed_build.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Nordeco';
-  src: url('/fonts/656363843a32e4fa57eb52ee_Nordeco-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Nordeco';
-  src: url('/fonts/656363843a32e4fa57eb52f3_Nordeco-SemiBold.ttf') format('truetype'), url('/fonts/656363843a32e4fa57eb52ee_Nordeco-Bold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Nordecocyrillic';
-  src: url('/fonts/656363843a32e4fa57eb52f6_NordecoCyrillic-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Nordeco';
-  src: url('/fonts/656363843a32e4fa57eb52f2_Nordeco-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Nordecocyrillic';
-  src: url('/fonts/656363843a32e4fa57eb52f0_NordecoCyrillic-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Nordecocyrillic';
-  src: url('/fonts/656363843a32e4fa57eb5300_NordecoCyrillic-SemiBold.ttf') format('truetype'), url('/fonts/656363843a32e4fa57eb52f0_NordecoCyrillic-Bold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Nordeco';
-  src: url('/fonts/656363843a32e4fa57eb52ef_Nordeco-Regular.ttf') format('truetype'), url('/fonts/656363843a32e4fa57eb52f3_Nordeco-SemiBold.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Nordecocyrillic';
-  src: url('/fonts/656363843a32e4fa57eb52f1_NordecoCyrillic-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Nordecocyrillic';
-  src: url('/fonts/656363843a32e4fa57eb52f1_NordecoCyrillic-Regular.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Nordeco';
-  src: url('/fonts/656363843a32e4fa57eb52ef_Nordeco-Regular.ttf') format('truetype'), url('/fonts/656363843a32e4fa57eb52f2_Nordeco-Light.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Fa Brands 400';
-  src: url('/fonts/6565a5affe23ca7dddec6116_fa-brands-400.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
   font-family: 'Satoshi';
   src: url('/fonts/656363843a32e4fa57eb5303_Satoshi-Bold.otf') format('opentype');
   font-weight: 700;
@@ -18956,48 +18754,6 @@ figure {
   src: url('/fonts/656363843a32e4fa57eb5309_Satoshi-MediumItalic.otf') format('opentype');
   font-weight: 500;
   font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'D 9 Yoz';
-  src: url('/fonts/65646bb29f02ee73d4aa265b_RedactionBold-d9yOZ.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Lgb 8 W';
-  src: url('/fonts/65646bb26348d6558cd71f21_RedactionItalic-lgB8w.otf') format('opentype');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Redaction 20 K 7 Zje';
-  src: url('/fonts/65646bb23263a1612548a97c_Redaction20Italic-K7ZJe.otf') format('opentype');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Redaction 10 1 Gx 2 V';
-  src: url('/fonts/65646bb3d862923e420a6a19_Redaction10-1GX2v.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Redaction Ml 8 P 5';
-  src: url('/fonts/65646bb219c0934bebb4230c_Redaction-mL8P5.otf') format('opentype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Redaction 10 1 Gx 2 V';
-  src: url('/fonts/65646bb3d862923e420a6a19_Redaction10-1GX2v.otf') format('opentype');
-  font-weight: 300;
-  font-style: normal;
   font-display: swap;
 }
 
@@ -19262,7 +19018,6 @@ h1, h2, h3, h4, h5, h6, .banner-1-title, .h2-hero-title-white, .product-title-2,
   margin-bottom: 12px;
 }
 
-
 /* Right Image (Hero Portrait) Natural Proportions & Fix */
 .right-img {
   width: auto !important;
@@ -19314,7 +19069,6 @@ h1, h2, h3, h4, h5, h6, .banner-1-title, .h2-hero-title-white, .product-title-2,
     display: none !important;
   }
 }
-
 
 /* ==========================================================================
    JANA AFFUM HIGH-FIDELITY DESIGN SYSTEM & LAYOUTS
@@ -19506,8 +19260,6 @@ h1, h2, h3, h4, h5, h6,
   display: flex !important;
   align-items: center !important;
 }
-
-
 
 .left-content {
   max-width: 620px !important;
@@ -19996,7 +19748,6 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
-
 /* ==========================================================================
    INFINITE SMOOTH LOGO MARQUEE
    ========================================================================== */
@@ -20055,7 +19806,6 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
-
 /* Golden Animated Circle behind Hero */
 .right-circle {
   background: linear-gradient(135deg, #ECCB85 0%, #D3AF65 60%, #BA9243 100%) !important;
@@ -20109,10 +19859,6 @@ h1, h2, h3, h4, h5, h6,
     display: block !important;
   }
 }
-
-
-
-
 
 /* Golden Animated Circle (25% smaller) & Positioned behind photo */
 .right-circle {
@@ -20211,7 +19957,6 @@ h1, h2, h3, h4, h5, h6,
     margin: 0 auto !important;
   }
 }
-
 
 /* ==========================================================================
    ELEVATED COACHING PILLAR CARDS
@@ -20331,7 +20076,6 @@ h1, h2, h3, h4, h5, h6,
   gap: 12px !important;
 }
 
-
 /* ==========================================================================
    LARGER HERO PORTRAIT & REFINED POSITIONING
    ========================================================================== */
@@ -20418,7 +20162,6 @@ h1, h2, h3, h4, h5, h6,
     margin: 0 auto !important;
   }
 }
-
 
 /* ==========================================================================
    VERTICAL 3 STEPS WITH ANIMATED CURLY GOLDEN LINE & POINTING PHOTO
@@ -20631,7 +20374,6 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
-
 /* ==========================================================================
    STABLE TESTIMONIAL SLIDER (ZERO HEIGHT JUMP / ZERO LAYOUT SHIFT)
    ========================================================================== */
@@ -20730,7 +20472,6 @@ h1, h2, h3, h4, h5, h6,
     text-align: center !important;
   }
 }
-
 
 /* ==========================================================================
    BESPOKE FULL-WIDTH EXECUTIVE PRICING ARCHITECTURE
@@ -20966,7 +20707,6 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
-
 /* ==========================================================================
    FRAMELESS POINTING PHOTO IN STEPS SECTION
    ========================================================================== */
@@ -21011,7 +20751,6 @@ h1, h2, h3, h4, h5, h6,
     max-height: 420px !important;
   }
 }
-
 
 /* ==========================================================================
    DARK GLASS COACHING PHOTO CARDS (NO WHITE BACKGROUND)
@@ -21097,7 +20836,6 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 8px !important;
 }
 
-
 /* ==========================================================================
    POINTING PHOTO ALIGNED TO BOTTOM OF OUR-SERVICES SECTION
    ========================================================================== */
@@ -21169,7 +20907,6 @@ h1, h2, h3, h4, h5, h6,
     padding-bottom: 0 !important;
   }
 }
-
 
 /* ==========================================================================
    VERTICAL STEPS STACKED ABOVE POINTING PHOTO WITH BESPOKE ICONS
@@ -21302,13 +21039,6 @@ h1, h2, h3, h4, h5, h6,
     max-height: 380px !important;
   }
 }
-
-
-
-
-
-
-
 
 /* ==========================================================================
    CLARITY — "GET CLARITY IN THREE STEPS"
@@ -21585,7 +21315,6 @@ h1, h2, h3, h4, h5, h6,
     background-size: 1px 12px;
   }
 }
-
 
 /* ==========================================================================
    SYSTEM OVERRIDES — single source of truth
@@ -22121,7 +21850,6 @@ h1 span, h2 span, h3 span, h4 span,
   .price-poto-con { min-height: 320px; }
 }
 
-
 /* ==========================================================================
    TYPE SCALE — nine roles, applied
    Replaces nine accidental sizes (20/17/16/15/14.5/14/13.5/13/12) and a
@@ -22280,7 +22008,6 @@ body {
   .clarity-flow-desc, .services-description-animation { max-width: none; }
 }
 
-
 /* ==========================================================================
    TYPE SCALE — corrections found in the rendered page
    Each of these was set by an earlier class rule carrying !important, which
@@ -22326,7 +22053,6 @@ body {
 .bespoke-pricing-card.featured .bespoke-card-badge.gold {
   font-weight: 700 !important;
 }
-
 
 /* ==========================================================================
    TYPE SCALE — final corrections
@@ -22397,7 +22123,6 @@ p.services-description-animation.services-description-animation {
   line-height: 1.5 !important;
   letter-spacing: var(--ls-label) !important;
 }
-
 
 /* ==========================================================================
    POLISH PASS
@@ -24754,9 +24479,6 @@ p.services-description-animation.services-description-animation {
     align-items: flex-start;
   }
 }
-
-
-
 
 /* ==========================================================================
    BUTTONS — pill with a circular arrow chip (sitewide)
