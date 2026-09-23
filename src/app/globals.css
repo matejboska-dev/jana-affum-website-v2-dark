@@ -23666,6 +23666,16 @@ p.services-description-animation.services-description-animation {
   white-space: nowrap;
 }
 
+.hero-v2-bg-j {
+  display: inline-block;
+  height: 0.927em;
+  width: 0.74em;
+  vertical-align: -0.188em;
+  margin-right: -0.20em;
+  fill: currentColor;
+  pointer-events: none;
+}
+
 /* Main Body Content */
 .hero-v2-body {
   position: relative;
